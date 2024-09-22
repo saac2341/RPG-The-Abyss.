@@ -1,4 +1,4 @@
-package rpg;
+package rpg.enums;
 
 /**
  * Caracteristicas de los personajes y los enemigos.
@@ -79,8 +79,8 @@ public enum Stats {
 
     /**
      * Daño adicional de un ataque critico.
-     */
+     **/
 
-    CRITICAL_HIT_DAMAGE
+    CRITICAL_HIT_DAMAGE,
 
 }
