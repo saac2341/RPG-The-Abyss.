@@ -1,4 +1,4 @@
-package enemies;
+package rpg;
 
 import characters.BasicCharacter;
 import game.exceptions.EnemyDeadException;
