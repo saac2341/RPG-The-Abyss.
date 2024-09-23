@@ -1,4 +1,4 @@
-package rpg.entities;
+package rpg.entities.enemies;
 import rpg.enums.Stats;
 import rpg.entities.Player;
 import java.util.Map;
@@ -47,11 +47,9 @@ public class Enemy {
         int damage = this.stats.get(Stats.ATTACK) - player.getStats().get(Stats.DEFENSE);
         if (damage > 0) {
             player.getStats().put(Stats.HP, player.getStats().get(Stats.HP) - damage);
-            System.out.println(this.name + " attacks " + player.getName() + " for " + damage + " damage!");
-            JOptionPane.showMessageDialog(null,this.name + " ataca " + player.getName() + " por " + damage + " cuidado!");
+            JOptionPane.showMessageDialog(null,this.name + " ataca " + player.getName() + " menos " + damage + " puntos");
         } else {
-            System.out.println(this.name + " attacks " + player.getName() + " but does no damage!");
-            JOptionPane.showMessageDialog(null,this.name + " ataques " + player.getName() + " no le esta haciendo daño!");
+            JOptionPane.showMessageDialog(null,this.name + " ataca a " + player.getName() + " no le esta haciendo daño!");
         }
     }
     /**

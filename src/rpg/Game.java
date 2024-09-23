@@ -1,34 +1,27 @@
 package rpg;
-import rpg.enums.Stats;
 import rpg.entities.Player;
-import rpg.entities.Enemy;
+import rpg.entities.enemies.Enemy;
 import javax.swing.*;
-import java.awt.*;
+
 
 public class Game {
-        private Player player;
-        private Enemy enemy;
+        private static Player player;
+        private static Enemy enemy;
 
         /**
          * Ejecutos del programa del juego
-         * @param args
          */
         public static void main(String[] args){
 
-        }
-
-        /**
-         * Creacion de los objetos
-         */
-        public Game() {
-            this.player = new Player("Mago");
-            this.enemy = new Enemy("Goblin");
+            player = new Player("Mago");
+            enemy = new Enemy("Goblin");
+            Game.startGame();
         }
 
         /**
          * Analiza quien a muerto en el juego
          */
-        public void startGame() {
+        public static void startGame() {
             while (player.isAlive() && enemy.isAlive()) {
                 player.attack(enemy);
                 if (enemy.isAlive()) {
