@@ -1,5 +1,4 @@
-package rpg.entities.enemies.destroyers;
-
+package rpg.entities.enemies;
 import rpg.entities.GameCharacter;
 import rpg.entities.enemies.Enemy;
 import rpg.enums.Stats;

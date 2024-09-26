@@ -1,51 +1,60 @@
 package rpg.entities;
 
 import rpg.enums.Stats;
+
+import javax.swing.*;
 import java.util.HashMap;
+import java.util.Map;
 
 public class GameCharacter {
     protected String name;
+    protected Map<Stats,Integer> stats;
 
-    protected HashMap<Stats, Integer> stats;
-
-    public GameCharacter(String name) {
-        this.name = name;
-        this.stats = new HashMap<>();
+    /**
+     * Constructor de los atributos iniciales muy paraecido a player.
+     * @param name
+     */
+    public Enemy(String name){
+        this.name=name;
+        this.stats=new HashMap<>();
+        this.stats.put(Stats.MAX_HP, 50);
+        this.stats.put(Stats.HP, 50);
+        this.stats.put(Stats.ATTACK, 5);
+        this.stats.put(Stats.DEFENSE, 2);
     }
 
-    public boolean isAlive() {
-        return stats.get(Stats.HP) > 0;
-    }
-
-    public void attack(GameCharacter enemy) {
-
-        String message = "";
-        String enemyName = enemy.getName();
-        int damage = this.stats.get(Stats.ATTACK) - enemy.getStats().get(Stats.DEFENSE);
-        int newHP = enemy.getStats().get(Stats.HP);
-        if (damage > 0) {
-
-            newHP = enemy.getStats().get(Stats.HP) - damage;
-            enemy.getStats().put(Stats.HP, newHP);
-            message += String.format("""
-                    %s attacks %s for %d damage!
-                    %s has %d HP left.
-                    """, this.name, enemyName, damage, enemyName, newHP);
-        } else {
-            message += String.format("""
-                    %s attacks %s but does no damage!
-                    %s has %d HP left.
-                    """, this.name, enemyName, enemyName, newHP);
-        }
-        System.out.println(message);
-    }
-
+    /**
+     * Metodo para obtener el nombre del enemigo
+     * @return
+     */
     public String getName() {
-        return String.format("%s el Intrépido", name);
+        return name;
     }
-
-    public HashMap<Stats, Integer> getStats() {
+    /**
+     * Merodo para obtener los atributos del enemigo
+     */
+    public Map<Stats, Integer> getStats() {
         return stats;
     }
-}
 
+
+    /**
+     * Metodo para atacar a player.
+     * @param player
+     */
+    public void attack(Player player) {
+        int damage = this.stats.get(Stats.ATTACK) - player.getStats().get(Stats.DEFENSE);
+        if (damage > 0) {
+            player.getStats().put(Stats.HP, player.getStats().get(Stats.HP) - damage);
+            JOptionPane.showMessageDialog(null,this.name + " ataca " + player.getName() + " menos " + damage + " puntos");
+        } else {
+            JOptionPane.showMessageDialog(null,this.name + " ataca a " + player.getName() + " no le esta haciendo daño!");
+        }
+    }
+    /**
+     * Sigues con vida?
+     */
+    public boolean isAlive() {
+        return this.stats.get(Stats.HP) > 0;
+    }
+}

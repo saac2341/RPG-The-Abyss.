@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.HashMap;
 import javax.swing.*;
 /**
- * Creacion de la clase con sus atrivutos.
+ * Creacion de la clase con sus atributos.
  */
 public class Enemy {
     protected String name;
