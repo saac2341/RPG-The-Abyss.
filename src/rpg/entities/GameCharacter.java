@@ -9,7 +9,6 @@ public class GameCharacter {
     protected HashMap<Stats, Integer> stats;
 
     public GameCharacter(String name) {
-
         this.name = name;
         this.stats = new HashMap<>();
     }

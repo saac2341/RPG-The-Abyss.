@@ -2,7 +2,6 @@ package rpg.entities;
 import javax.swing.*;
 import rpg.entities.enemies.Enemy;
 import rpg.enums.Stats;
-
 import java.util.HashMap;
 import java.util.Map;
 /**
@@ -10,17 +9,16 @@ import java.util.Map;
  */
 public class Player {
     private String name;
-    private Map<Stats, Integer> stats;
+    private Map<Stats,Integer>stats;
 
     /**
      * Deffinición de los atributos.
-     *
      * @param name
      */
     public Player(String name) {
-        this.name = name;
-        this.stats = new HashMap<>();
-        this.stats.put(Stats.MAX_HP, 100);
+        this.name=name;
+        this.stats=new HashMap<>();
+        this.stats.put(Stats.MAX_HP,100);
         this.stats.put(Stats.HP, 100);
         this.stats.put(Stats.MAX_MP, 50);
         this.stats.put(Stats.MP, 50);
@@ -32,7 +30,7 @@ public class Player {
      * Constructor que inicializa el nombre y los atributos del jugador
      */
     public Player() {
-        this.name = getName();
+        this.name=getName();
     }
 
     // Método para obtener el nombre del jugador
@@ -51,13 +49,12 @@ public class Player {
         if (damage > 0) {
             int enemyHp = enemy.getStats().get(Stats.HP);
             enemy.getStats().put(Stats.HP, enemyHp - damage);
-            JOptionPane.showMessageDialog(null, this.name + " ataca a " + enemy.getName() + " menos " + damage + " puntos");
+            JOptionPane.showMessageDialog(null,this.name + " atacado " + enemy.getName() + " por " + damage + " peligro!" );
         } else {
-            JOptionPane.showMessageDialog(null, this.name + " attacks " + enemy.getName() + " but does no damage!");
+            JOptionPane.showMessageDialog(null,this.name + " attacks " + enemy.getName() + " but does no damage!");
         }
     }
-
-    public Map<Stats, Integer> getStats() {
-        return stats;
+    public ActionMap getStats() {
+        return null;
     }
 }
