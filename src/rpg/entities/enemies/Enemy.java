@@ -8,8 +8,8 @@ import javax.swing.*;
  * Creacion de la clase con sus atrivutos.
  */
 public class Enemy {
-    private String name;
-    private Map<Stats,Integer>stats;
+    protected String name;
+    protected Map<Stats,Integer>stats;
 
     /**
      * Constructor de los atributos iniciales muy paraecido a player.
