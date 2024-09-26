@@ -1,9 +1,8 @@
 package rpg;
-import rpg.enums.Stats;
 import rpg.entities.Player;
-import rpg.entities.enemies.Enemy;
+import rpg.entities.enemies.*;
 import javax.swing.*;
-import java.awt.*;
+import rpg.utils.Randomize;
 
 public class Game {
         private Player player;
@@ -14,7 +13,8 @@ public class Game {
          * @param args
          */
         public static void main(String[] args){
-
+            Game game=new Game();
+            game.startGame();
         }
 
         /**
@@ -22,7 +22,14 @@ public class Game {
          */
         public Game() {
             this.player = new Player("Mago");
-            this.enemy = new Enemy("Goblin");
+            int enemyType= Randomize.getRandomInt(1,4);
+            this.enemy = switch (enemyType){
+                case 1 -> new Destroyer();
+                case 2 -> new TheButcherOfSouls();
+                case 3 -> new IntermediateLince();
+                case 4 -> new MoleMan();
+                default -> new Enemy();
+            };
         }
 
         /**
@@ -42,4 +49,4 @@ public class Game {
                 JOptionPane.showMessageDialog(null,"Has perdido, el enemigo te a matado");
             }
         }
-    }
+}

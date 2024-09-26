@@ -1,8 +1,11 @@
 package rpg.utils;
 
 public class Randomize {
+    public static int getRandomInt(int min, int max){
+        return (int)(Math.random()*(max-min+1)+min);
+    }
 
-    public static int getRandomInt(int i, int i1) {
-        return i;
+    static boolean getRandomBolean(){
+        return Math.random()<0.5;
     }
 }

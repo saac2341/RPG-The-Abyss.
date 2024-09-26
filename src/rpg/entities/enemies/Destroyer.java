@@ -1,8 +1,9 @@
 package rpg.entities.enemies;
 import rpg.entities.GameCharacter;
-import rpg.entities.enemies.Enemy;
+import rpg.entities.Player;
 import rpg.enums.Stats;
 import rpg.utils.Randomize;
+import javax.swing.*;
 
 public class Destroyer extends Enemy {
 
@@ -15,9 +16,8 @@ public class Destroyer extends Enemy {
         this.stats.put(Stats.DEFENSE, 5); // Más defensa
     }
 
-    @Override
     public void attack(GameCharacter enemy) {
-        int attack = Randomize.getRandomInt(1, 3); // Elegir entre 2 ataques
+        int attack = Randomize.getRandomInt(1, 1); // Elegir entre 2 ataques
         switch (attack) {
             case 1:
                 fireBlast(enemy);  // Ataque 1: Fire Blast
@@ -34,16 +34,16 @@ public class Destroyer extends Enemy {
     protected void fireBlast(GameCharacter enemy) {
         int damage = 7; // Daño considerable para este ataque
         enemy.getStats().put(Stats.HP, enemy.getStats().get(Stats.HP) - damage);
-        System.out.println(this.name + " uses Fire Blast on " + enemy.getName() + " for "
+        JOptionPane.showMessageDialog(null,this.name + " uses Fire Blast on " + enemy.getName() + " for "
                 + damage + " damage!");
-        System.out.println(enemy.getName() + " has " + enemy.getStats().get(Stats.HP) + " HP left.");
+        JOptionPane.showMessageDialog(null,enemy.getName() + " has " + enemy.getStats().get(Stats.HP) + " HP left.");
     }
 
     protected void darkSlash(GameCharacter enemy) {
         int damage = 5; // Daño un poco menor que el Fire Blast
         enemy.getStats().put(Stats.HP, enemy.getStats().get(Stats.HP) - damage);
-        System.out.println(this.name + " slashes " + enemy.getName() + " with Dark Slash for "
+        JOptionPane.showMessageDialog(null,this.name + " slashes " + enemy.getName() + " with Dark Slash for "
                 + damage + " damage!");
-        System.out.println(enemy.getName() + " has " + enemy.getStats().get(Stats.HP) + " HP left.");
+        JOptionPane.showMessageDialog(null,enemy.getName() + " has " + enemy.getStats().get(Stats.HP) + " HP left.");
     }
 }
