@@ -28,6 +28,7 @@ public class Game {
                 case 2 -> new TheButcherOfSouls();
                 case 3 -> new IntermediateLince();
                 case 4 -> new MoleMan();
+                case 5 -> new Hermit();
                 default -> new Enemy();
             };
         }

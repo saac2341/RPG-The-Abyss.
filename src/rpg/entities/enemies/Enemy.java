@@ -3,12 +3,8 @@ package rpg.entities.enemies;
 import rpg.entities.GameCharacter;
 import rpg.entities.Player;
 import rpg.enums.Stats;
-
-import java.util.Map;
-import java.util.HashMap;
 import javax.swing.*;
-import java.lang.Integer;
-import javax.swing.Action;
+
 
 /**
  * Creacion de la clase con sus atributos.
