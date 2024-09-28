@@ -34,7 +34,7 @@ public class Game {
         }
 
         /**
-         * Analiza quien a muerto en el juego
+         * Analiza quien ha muerto en el juego
          */
         public void startGame() {
             while (player.isAlive() && enemy.isAlive()) {
