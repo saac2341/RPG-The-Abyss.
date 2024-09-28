@@ -1,7 +1,6 @@
 package rpg.entities;
 import rpg.enums.Stats;
 import java.util.HashMap;
-import javax.swing.*;
 /**
  * Creacion de la clase.
  */
@@ -14,7 +13,7 @@ public class GameCharacter {
         this.name = name;
         this.stats = new HashMap<>();
     }
-    //Oye estas vivo?
+    //¿Oye estás vivo?
     public boolean isAlive(){
         return stats.get(Stats.HP)>0;
     }
@@ -28,7 +27,6 @@ public class GameCharacter {
         if(damage>0){
             newHP=enemy.getStats().get(Stats.HP)-damage;
             enemy.getStats().put(Stats.HP,newHP);
-        }else{
         }
     }
 

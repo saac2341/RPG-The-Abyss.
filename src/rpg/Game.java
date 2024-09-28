@@ -5,12 +5,11 @@ import javax.swing.*;
 import rpg.utils.Randomize;
 
 public class Game {
-        private Player player;
-        private Enemy enemy;
+        private final Player player;
+        private final Enemy enemy;
 
         /**
          * Ejecutos del programa del juego
-         * @param args
          */
         public static void main(String[] args){
             Game game=new Game();
@@ -34,7 +33,7 @@ public class Game {
         }
 
         /**
-         * Analiza quien a muerto en el juego
+         * Analiza quien ha muerto en el juego
          */
         public void startGame() {
             while (player.isAlive() && enemy.isAlive()) {
