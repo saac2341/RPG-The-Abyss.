@@ -28,4 +28,5 @@ public class Player extends GameCharacter {
         this.stats.put(Stats.ATTACK, 10);
         this.stats.put(Stats.DEFENSE, 5);
     }
+
 }

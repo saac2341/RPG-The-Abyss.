@@ -23,18 +23,18 @@ public class GameCharacter {
     public void attack (GameCharacter enemy){
         String enemyName= enemy.getName();
         int damage =this.stats.get(Stats.ATTACK)-
-                enemy.getStats().get(Stats.HP);
+                enemy.getStats().get(Stats.DEFENSE);
         int newHP=enemy.getStats().get(Stats.HP);
         if(damage>0){
             newHP=enemy.getStats().get(Stats.HP)-damage;
             enemy.getStats().put(Stats.HP,newHP);
             JOptionPane.showMessageDialog(null,this.name+" ataca por "+
                     enemyName+" por "+damage+" daño!");
-            JOptionPane.showMessageDialog(null,enemyName+" tienes "+newHP);
+            JOptionPane.showMessageDialog(null,enemyName+" tienes "+newHP+ " de vida");
         }else{
             JOptionPane.showMessageDialog(null,this.name+" ataca "+
                     enemyName+" pero no hace daño!");
-            JOptionPane.showMessageDialog(null,this.name+" tiene "+newHP);
+            JOptionPane.showMessageDialog(null,this.name+" tienes "+newHP+" de vida");
         }
     }
 

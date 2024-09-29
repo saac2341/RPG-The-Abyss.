@@ -34,16 +34,16 @@ public class Destroyer extends Enemy {
     protected void fireBlast(GameCharacter enemy) {
         int damage = 7; // Daño considerable para este ataque
         enemy.getStats().put(Stats.HP, enemy.getStats().get(Stats.HP) - damage);
-        JOptionPane.showMessageDialog(null,this.name + " uses Fire Blast on " + enemy.getName() + " for "
-                + damage + " damage!");
+        JOptionPane.showMessageDialog(null,this.name + " usa Fire Blast a " + enemy.getName() + " por "
+                + damage + " daño!");
         JOptionPane.showMessageDialog(null,enemy.getName() + " has " + enemy.getStats().get(Stats.HP) + " HP left.");
     }
 
     protected void darkSlash(GameCharacter enemy) {
         int damage = 5; // Daño un poco menor que el Fire Blast
         enemy.getStats().put(Stats.HP, enemy.getStats().get(Stats.HP) - damage);
-        JOptionPane.showMessageDialog(null,this.name + " slashes " + enemy.getName() + " with Dark Slash for "
-                + damage + " damage!");
-        JOptionPane.showMessageDialog(null,enemy.getName() + " has " + enemy.getStats().get(Stats.HP) + " HP left.");
+        JOptionPane.showMessageDialog(null,this.name + " con garras " + enemy.getName() + " con Dark Slash por "
+                + damage + " daño!");
+        JOptionPane.showMessageDialog(null,enemy.getName() + " tiene " + enemy.getStats().get(Stats.HP) + " HP vida.");
     }
 }

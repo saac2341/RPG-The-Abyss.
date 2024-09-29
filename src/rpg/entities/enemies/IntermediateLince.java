@@ -29,28 +29,29 @@ public class IntermediateLince extends Enemy {
                 break;
             default:
                 super.attack(enemy);
+                break;
         }
     }
 
     protected void clawStrike(GameCharacter enemy) {
         int damage = 6;
         enemy.getStats().put(Stats.HP, enemy.getStats().get(Stats.HP) - damage);
-        JOptionPane.showMessageDialog(null,this.name + " strikes " + enemy.getName() + " with its claws for " + damage + " damage!");
-        JOptionPane.showMessageDialog(null,enemy.getName() + " has " + enemy.getStats().get(Stats.HP) + " HP left.");
+        JOptionPane.showMessageDialog(null,this.name + " guadalla " + enemy.getName() + " lo lastima por " + damage + " daño!");
+        JOptionPane.showMessageDialog(null,enemy.getName() + " tiene " + enemy.getStats().get(Stats.HP) + "vida.");
     }
 
     protected void tailWhip(GameCharacter enemy) {
         int damage = 4;
         enemy.getStats().put(Stats.HP, enemy.getStats().get(Stats.HP) - damage);
-        JOptionPane.showMessageDialog(null,this.name + " whips " + enemy.getName() + " with its tail for " + damage + " damage!");
-        JOptionPane.showMessageDialog(null,enemy.getName() + " has " + enemy.getStats().get(Stats.HP) + " HP left.");
+        JOptionPane.showMessageDialog(null,this.name + " latigos " + enemy.getName() + " con cadenas " + damage + " daño!");
+        JOptionPane.showMessageDialog(null,enemy.getName() + " tiene " + enemy.getStats().get(Stats.HP) + " vida.");
     }
 
     protected void roar(GameCharacter enemy) {
         int attackReduction = 2;
         enemy.getStats().put(Stats.ATTACK, enemy.getStats().get(Stats.ATTACK) - attackReduction);
-        JOptionPane.showMessageDialog(null,this.name + " roars at " + enemy.getName() + ", reducing its attack by " + attackReduction + "!");
-        JOptionPane.showMessageDialog(null,enemy.getName() + "'s attack is now " + enemy.getStats().get(Stats.ATTACK) + ".");
+        JOptionPane.showMessageDialog(null,this.name + " rugido " + enemy.getName() + ", reduciendo el ataque " + attackReduction + "!");
+        JOptionPane.showMessageDialog(null,enemy.getName() + " ahora el ataca " + enemy.getStats().get(Stats.ATTACK) + ".");
         }
     }
 

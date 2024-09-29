@@ -5,8 +5,8 @@ import javax.swing.*;
 import rpg.utils.Randomize;
 
 public class Game {
-        private final Player player;
-        private final Enemy enemy;
+        private Player player;
+        private Enemy enemy;
 
         /**
          * Ejecutos del programa del juego
@@ -21,7 +21,7 @@ public class Game {
          */
         public Game() {
             this.player = new Player("Mago");
-            int enemyType= Randomize.getRandomInt(1,4);
+            int enemyType= Randomize.getRandomInt(1,5);
             this.enemy = switch (enemyType){
                 case 1 -> new Destroyer();
                 case 2 -> new TheButcherOfSouls();

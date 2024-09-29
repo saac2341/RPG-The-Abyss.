@@ -26,12 +26,13 @@ public class Enemy extends GameCharacter {
         this.stats.put(Stats.DEFENSE, 2);
     }
 
+
     /**
      * Metodo para atacar a player.
      *
      * @param player
      */
-    public void attack(Player player) {
+     public void attack(Player player) {
         int damage = this.stats.get(Stats.ATTACK)
                 - player.getStats().get(Stats.DEFENSE);
         if (damage > 0) {
