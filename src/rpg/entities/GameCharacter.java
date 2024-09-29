@@ -1,6 +1,7 @@
 package rpg.entities;
 import rpg.enums.Stats;
 import java.util.HashMap;
+import javax.swing.*;
 /**
  * Creacion de la clase.
  */
@@ -27,6 +28,13 @@ public class GameCharacter {
         if(damage>0){
             newHP=enemy.getStats().get(Stats.HP)-damage;
             enemy.getStats().put(Stats.HP,newHP);
+            JOptionPane.showMessageDialog(null,this.name+" ataca por "+
+                    enemyName+" por "+damage+" daño!");
+            JOptionPane.showMessageDialog(null,enemyName+" tienes "+newHP);
+        }else{
+            JOptionPane.showMessageDialog(null,this.name+" ataca "+
+                    enemyName+" pero no hace daño!");
+            JOptionPane.showMessageDialog(null,this.name+" tiene "+newHP);
         }
     }
 
