@@ -11,7 +11,7 @@ public class TheButcherOfSouls extends Enemy{
         this.stats.put(Stats.MAX_HP, 160);
         this.stats.put(Stats.HP, 160);
         this.stats.put(Stats.ATTACK, 15);
-        this.stats.put(Stats.DEFENSE, 30);
+        this.stats.put(Stats.DEFENSE, 8);
     }
 
     public void attack(GameCharacter enemy) {

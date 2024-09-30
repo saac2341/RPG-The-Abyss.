@@ -8,7 +8,7 @@ import javax.swing.*;
 public class IntermediateLince extends Enemy {
     public IntermediateLince(){
         super();
-        this.name="Intermediate Lince";
+        this.name="Lince";
         this.stats.put(Stats.MAX_MP,60);
         this.stats.put(Stats.HP,60);
         this.stats.put(Stats.ATTACK,12);
