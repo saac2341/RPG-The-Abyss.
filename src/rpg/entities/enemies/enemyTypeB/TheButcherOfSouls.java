@@ -1,10 +1,11 @@
-package rpg.entities.enemies;
+package rpg.entities.enemies.enemyTypeB;
 import rpg.entities.GameCharacter;
+import rpg.entities.enemies.Enemy;
 import rpg.enums.Stats;
 import rpg.utils.Randomize;
 import javax.swing.*;
 
-public class TheButcherOfSouls extends Enemy{
+public class TheButcherOfSouls extends Enemy {
     public TheButcherOfSouls(){
         super();
         this.name = "EL CARNICERO DE ALMAS";

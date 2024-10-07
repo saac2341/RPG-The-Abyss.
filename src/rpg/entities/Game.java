@@ -1,7 +1,12 @@
-package rpg;
-import rpg.entities.Player;
+package rpg.entities;
 import rpg.entities.enemies.*;
 import javax.swing.*;
+
+import rpg.entities.enemies.enemyTypeA.Hermit;
+import rpg.entities.enemies.enemyTypeA.MoleMan;
+import rpg.entities.enemies.enemyTypeB.Destroyer;
+import rpg.entities.enemies.enemyTypeB.IntermediateLince;
+import rpg.entities.enemies.enemyTypeB.TheButcherOfSouls;
 import rpg.utils.Randomize;
 
 public class Game {

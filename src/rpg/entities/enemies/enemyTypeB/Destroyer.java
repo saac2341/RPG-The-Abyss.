@@ -1,6 +1,6 @@
-package rpg.entities.enemies;
+package rpg.entities.enemies.enemyTypeB;
 import rpg.entities.GameCharacter;
-import rpg.entities.Player;
+import rpg.entities.enemies.Enemy;
 import rpg.enums.Stats;
 import rpg.utils.Randomize;
 import javax.swing.*;
