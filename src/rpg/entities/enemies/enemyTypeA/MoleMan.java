@@ -1,18 +1,28 @@
 package rpg.entities.enemies.enemyTypeA;
 import rpg.entities.GameCharacter;
 import rpg.entities.enemies.Enemy;
+import rpg.enums.EnemyType;
 import rpg.enums.Stats;
 import rpg.utils.Randomize;
 import javax.swing.*;
 
 public class MoleMan extends Enemy{
-    public MoleMan(){
-        super();
+    @Override
+    public void getLoot() {
+
+    }
+    @Override
+    protected void intiCharacter() {
         this.name="Hombre Topo";
+        this.type = EnemyType.enemyA;
         this.stats.put(Stats.MAX_HP,15);
         this.stats.put(Stats.HP,10);
         this.stats.put(Stats.ATTACK,3);
         this.stats.put(Stats.DEFENSE,6);
+    }
+
+    public MoleMan(){
+        super("Hombre Topo");
     }
 
     public void attack(GameCharacter enemy){
@@ -25,7 +35,7 @@ public class MoleMan extends Enemy{
                 Drill(enemy);
                 break;
             default:
-                super.attack(enemy);
+                ((GameCharacter)this).attack(enemy);
                 break;
         }
     }

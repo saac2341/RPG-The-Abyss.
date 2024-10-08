@@ -1,20 +1,25 @@
 package rpg.entities.enemies.enemyTypeB;
 import rpg.entities.GameCharacter;
 import rpg.entities.enemies.Enemy;
+import rpg.enums.EnemyType;
 import rpg.enums.Stats;
 import rpg.utils.Randomize;
 import javax.swing.*;
 
 public class Destroyer extends Enemy {
+    public void getLoot(){
 
-    public Destroyer() {
-        super();
+    }
+
+    protected void intiCharacter(){
         this.name = "Destroyer";
+        this.type= EnemyType.enemtB;
         this.stats.put(Stats.MAX_HP, 50); // Más vida que el Rookie Goblin
         this.stats.put(Stats.HP, 50);
         this.stats.put(Stats.ATTACK, 10); // Más ataque
         this.stats.put(Stats.DEFENSE, 5); // Más defensa
     }
+    public Destroyer(){super("Destroyer");}
 
     public void attack(GameCharacter enemy) {
         int attack = Randomize.getRandomInt(1, 2); // Elegir entre 2 ataques
@@ -26,7 +31,7 @@ public class Destroyer extends Enemy {
                 darkSlash(enemy);  // Ataque 2: Dark Slash
                 break;
             default:
-                super.attack(enemy);
+                ((GameCharacter)this).attack(enemy);
                 break;
         }
     }

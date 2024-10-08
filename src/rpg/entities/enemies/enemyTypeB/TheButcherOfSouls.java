@@ -6,14 +6,18 @@ import rpg.utils.Randomize;
 import javax.swing.*;
 
 public class TheButcherOfSouls extends Enemy {
-    public TheButcherOfSouls(){
-        super();
+    public void getLoot(){
+
+    }
+
+    protected void intiCharacter(){
         this.name = "EL CARNICERO DE ALMAS";
         this.stats.put(Stats.MAX_HP, 160);
         this.stats.put(Stats.HP, 160);
         this.stats.put(Stats.ATTACK, 15);
         this.stats.put(Stats.DEFENSE, 8);
     }
+    public TheButcherOfSouls(){super("El CARNICERO DE ALMAS");}
 
     public void attack(GameCharacter enemy) {
         int attack = Randomize.getRandomInt(1, 3);
@@ -28,7 +32,7 @@ public class TheButcherOfSouls extends Enemy {
                 EatMeat(enemy);
                 break;
             default:
-                super.attack(enemy);
+                ((GameCharacter)this).attack(enemy);
                 break;
         }
     }

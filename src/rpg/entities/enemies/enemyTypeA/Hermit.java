@@ -2,6 +2,7 @@ package rpg.entities.enemies.enemyTypeA;
 
 import rpg.entities.GameCharacter;
 import rpg.entities.enemies.Enemy;
+import rpg.enums.EnemyType;
 import rpg.enums.Stats;
 import rpg.utils.Randomize;
 import javax.swing.*;
@@ -9,7 +10,14 @@ import javax.swing.*;
 public class Hermit extends Enemy {
 
     public Hermit() {
-        super();
+        super("Hermit");
+    }
+    //Loterar el enemigo
+    public void getLoot(){
+
+    }
+    protected void intiCharacter(){
+        this.type = EnemyType.enemyA;
         this.name = "Hermit";
         this.stats.put(Stats.MAX_HP, 60); // Más vida que Destroyer
         this.stats.put(Stats.HP, 60);
@@ -28,7 +36,6 @@ public class Hermit extends Enemy {
                 phantomClaw(enemy);  // Ataque 2: Phantom Claw
                 break;
             default:
-                super.attack(enemy);
                 break;
         }
     }

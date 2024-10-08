@@ -33,7 +33,7 @@ public class Game {
                 case 3 -> new IntermediateLince();
                 case 4 -> new MoleMan();
                 case 5 -> new Hermit();
-                default -> new Enemy();
+                default -> null;
             };
         }
 

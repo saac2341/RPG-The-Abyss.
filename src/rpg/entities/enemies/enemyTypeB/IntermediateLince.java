@@ -1,19 +1,27 @@
 package rpg.entities.enemies.enemyTypeB;
+import rpg.entities.Game;
 import rpg.entities.GameCharacter;
 import rpg.entities.enemies.Enemy;
+import rpg.enums.EnemyType;
 import rpg.enums.Stats;
 import rpg.utils.Randomize;
 import javax.swing.*;
 
 public class IntermediateLince extends Enemy {
-    public IntermediateLince(){
-        super();
+
+    public void getLoot(){
+
+    }
+    protected void intiCharacter(){
         this.name="Lince";
+        this.type= EnemyType.enemtB;
         this.stats.put(Stats.MAX_MP,60);
         this.stats.put(Stats.HP,60);
         this.stats.put(Stats.ATTACK,12);
         this.stats.put(Stats.DEFENSE,5);
     }
+
+    public IntermediateLince(){super("Lince");}
 
     public void attack(GameCharacter enemy){
         int attack=Randomize.getRandomInt(1,3);
@@ -28,7 +36,7 @@ public class IntermediateLince extends Enemy {
                 roar(enemy);
                 break;
             default:
-                super.attack(enemy);
+                ((GameCharacter)this).attack(enemy);
                 break;
         }
     }

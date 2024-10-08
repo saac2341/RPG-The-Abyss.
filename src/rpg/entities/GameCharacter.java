@@ -2,10 +2,12 @@ package rpg.entities;
 import rpg.enums.Stats;
 import java.util.HashMap;
 import javax.swing.*;
+import rpg.entities.GameCharacter;
 /**
  * Creacion de la clase.
  */
-public class GameCharacter {
+public abstract class GameCharacter {
+
     protected String name;
     protected HashMap<Stats,Integer>stats;
 
@@ -13,7 +15,11 @@ public class GameCharacter {
     public GameCharacter(String name) {
         this.name = name;
         this.stats = new HashMap<>();
+        intiCharacter();
     }
+
+    protected abstract void intiCharacter();
+
     //¿Oye estás vivo?
     public boolean isAlive(){
         return stats.get(Stats.HP)>0;
@@ -45,4 +51,5 @@ public class GameCharacter {
     public HashMap<Stats, Integer> getStats() {
         return stats;
     }
+
 }
