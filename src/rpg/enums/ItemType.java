@@ -8,7 +8,7 @@ public enum ItemType {
     //ARMA.
     WEAPON,
     //ARMADURA
-    ARMOUR,
+    ARMOR,
     //MAS ATRIBUTOS
     MISC,
 }

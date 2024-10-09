@@ -9,29 +9,27 @@ public abstract class Item {
     protected int price;
     protected ItemType itemType;
 
-    public Item(String name, String description, int price, ItemType itemType) {
-
-        this.name = name;
-        this.description = description;
-        this.price = price;
-        this.itemType = itemType;
+    public Item(String name){
+        initItem();
+        this.name=name;
+        this.description=description;
+        this.price=price;
+        this.itemType=itemType;
 
     }
 
-    public String getName() {
+    protected abstract void initItem();
+
+    public String getName(){
         return name;
     }
-
-    public String getDescription() {
-        return description;
+    public String getDescription(){
+        return getDescription();
     }
-
-    public int getPrice() {
-        return price;
+    public int getPrice(){
+        return getPrice();
     }
-
-    public ItemType getItemType() {
+    public ItemType getItemType(){
         return itemType;
     }
-
 }
