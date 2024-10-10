@@ -12,7 +12,7 @@ public class Hermit extends Enemy {
     public Hermit() {
         super("Hermit");
     }
-    //Loterar el enemigo
+    //Loot que lleva el enemigo el enemigo
     public void getLoot(){
 
     }

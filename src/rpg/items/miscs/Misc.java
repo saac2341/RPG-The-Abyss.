@@ -1,6 +1,6 @@
 package rpg.items.miscs;
 import rpg.items.Item;
-import rpg.enums.ItemType;
+
 
 /**
  * Creacion de demas objetos.
