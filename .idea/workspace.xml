@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc0f9441-2c0c-4d43-89b3-04e94701314d" name="Changes" comment="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/vcs.xml">
-      <change afterPath="$PROJECT_DIR$/src/rpg/items/weapons/swords/PlasmaCannon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="cc0f9441-2c0c-4d43-89b3-04e94701314d" name="Changes" comment="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <change afterPath="$PROJECT_DIR$/src/rpg/items/armors/Armaduras/CloakOfDeath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rpg/items/armors/Armaduras/HeavenlyArmor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rpg/items/miscs/GreedAmulet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rpg/items/weapons/swords/Haladie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rpg/items/weapons/swords/Scythe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rpg/enums/WeaponType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/enums/WeaponType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpg/items/weapons/swords/Sword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/items/weapons/swords/Sword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/items/miscs/Posion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/items/miscs/Posion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/items/weapons/swords/StarBlack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/items/weapons/swords/StarBlack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +28,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Saac2341 &lt;isaemm203@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -32,12 +41,12 @@
     &quot;assignee&quot;: &quot;saac2341&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/saac2341/RPG-The-Abyss.git",
-    "accountId": "0d9f628f-32c2-4fbd-9dbe-424abfd4d055"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/saac2341/RPG-The-Abyss.git&quot;,
+    &quot;accountId&quot;: &quot;0d9f628f-32c2-4fbd-9dbe-424abfd4d055&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -79,7 +88,31 @@
       <option name="project" value="LOCAL" />
       <updated>1728598207683</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
+      <option name="closed" value="true" />
+      <created>1728600429217</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728600429217</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
+      <option name="closed" value="true" />
+      <created>1728600440126</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728600440126</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <option name="closed" value="true" />
+      <created>1728600476655</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728600476655</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -96,6 +129,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;src/rpg/enums/WeaponType.java&#10;#&#9;src/rpg/inventory/Inventory.java&#10;#&#9;src/rpg/items/Equipment.java&#10;#&#9;src/rpg/items/weapons/Weapon.java" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/vcs.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/vcs.xml" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main-cpp' into main-cpp" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
   </component>
 </project>

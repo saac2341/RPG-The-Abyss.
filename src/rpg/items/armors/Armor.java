@@ -7,17 +7,14 @@ import rpg.items.Equipment;
 import java.util.HashMap;
 
 public abstract class Armor extends Equipment{
-    protected ArmorType armorType;
     protected String name;
     protected String descipcion;
     protected  int price;
+    protected ArmorType armorType;
 
-    public Armor(String name) {
-        initArmor();
-        this.armorType = armorType;
-        this.name = name;
-        this.descipcion = descipcion;
-        this.price = price;
+    public Armor(String name){
+        this.name=name;
+
     }
     protected abstract void initArmor();
 

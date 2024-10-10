@@ -5,6 +5,6 @@ public enum WeaponType {
     SPEAR,
     AXE,
     BOW,
-    STAFF,
-    GRIMOIRE,
+    KNIFE,
+    MYTHICAL,
 }

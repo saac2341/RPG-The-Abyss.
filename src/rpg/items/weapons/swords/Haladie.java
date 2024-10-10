@@ -3,10 +3,10 @@ package rpg.items.weapons.swords;
 import rpg.enums.WeaponType;
 import rpg.items.weapons.Weapon;
 
-public abstract class StarBlack extends Weapon {
+public abstract class Haladie extends Weapon {
 
-    public StarBlack(){
-        super("Estrella negra","Un arma misteriosa forjads de un metal oscuro desconocido.", 2000, WeaponType.MYTHICAL);
+    public Haladie(){
+        super("Haladie","Un arma antigua con dos hojas en ambos extremos.", 800, WeaponType.KNIFE);
     }
 
     @Override

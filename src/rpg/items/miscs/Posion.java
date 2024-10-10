@@ -1,6 +1,6 @@
 package rpg.items.miscs;
 
-public class Posion extends Misc{
+public class Posion extends Misc {
     public Posion(){
         super("Posima");
     }
