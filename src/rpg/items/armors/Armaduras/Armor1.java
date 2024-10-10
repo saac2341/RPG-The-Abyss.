@@ -1,12 +1,12 @@
 package rpg.items.armors.Armaduras;
 
-import rpg.enums.ArmorType;
 import rpg.items.armors.Armor;
 
-public class Armor1 extends Armor {
-    public Armor1(){
+public abstract class Armor1 extends Armor {
+    public Armor1(String name){
         super("Casco");
     }
+
     protected void initArmor(){
         this.name="Casco";
         this.description="Casco de acero";
