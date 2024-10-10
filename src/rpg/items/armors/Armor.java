@@ -7,25 +7,41 @@ import rpg.items.Equipment;
 import java.util.HashMap;
 
 public abstract class Armor extends Equipment{
-    protected ArmorType armorType;
     protected String name;
-    protected String descipcion;
-    protected  int price;
-
+    protected String description;
+    protected int price;
+    protected ArmorType armorType;
     public Armor(String name) {
+
         initArmor();
-        this.armorType = armorType;
-        this.name = name;
-        this.descipcion = descipcion;
-        this.price = price;
+        this.name=name;
+        this.description=description;
+        this.price=price;
+        this.armorType=armorType;
     }
     protected abstract void initArmor();
 
+    public String toString(){
+        return "Armadura: "+name+" Descripción "+description+" Puntos: "+price;
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String getDescription() {
+        return description;
+    }
+
+    @Override
+    public int getPrice() {
+        return price;
+    }
+
     public ArmorType getArmorType() {
         return armorType;
-    }
-    public String toString(){
-        return "Casco"+name+ "Descripcion: "+description+"puntos"+price;
     }
 }
 

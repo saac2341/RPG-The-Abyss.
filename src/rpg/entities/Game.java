@@ -10,8 +10,8 @@ import rpg.entities.enemies.enemyTypeB.TheButcherOfSouls;
 import rpg.utils.Randomize;
 
 public class Game {
-        private Player player;
-        private Enemy enemy;
+        private final Player player;
+        private final Enemy enemy;
 
         /**
          * Ejecutos del programa del juego

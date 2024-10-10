@@ -18,6 +18,10 @@ public abstract class Item {
 
     }
 
+    public Item() {
+
+    }
+
     protected abstract void initItem();
 
     public String getName(){
