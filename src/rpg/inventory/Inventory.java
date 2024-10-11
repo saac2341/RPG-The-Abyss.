@@ -3,6 +3,7 @@ package rpg.inventory;
 import rpg.items.Item;
 import rpg.items.armors.Armor;
 import rpg.items.miscs.Misc;
+import rpg.items.weapons.Weapon;
 
 import java.util.ArrayList;
 import javax.swing.*;
@@ -59,5 +60,15 @@ public class Inventory {
             }
         }
         return miscs;
+    }
+
+    public ArrayList<Weapon> getWeapons() {
+        ArrayList<Weapon> weapons=new ArrayList<>();
+        for (Item item:items){
+            if (item instanceof Weapon){
+                weapons.add((Weapon) item);
+            }
+        }
+        return weapons;
     }
 }
