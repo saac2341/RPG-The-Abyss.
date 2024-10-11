@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc0f9441-2c0c-4d43-89b3-04e94701314d" name="Changes" comment="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <change afterPath="$PROJECT_DIR$/src/rpg/items/armors/Armaduras/CloakOfDeath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rpg/items/armors/Armaduras/HeavenlyArmor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rpg/items/miscs/GreedAmulet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rpg/items/weapons/swords/Haladie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rpg/items/weapons/swords/Scythe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rpg/items/armors/Armaduras/DragonTunic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rpg/items/armors/Armaduras/Yoroi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rpg/items/miscs/EquipmentAmulet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rpg/items/miscs/StrengthPotion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpg/enums/WeaponType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/enums/WeaponType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpg/items/miscs/Posion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/items/miscs/Posion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpg/items/weapons/swords/StarBlack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/items/weapons/swords/StarBlack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,13 +52,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main-cpp&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main-cpp",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -112,7 +109,39 @@
       <option name="project" value="LOCAL" />
       <updated>1728600476655</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <option name="closed" value="true" />
+      <created>1728622264198</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728622264198</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <option name="closed" value="true" />
+      <created>1728622271047</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728622271047</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <option name="closed" value="true" />
+      <created>1728622299683</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728622299683</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <option name="closed" value="true" />
+      <created>1728622327904</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1728622327904</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

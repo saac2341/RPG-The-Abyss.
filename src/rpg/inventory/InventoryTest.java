@@ -1,21 +1,33 @@
 package rpg.inventory;
 import javax.swing.*;
 
+import rpg.items.armors.Armaduras.*;
 import rpg.items.armors.Armor;
 import rpg.items.miscs.Misc;
+import rpg.items.miscs.Posion;
 
 public class InventoryTest {
-    public class Main{
+    public static class  Main{
         public static void main(String[] args){
             Inventory inventory=new Inventory(10);
 
             /**
              * Agregar armas.
              */
+            Armor armor;
+            armor = new Armor1() {
+                @Override
+                protected void initItem() {
 
+                }
+            };
+
+            inventory.addItem(armor);
             /**
              * argregar armaduras.
              */
+            Misc misc=new Posion();
+            inventory.addItem(misc);
 
             //Imprimir las armas del inventario.
             JOptionPane.showMessageDialog(null,"Armadura del inventario");

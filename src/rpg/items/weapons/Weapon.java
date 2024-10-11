@@ -2,7 +2,6 @@ package rpg.items.weapons;
 import rpg.enums.ItemType;
 import rpg.enums.WeaponType;
 import rpg.items.Equipment;
-
 import java.util.HashMap;
 
 public abstract class Weapon extends Equipment{

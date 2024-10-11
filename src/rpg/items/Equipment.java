@@ -11,10 +11,10 @@ public abstract class Equipment extends Item implements Equipable{
 
     public Equipment(String name, String description, int price, ItemType itemType) {
         super(name);
-
     }
 
     protected Equipment() {
+        super();
     }
 
     public void equip(Player player){

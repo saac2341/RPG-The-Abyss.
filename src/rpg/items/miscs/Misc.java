@@ -1,9 +1,8 @@
 package rpg.items.miscs;
 import rpg.items.Item;
 
-
 /**
- * Creacion de demas objetos.
+ * Creation de demás objetos.
  */
 public abstract class Misc extends Item {
     public Misc(String name){
@@ -11,6 +10,6 @@ public abstract class Misc extends Item {
     }
 
     public String toString(){
-        return "Objeto    "+name+"  Descripcion   "+description+"    puntos "+ price;
+        return "Objeto    "+name+"  Description   "+description+"    puntos "+ price;
     }
 }
