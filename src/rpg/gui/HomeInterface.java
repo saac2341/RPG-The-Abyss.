@@ -7,7 +7,10 @@ public class HomeInterface extends JPanel {
     private JPanel homePanel;
 
     public HomeInterface(){
-        setTitle("");
+    }
+
+    public static void main (String[] args){
+        new HomeInterface();
     }
 
 }
