@@ -1,4 +1,4 @@
-package rpg.utils;
+package rpg.gui;
 
 import javax.swing.*;
 import java.awt.image.BufferedImage;
@@ -15,7 +15,7 @@ public class PictureCache {
         BufferedImage image;
         if (!CACHE.containsKey(name)) {
 
-            image = ImageLoader.loadImage(IMAGE_PATH + path);
+            image = ImageUploader.loadImage(IMAGE_PATH + path);
             CACHE.put(name, image);
         } else {
             image = CACHE.get(name);

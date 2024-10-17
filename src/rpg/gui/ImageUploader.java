@@ -1,4 +1,4 @@
-package rpg.utils;
+package rpg.gui;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
