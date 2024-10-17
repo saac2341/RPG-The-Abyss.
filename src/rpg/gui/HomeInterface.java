@@ -13,6 +13,9 @@ public class HomeInterface extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setContentPane(homePanel);
         setVisible(true);
+        setLocationRelativeTo(null);
+        setVisible(true);
+        setResizable(false);
 
     }
 
@@ -20,4 +23,7 @@ public class HomeInterface extends JFrame {
         new HomeInterface();
     }
 
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
+    }
 }
