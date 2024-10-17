@@ -1,4 +1,4 @@
-package rpg.gui;
+package rpg.utils;
 
 import java.awt.*;
 import java.util.HashMap;

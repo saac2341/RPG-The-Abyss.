@@ -1,4 +1,4 @@
-package rpg.gui;
+package rpg.utils;
 
 import javax.swing.*;
 import java.awt.*;
