@@ -11,7 +11,6 @@ public class ImageUploader {
     public static BufferedImage loadImage(String path) {
 
         try {
-
             return ImageIO.read(new File(path));
         } catch (IOException e) {
             JOptionPane.showConfirmDialog(null, "Error no es posible cargar la imagen: " + path,

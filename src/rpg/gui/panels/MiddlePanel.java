@@ -10,7 +10,7 @@ public class MiddlePanel extends BackgroundPanel {
     @Override
     protected void init() {
         // Buscamos la imagen por ahora directamente en los directorios
-        backgroundImage = new ImageIcon(PictureCache.addImage("midPanel", "panels/mainBackground.png"));
+        backgroundImage = new ImageIcon(PictureCache.addImage("midPanel", "panels/MainPanel.jpg"));
         setDimension(WindowConstants.MIDDLE_DIMENSION);
         setBorder(WindowConstants.EMPTY_BORDER);
     }

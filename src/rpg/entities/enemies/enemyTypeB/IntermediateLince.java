@@ -1,5 +1,4 @@
 package rpg.entities.enemies.enemyTypeB;
-import rpg.entities.Game;
 import rpg.entities.GameCharacter;
 import rpg.entities.enemies.Enemy;
 import rpg.enums.EnemyType;

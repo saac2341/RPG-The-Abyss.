@@ -4,8 +4,6 @@ import rpg.utils.*;
 
 import javax.swing.*;
 
-import static javax.swing.text.StyleConstants.setIcon;
-
 public class Basebutton extends JButton {
     public Basebutton(String text){
         setText(text);

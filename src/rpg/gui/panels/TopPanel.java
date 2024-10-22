@@ -10,7 +10,7 @@ public class TopPanel extends BackgroundPanel {
     @Override
     protected void init() {
         // Buscamos la imagen por ahora directamente en los directorios
-        backgroundImage = new ImageIcon(PictureCache.addImage("topPanel", "panels/statusPanel.png"));
+        backgroundImage = new ImageIcon(PictureCache.addImage("topPanel", "panels/Fondo.jpg"));
         setDimension(WindowConstants.TOP_DIMENSION);
         setBorder(WindowConstants.EMPTY_BORDER);
     }

@@ -12,7 +12,7 @@ import java.awt.event.ActionListener;
 
 public class HomeInterface extends JFrame {
     private JPanel mainPanel;
-    private JPanel topPanle;
+    private JPanel topPanel;
     private JPanel middlePanel;
     private JPanel bottomPanel;
     private JButton button1;
@@ -40,7 +40,7 @@ public class HomeInterface extends JFrame {
     }
 
     private void createUIComponents() {
-        TopPanel topPanel = new TopPanel();
+        topPanel= new TopPanel();
         middlePanel = new MiddlePanel();
         bottomPanel = new BottomPanel();
         button1 = new Basebutton("Button 1");
