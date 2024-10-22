@@ -1,7 +1,6 @@
 package rpg.gui;
 
-import rpg.gui.buttons.BaseButton;
-import rpg.gui.internalFrames.CristalFrame;
+import rpg.gui.buttons.Basebutton;
 import rpg.gui.panels.BottomPanel;
 import rpg.gui.panels.MiddlePanel;
 import rpg.gui.panels.TopPanel;
@@ -10,7 +9,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.*;
 
 public class HomeInterface extends JFrame {
     private JPanel mainPanel;
@@ -41,10 +39,17 @@ public class HomeInterface extends JFrame {
         setResizable(false);
     }
 
+    private void createUIComponents() {
+        TopPanel topPanel = new TopPanel();
+        middlePanel = new MiddlePanel();
+        bottomPanel = new BottomPanel();
+        button1 = new Basebutton("Button 1");
+        button2 = new Basebutton("Tiendas");
+        button3 = new Basebutton("Inventario");
+    }
+
     public static void main (String[] args){
         new HomeInterface();
     }
 
-    private void createUIComponents() {
-    }
 }
