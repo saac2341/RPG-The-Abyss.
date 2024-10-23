@@ -1,5 +1,7 @@
 package rpg.utils;
 
+import rpg.utils.cache.FontLoader;
+
 import java.awt.*;
 import java.util.HashMap;
 import java.util.Map;

@@ -1,7 +1,7 @@
 package rpg.gui.buttons;
 
 import rpg.utils.FontCache;
-import rpg.utils.PictureCache;
+import rpg.utils.cache.PictureCache;
 
 import javax.swing.*;
 import javax.swing.plaf.basic.BasicButtonUI;

@@ -1,6 +1,6 @@
 package rpg.gui.buttons;
 
-import rpg.utils.*;
+import rpg.utils.cache.PictureCache;
 
 import javax.swing.*;
 

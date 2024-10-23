@@ -1,4 +1,4 @@
-package rpg.utils;
+package rpg.utils.cache;
 
 import javax.swing.*;
 import java.awt.*;

@@ -1,7 +1,7 @@
 package rpg.gui.panels;
 
 import rpg.gui.WindowConstants;
-import rpg.utils.PictureCache;
+import rpg.utils.cache.PictureCache;
 
 import javax.swing.*;
 
