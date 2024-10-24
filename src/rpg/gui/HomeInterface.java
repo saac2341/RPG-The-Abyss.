@@ -3,7 +3,6 @@ package rpg.gui;
 import rpg.gui.panels.HomePanel;
 import rpg.gui.panels.MiddlePanel;
 import rpg.gui.panels.TopPanel;
-import rpg.gui.buttons.Basebutton;
 
 import javax.swing.*;
 
@@ -39,10 +38,6 @@ public class HomeInterface extends JFrame {
         topPanel = new TopPanel();
         middlePanel = new MiddlePanel();
         homePanel=new HomePanel();
-        button1=new Basebutton("button1");
-        button2=new Basebutton("Inventario");
-        button3=new Basebutton("Tienda");
-
     }
 
     public static void main(String[] args) {
