@@ -10,11 +10,11 @@ public interface WindowConstants {
     /**
      * Ancho de la ventana.
      */
-    int WINDOW_WIDTH = 1500;
+    int WINDOW_WIDTH = 1150;
     /**
      * Alto de la parte superior de la ventana.
      */
-    int TOP_HEIGHT = 150;
+    int TOP_HEIGHT = 250;
     /**
      * Alto de la parte media de la ventana.
      */
