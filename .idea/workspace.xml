@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc0f9441-2c0c-4d43-89b3-04e94701314d" name="Changes" comment="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_10_2024_11_11_p__m___Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_10_2024_11_11_p_ m__[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpg/gui/buttons/Basebutton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/Basebutton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpg/gui/buttons/HoverButtonUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/HoverButtonUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpg/gui/panels/BottomPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/panels/BottomPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpg/gui/panels/MiddlePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/panels/MiddlePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpg/gui/panels/TopPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/panels/TopPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpg/utils/FontCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/utils/FontCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpg/utils/FontLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/utils/cache/FontLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpg/utils/ImageUploader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/utils/cache/ImageUploader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpg/utils/PictureCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/utils/cache/PictureCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/HomeInterface.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/HomeInterface.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/HomeInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/HomeInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +27,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="unknown &lt;isaemm203@gmail.com&gt;" />
         <option value="Saac2341 &lt;isaemm203@gmail.com&gt;" />
         <option value="HRCHABLE &lt;l23280058@toluca.tecnm.mx&gt;" />
       </list>
@@ -379,7 +375,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729566894189</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
+      <option name="closed" value="true" />
+      <created>1729737103950</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1729737103951</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
+      <option name="closed" value="true" />
+      <created>1729737126821</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1729737126821</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

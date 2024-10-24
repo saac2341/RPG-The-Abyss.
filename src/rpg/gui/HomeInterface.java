@@ -6,19 +6,12 @@ import rpg.gui.panels.MiddlePanel;
 import rpg.gui.panels.TopPanel;
 
 import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class HomeInterface extends JFrame {
     private JPanel mainPanel;
+    private JPanel homePanel;
     private JPanel topPanel;
     private JPanel middlePanel;
-    private JPanel bottomPanel;
-    private JButton button1;
-    private JButton button2;
-    private JButton button3;
-    private JLabel exampleLabel;
     private JDesktopPane desktopPane;
 
     public HomeInterface() {
@@ -27,9 +20,9 @@ public class HomeInterface extends JFrame {
 
     private void initComponets() {
         desktopPane = new JDesktopPane();
-        desktopPane.setPreferredSize(mainPanel != null ? mainPanel.getPreferredSize(): null);
-        mainPanel.setBounds(0,0,mainPanel.getPreferredSize().width,mainPanel.getPreferredSize().height);
-        desktopPane.add(mainPanel, JLayeredPane.DEFAULT_LAYER);
+        desktopPane.setPreferredSize(homePanel != null ? homePanel.getPreferredSize() : null);
+        homePanel.setBounds(0, 0, homePanel.getPreferredSize().width, homePanel.getPreferredSize().height);
+        desktopPane.add(homePanel, JLayeredPane.DEFAULT_LAYER);
         setContentPane(desktopPane);
         setTitle("RPG EL ABISMO");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -40,15 +33,11 @@ public class HomeInterface extends JFrame {
     }
 
     private void createUIComponents() {
-        topPanel= new TopPanel();
+        topPanel = new TopPanel();
         middlePanel = new MiddlePanel();
-        bottomPanel = new BottomPanel();
-        button1 = new Basebutton("Button 1");
-        button2 = new Basebutton("Tiendas");
-        button3 = new Basebutton("Inventario");
     }
 
-    public static void main (String[] args){
+    public static void main(String[] args) {
         new HomeInterface();
     }
 
