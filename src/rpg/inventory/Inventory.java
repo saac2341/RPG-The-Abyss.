@@ -8,6 +8,10 @@ import rpg.items.weapons.Weapon;
 import java.util.ArrayList;
 import javax.swing.*;
 
+/**
+ * Clase que representará el inventario de un personaje.
+ */
+
 public class Inventory {
     private ArrayList<Item> items;
     private int capacity;

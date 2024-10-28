@@ -5,6 +5,10 @@ import java.awt.image.BufferedImage;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Recupera las imagenes del diso duro.
+ */
+
 public class PictureCache {
 
     private static final String IMAGE_PATH = "image/";

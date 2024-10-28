@@ -4,6 +4,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.File;
 
+/**
+ * Es una clase auxiliar que se encarga de cargar imágenes desde el disco duro.
+ */
+
 public class FontLoader {
 
     public static Font loadFont(String path) {

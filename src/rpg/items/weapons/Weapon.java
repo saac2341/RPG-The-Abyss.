@@ -4,6 +4,10 @@ import rpg.enums.WeaponType;
 import rpg.items.Equipment;
 import java.util.HashMap;
 
+/**
+ * Clase principal para las armas.
+ */
+
 public abstract class Weapon extends Equipment{
     protected WeaponType weaponType;
     public Weapon(String name, String description, int price, WeaponType weaponType){

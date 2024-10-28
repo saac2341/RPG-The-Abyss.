@@ -1,10 +1,12 @@
-package rpg.utils;
-
-import rpg.utils.cache.FontLoader;
+package rpg.utils.cache;
 
 import java.awt.*;
 import java.util.HashMap;
 import java.util.Map;
+
+/**
+ * Es una clase que almacena las fuentes en una caché para que puedan ser recuperadas rápidamente.
+ */
 
 public class FontCache {
 

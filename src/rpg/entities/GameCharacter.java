@@ -11,7 +11,9 @@ public abstract class GameCharacter {
     protected String name;
     protected HashMap<Stats,Integer>stats;
 
-    //Constructor
+    /**
+     * Se crean los constructores
+     */
     public GameCharacter(String name) {
         this.name = name;
         this.stats = new HashMap<>();
@@ -25,7 +27,9 @@ public abstract class GameCharacter {
         return stats.get(Stats.HP)>0;
     }
 
-    //Atacar al jugador.
+    /**
+     * Se crea la función para atacar al jugador.
+     */
     public void attack (GameCharacter enemy){
         String enemyName= enemy.getName();
         int damage =this.stats.get(Stats.ATTACK)-
