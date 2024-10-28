@@ -6,6 +6,10 @@ import rpg.interfaces.Equipable;
 
 import java.util.HashMap;
 
+/**
+ * Clase para equipar objetos al jugador.
+ */
+
 public abstract class Equipment extends Item implements Equipable{
     protected HashMap<Stats, Integer>stats;
 

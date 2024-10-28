@@ -1,6 +1,6 @@
 package rpg.gui.buttons;
 
-import rpg.utils.FontCache;
+import rpg.utils.cache.FontCache;
 import rpg.utils.cache.PictureCache;
 
 import javax.swing.*;
@@ -18,8 +18,7 @@ public class HoverButtonUI extends BasicButtonUI {
     protected void installDefaults(AbstractButton b) {
 
         initParts();
-        b.setFont(FontCache.addFont("M6X",
-                "fonts/M6X.ttf").deriveFont(22.5f));
+        b.setFont(FontCache.addFont("M6X","fonts/M6X.ttf").deriveFont(22.5f));
         b.setForeground(Color.BLACK);
         b.setDoubleBuffered(true);
         b.setOpaque(false);
@@ -54,25 +53,20 @@ public class HoverButtonUI extends BasicButtonUI {
      * En sus estados normal y hover.
      */
     private void initParts() {
-        //Inicializamos los arreglos de imágenes.
+        /**
+         * Inicializamos los arreglos de imágenes.
+         */
         parts = new ImageIcon[3];
         partsHover = new ImageIcon[3];
-        // Agregamos las imágenes a la caché.
+        /**
+         * Agregamos las imágenes a la caché.
+         */
         PictureCache.addImage("userLeftSide", "image/buttons/idle/user/Button.png");
-        /*
-        PictureCache.addImage("userCenterSide", "buttons/idle/user/centerSide.png");
-        PictureCache.addImage("userRightSide", "buttons/idle/user/rightSide.png");
-        PictureCache.addImage("userHoverLeftSide", "buttons/hover/user/leftSide.png");
-        PictureCache.addImage("userHoverCenterSide", "buttons/hover/user/centerSide.png");
-        PictureCache.addImage("userHoverRightSide", "buttons/hover/user/rightSide.png");
-        */
-        // Obtenemos las imágenes de la caché y las almacenamos en los arreglos correspondientes.
+        /**
+         * Obtenemos las imágenes de la caché y las almacenamos en los arreglos correspondientes.
+         */
         parts[0] = PictureCache.getImageIcon("userLeftSide");
-        parts[1] = PictureCache.getImageIcon("userCenterSide");
-        parts[2] = PictureCache.getImageIcon("userRightSide");
         partsHover[0] = PictureCache.getImageIcon("userHoverLeftSide");
-        partsHover[1] = PictureCache.getImageIcon("userHoverCenterSide");
-        partsHover[2] = PictureCache.getImageIcon("userHoverRightSide");
     }
 
     @Override

@@ -6,6 +6,10 @@ import rpg.items.Equipment;
 
 import java.util.HashMap;
 
+/**
+ * Craeción de la clase para las armaduras.
+ */
+
 public abstract class Armor extends Equipment{
     protected String name;
     protected String description;

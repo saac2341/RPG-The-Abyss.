@@ -2,6 +2,10 @@ package rpg.items;
 
 import rpg.enums.ItemType;
 
+/**
+ * Creación de la clase de objetos.
+ */
+
 public abstract class Item {
 
     protected String name;

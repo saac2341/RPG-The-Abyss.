@@ -6,6 +6,10 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
+/**
+ * Es una clase auxiliar que se encarga de cargar imágenes desde el disco duro.
+ */
+
 public class ImageUploader {
 
     public static BufferedImage loadImage(String path) {

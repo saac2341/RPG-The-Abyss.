@@ -15,7 +15,9 @@ public class InventoryTest {
         public static void main(String[] args){
             Inventory inventory=new Inventory(10);
 
-            /// Agregar armaduras.
+            /**
+             * Agregar armaduras.
+             */
             Armor armor;
             armor = new Armor1() {
                 @Override
@@ -23,11 +25,13 @@ public class InventoryTest {
                 }
             };
             inventory.addItem(armor);
-            /// Agregar armaduras.
             Misc misc=new DefensePotion() {
             };
             inventory.addItem(misc);
-            ///Agregar espadas.
+
+            /**
+             * Agregar espadas.
+             */
 
             Weapon weapon;
             weapon= new Haladie() {
@@ -36,12 +40,20 @@ public class InventoryTest {
                 }
             };
             inventory.addItem(weapon);
-            //Imprimir la espada al inventario.
+
+            /**
+             * Imprimir la espada al inventario.
+             */
+
             JOptionPane.showMessageDialog(null,"La espada que lleva el jugador es:");
             for (Weapon w:inventory.getWeapons()){
                 JOptionPane.showMessageDialog(null,w.getName());
             }
-            //Imprimir la armadura al inventario.
+
+            /**
+             * Imprimir la armadura al inventario.
+             */
+
             JOptionPane.showMessageDialog(null,"Armadura del inventario");
             for (Armor a: inventory.getArmors()){
 
