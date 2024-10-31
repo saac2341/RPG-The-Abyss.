@@ -18,7 +18,7 @@ public class HoverButtonUI extends BasicButtonUI {
     protected void installDefaults(AbstractButton b) {
 
         initParts();
-        b.setFont(FontCache.addFont("M6X","fonts/M6X.ttf").deriveFont(22.5f));
+        b.setFont(FontCache.addFont("Retron2000","fonts/retron2000/Retron2000.ttf").deriveFont(22.5f));
         b.setForeground(Color.BLACK);
         b.setDoubleBuffered(true);
         b.setOpaque(false);
@@ -61,11 +61,12 @@ public class HoverButtonUI extends BasicButtonUI {
         /**
          * Agregamos las imágenes a la caché.
          */
-        PictureCache.addImage("userLeftSide", "image/buttons/idle/user/Button.png");
+        PictureCache.addImage("userButtonLeft", "panels/Button.png");
+        PictureCache.addImage("userHoverLeftSide","panels/Button.png");
         /**
          * Obtenemos las imágenes de la caché y las almacenamos en los arreglos correspondientes.
          */
-        parts[0] = PictureCache.getImageIcon("userLeftSide");
+        parts[0] = PictureCache.getImageIcon("userButtonLeft");
         partsHover[0] = PictureCache.getImageIcon("userHoverLeftSide");
     }
 
