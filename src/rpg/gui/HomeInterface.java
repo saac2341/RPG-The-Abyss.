@@ -1,5 +1,9 @@
 package rpg.gui;
 
+import rpg.gui.buttons.EstaticsBotton;
+import rpg.gui.buttons.ExitBotton;
+import rpg.gui.buttons.InventaryButton;
+import rpg.gui.buttons.SaveBottion;
 import rpg.gui.panels.HomePanel;
 import rpg.gui.panels.MiddlePanel;
 import rpg.gui.panels.TopPanel;
@@ -14,6 +18,7 @@ public class HomeInterface extends JFrame {
     private JButton button1;
     private JButton button2;
     private JButton button3;
+    private JButton button4;
     private JDesktopPane desktopPane;
 
     public HomeInterface() {
@@ -38,6 +43,10 @@ public class HomeInterface extends JFrame {
         topPanel = new TopPanel();
         middlePanel = new MiddlePanel();
         homePanel=new HomePanel();
+        button1=new SaveBottion();
+        button2=new ExitBotton();
+        button3=new InventaryButton();
+        button4=new EstaticsBotton();
     }
 
     public static void main(String[] args) {

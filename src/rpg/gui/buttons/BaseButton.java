@@ -1,20 +1,21 @@
 package rpg.gui.buttons;
 
 import rpg.utils.cache.PictureCache;
+import rpg.gui.buttons.HoverButtonUI;
 
 import javax.swing.*;
 
-public class BaseButton extends JButton {
+public abstract class BaseButton extends JButton {
     public BaseButton(String text) {
         setText(text);
         /**
          * Agregamos los iconos de la cache de imagen
          */
-        setIcon(new ImageIcon(PictureCache.addImage("Button", "panels/Button.png")));
-        setRolloverIcon(new ImageIcon(PictureCache.addImage("Button", "panels/Button.png")));
+        initIcons();
+        setUI(new HoverButtonUI());
         /**
          * Establecemos el manger de UI.
          */
-        setUI(new HoverButtonUI());
     }
-}
+    protected abstract void initIcons();
+    }
