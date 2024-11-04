@@ -1,7 +1,7 @@
-package rpg.gui.labels;
+package rpg.gui.Labels;
 
 import rpg.gui.ui.LabelUI;
-import rpg.utils.cache.ImageCache;
+import rpg.utils.cache.PictureCache;
 
 import javax.swing.*;
 import java.awt.*;
@@ -16,9 +16,9 @@ public class PortraitLabel extends JLabel {
     }
 
     public void initComponents() {
-        ImageCache.addImage("portrait",
+        PictureCache.addImage("portrait",
                 "player/portrait.png");
-        icon = ImageCache.getImageIcon("portrait");
+        icon = PictureCache.getImageIcon("portrait");
         setPreferredSize(
                 new Dimension(icon.getIconWidth(),
                         icon.getIconHeight()));
