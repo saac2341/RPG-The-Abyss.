@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc0f9441-2c0c-4d43-89b3-04e94701314d" name="Changes" comment="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <change afterPath="$PROJECT_DIR$/image/ButtonParts/ButtonDerecha.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/ButtonParts/ButtonI.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/ButtonParts/ButtonIzquierda.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/ButtonParts/ButtonMedio.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ButtonParts/Boton(Derecha).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ButtonParts/Boton(Izquierda).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ButtonParts/Boton(Medio).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/HomeInterface.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/HomeInterface.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/HomeInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/HomeInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/Labels/PortraitLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/Labels/PortraitLabel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/buttons/HoverButtonUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/HoverButtonUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +77,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\CP Mario Trejo\IdeaProjects\The-Abyss\image\ButtonParts" />
+      <recent name="C:\Users\CP Mario Trejo\IdeaProjects\The-Abyss\image\InterfacePlugins" />
+      <recent name="C:\Users\CP Mario Trejo\IdeaProjects\The-Abyss\image\Enemies" />
       <recent name="C:\Users\CP Mario Trejo\IdeaProjects\The-Abyss\evidencias" />
     </key>
   </component>
@@ -97,22 +111,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728597993386</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <option name="closed" value="true" />
-      <created>1728622299683</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1728622299683</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <option name="closed" value="true" />
-      <created>1728622327904</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1728622327904</updated>
     </task>
     <task id="LOCAL-00010" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <option name="closed" value="true" />
@@ -490,7 +488,23 @@
       <option name="project" value="LOCAL" />
       <updated>1730747427449</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <option name="closed" value="true" />
+      <created>1730748635541</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1730748635541</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <option name="closed" value="true" />
+      <created>1730748642819</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1730748642819</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

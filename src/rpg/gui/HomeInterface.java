@@ -43,7 +43,7 @@ public class HomeInterface extends JFrame {
         topPanel = new TopPanel();
         middlePanel = new MiddlePanel();
         homePanel=new HomePanel();
-        button1=new SaveBottion();
+        button1 =new SaveBottion();
         button2=new ExitBotton();
         button3=new InventaryButton();
         button4=new EstaticsBotton();
