@@ -63,8 +63,8 @@ public class HoverButtonUI extends BasicButtonUI {
         /**
          * Agregamos las imágenes a la caché.
          */
-        PictureCache.addImage("userCenterSide", "ButtonParts/ButtonI.png");
-        PictureCache.addImage("userHoverCenterSide", "ButtonParts/ButtonI.png");
+        PictureCache.addImage("userCenterSide", "ButtonParts/Boton.png");
+        PictureCache.addImage("userHoverCenterSide", "ButtonParts/Boton.png");
         /**
          * Obtenemos las imágenes de la caché y las almacenamos en los arreglos correspondientes.
          */
