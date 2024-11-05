@@ -5,38 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc0f9441-2c0c-4d43-89b3-04e94701314d" name="Changes" comment="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
-      <change afterPath="$PROJECT_DIR$/image/ButtonParts/Boton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/Enemies/Normal/CarniceroDeAlmas.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/Enemies/Normal/Destroyer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/Enemies/Normal/Hermitaño.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/Enemies/Normal/HombreTopo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/Enemies/Normal/Ninja.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/Enemies/Pixel/CarniceroAlmasP.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/Enemies/Pixel/DestroyerP.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/Enemies/Pixel/HermitañoP.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/Enemies/Pixel/HombreTP.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/Enemies/Pixel/NinjaP.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/InterfacePlugins/Normal/BarraOro.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/InterfacePlugins/Normal/BarraV.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/InterfacePlugins/Normal/CuadroDialogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/InterfacePlugins/Normal/EstandarteV.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/InterfacePlugins/Normal/LogoV.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/InterfacePlugins/Pixel/BarraOroP.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/InterfacePlugins/Pixel/BarraVP.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/InterfacePlugins/Pixel/CuadroDialogoP.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/InterfacePlugins/Pixel/EstadarteVP.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/InterfacePlugins/Pixel/LogoVP.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rpg/enums/BarType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rpg/gui/Labels/BarLabel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rpg/gui/UIConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rpg/gui/ui/BarLabelUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/Enemies/CarniseroDeAlmas.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/Enemies/Destroyer.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/Enemies/Hermitaño.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/Enemies/HombreTopo.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/Enemies/Ninja.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/InterfacePlugins/BarraDeOro.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/InterfacePlugins/BarraDeVida.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/InterfacePlugins/CuadroDeDialogo.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/InterfacePlugins/CuadroDeVida.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/InterfacePlugins/LogoDeVida.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/HomeInterface.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/HomeInterface.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/HomeInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/HomeInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rpg/gui/buttons/HoverButtonUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/HoverButtonUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,8 +22,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -84,18 +60,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.HomeInterface.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW&quot;: &quot;false&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main-cpp&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HomeInterface.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
+    "git-widget-placeholder": "main-cpp",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\CP Mario Trejo\IdeaProjects\The-Abyss\image\InterfacePlugins\Pixel" />
@@ -133,38 +109,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728597993386</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <option name="closed" value="true" />
-      <created>1729029800514</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1729029800514</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <option name="closed" value="true" />
-      <created>1729029824303</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1729029824303</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <option name="closed" value="true" />
-      <created>1729029842600</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1729029842600</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
-      <option name="closed" value="true" />
-      <created>1729141972216</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1729141972216</updated>
     </task>
     <task id="LOCAL-00018" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
       <option name="closed" value="true" />
@@ -526,7 +470,39 @@
       <option name="project" value="LOCAL" />
       <updated>1730752661150</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
+      <option name="closed" value="true" />
+      <created>1730780409572</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1730780409572</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
+      <option name="closed" value="true" />
+      <created>1730780416633</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1730780416633</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
+      <option name="closed" value="true" />
+      <created>1730780443748</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1730780443748</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
+      <option name="closed" value="true" />
+      <created>1730780448916</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1730780448916</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

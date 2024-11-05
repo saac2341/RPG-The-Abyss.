@@ -7,6 +7,8 @@ import rpg.gui.buttons.SaveBottion;
 import rpg.gui.panels.HomePanel;
 import rpg.gui.panels.MiddlePanel;
 import rpg.gui.panels.TopPanel;
+import rpg.gui.Labels.BarLabel;
+import rpg.enums.BarType;
 
 import javax.swing.*;
 
@@ -19,6 +21,7 @@ public class HomeInterface extends JFrame {
     private JButton button2;
     private JButton button3;
     private JButton button4;
+    private JLabel lifeLabel;
     private JDesktopPane desktopPane;
 
     public HomeInterface() {
@@ -47,6 +50,7 @@ public class HomeInterface extends JFrame {
         button2=new ExitBotton();
         button3=new InventaryButton();
         button4=new EstaticsBotton();
+        lifeLabel = new BarLabel(100, 100, BarType.LIFE);
     }
 
     public static void main(String[] args) {

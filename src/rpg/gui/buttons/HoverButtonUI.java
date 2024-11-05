@@ -74,7 +74,7 @@ public class HoverButtonUI extends BasicButtonUI {
 
     @Override
     public void paint(Graphics g, JComponent c) {
-        super.paint(g, c);
+
         Graphics2D g2d = (Graphics2D) g;
         AbstractButton button = (AbstractButton) c;
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
@@ -86,7 +86,6 @@ public class HoverButtonUI extends BasicButtonUI {
 
     private void drawButtonParts(Graphics2D g2d, ImageIcon[] parts) {
 
-        System.out.println(parts[0].getImage().getWidth(null));
         g2d.drawImage(parts[0].getImage(), 0, 0, d.width,
                 d.height, null);
     }
