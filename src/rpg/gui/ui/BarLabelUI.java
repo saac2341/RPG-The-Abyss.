@@ -69,14 +69,14 @@ public class BarLabelUI extends BasicLabelUI {
         int iconY = 0;
         int iconWidth = UIConstants.BAR_ICON.width;
         int iconHeight = UIConstants.BAR_ICON.height;
-        int displayX = UIConstants.BAR_ICON.width - 20;
+        int displayX = UIConstants.BAR_ICON.width - 2;
         int displayY = iconY + 5;
         int displayWidth = UIConstants.BAR_DISPLAY.width;
         int displayHeight = UIConstants.BAR_DISPLAY.height;
         int barWidth = (int) ((double) barValue / maxValue * 157);
-        int barHeight = 18;
+        int barHeight = 17;
         int barX = iconWidth + 9;
-        int barY = iconY + 26;
+        int barY = iconY + 15;
         System.out.println(icon);
         g2d.drawImage(icon, iconX, iconY, iconWidth, iconHeight, null);
         g2d.drawImage(container, displayX, displayY, displayWidth, displayHeight, null);

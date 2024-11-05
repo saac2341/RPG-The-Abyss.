@@ -22,6 +22,8 @@ public class HomeInterface extends JFrame {
     private JButton button3;
     private JButton button4;
     private JLabel lifeLabel;
+    private JLabel magicLabel;
+    private JLabel expLabel;
     private JDesktopPane desktopPane;
 
     public HomeInterface() {
@@ -51,6 +53,8 @@ public class HomeInterface extends JFrame {
         button3=new InventaryButton();
         button4=new EstaticsBotton();
         lifeLabel = new BarLabel(100, 100, BarType.LIFE);
+        magicLabel = new BarLabel(30, 100, BarType.MAGIC);
+        expLabel = new BarLabel(0, 350, BarType.EXPERIENCE);
     }
 
     public static void main(String[] args) {

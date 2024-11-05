@@ -16,15 +16,19 @@ public enum BarType {
     BarType(){
         switch (this){
             case LIFE -> {
-                container = PictureCache.addImage("life_container", "InterfacePlugins/Pixel/EstadarteVP.png");
-                icon = PictureCache.addImage("life_icon","InterfacePlugins/Pixel/LogoVP.png");
-                bar = PictureCache.addImage("life_bar","InterfacePlugins/Pixel/BarraVP.png");
+                container = PictureCache.addImage("life_container", "InterfacePlugins/Normal/EstandarteV.png");
+                icon = PictureCache.addImage("life_icon","InterfacePlugins/Normal/LogoV.png");
+                bar = PictureCache.addImage("life_bar","InterfacePlugins/Normal/BarraV.png");
             }
             case MAGIC -> {
-
+                container = PictureCache.addImage("magic_container", "InterfacePlugins/Magic/EstandarteM.png");
+                icon = PictureCache.addImage("magic_icon","InterfacePlugins/Magic/LogoM.png");
+                bar = PictureCache.addImage("magic_bar","InterfacePlugins/Magic/BarraM.png");
             }
             case EXPERIENCE -> {
-
+                container = PictureCache.addImage("experience_container", "InterfacePlugins/Experience/EstandarteE.png");
+                icon = PictureCache.addImage("experience_icon","InterfacePlugins/Experience/LogoE.png");
+                bar = PictureCache.addImage("experience_bar","InterfacePlugins/Experience/BarraE.png");
             }
         }
     }
