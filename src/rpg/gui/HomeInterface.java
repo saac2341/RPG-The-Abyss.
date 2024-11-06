@@ -42,9 +42,13 @@ public class HomeInterface extends JFrame {
         setLocationRelativeTo(null);
         setVisible(true);
         setResizable(false);
+        ((BarLabel) lifeLabel).initComponents();
+        ((BarLabel) magicLabel).initComponents();
+        ((BarLabel) expLabel).initComponents();
     }
 
     private void createUIComponents() {
+
         topPanel = new TopPanel();
         middlePanel = new MiddlePanel();
         homePanel=new HomePanel();
@@ -53,8 +57,8 @@ public class HomeInterface extends JFrame {
         button3=new InventaryButton();
         button4=new EstaticsBotton();
         lifeLabel = new BarLabel(100, 100, BarType.LIFE);
-        magicLabel = new BarLabel(30, 100, BarType.MAGIC);
-        expLabel = new BarLabel(0, 350, BarType.EXPERIENCE);
+        magicLabel = new BarLabel(100, 100, BarType.MAGIC);
+        expLabel = new BarLabel(100, 100, BarType.EXPERIENCE);
     }
 
     public static void main(String[] args) {

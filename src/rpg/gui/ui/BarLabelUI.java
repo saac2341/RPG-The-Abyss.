@@ -5,6 +5,7 @@ import rpg.gui.UIConstants;
 import rpg.gui.Labels.BarLabel;
 
 import javax.swing.*;
+import javax.swing.border.LineBorder;
 import javax.swing.plaf.basic.BasicLabelUI;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -21,7 +22,6 @@ public class BarLabelUI extends BasicLabelUI {
     protected void installDefaults(JLabel c) {
 
         c.setOpaque(false);
-        c.setBorder(null);
         c.setForeground(Color.WHITE);
         c.setFont(UIConstants.BAR_LABEL_FONT);
         c.setVerticalAlignment(JLabel.BOTTOM);
@@ -76,8 +76,7 @@ public class BarLabelUI extends BasicLabelUI {
         int barWidth = (int) ((double) barValue / maxValue * 157);
         int barHeight = 17;
         int barX = iconWidth + 9;
-        int barY = iconY + 15;
-        System.out.println(icon);
+        int barY = iconY + 18;
         g2d.drawImage(icon, iconX, iconY, iconWidth, iconHeight, null);
         g2d.drawImage(container, displayX, displayY, displayWidth, displayHeight, null);
         g2d.drawImage(bar, barX, barY, barWidth, barHeight, null);

@@ -17,21 +17,18 @@ public class BarLabel extends JLabel {
         this.maxValue = maxValue;
         this.type = type;
         initComponents();
-
     }
 
     public void initComponents() {
 
         setBarValue(barValue);
         setUI(new BarLabelUI(type));
-
     }
 
     public void setBarValue(int value){
 
         this.barValue = value;
-        setText(String.format("%d / %d", value, maxValue));
-
+        setText(String.format("%d / %d", barValue, maxValue));
     }
 
     public int getBarValue() {
