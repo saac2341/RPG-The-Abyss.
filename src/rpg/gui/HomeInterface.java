@@ -66,7 +66,12 @@ public class HomeInterface extends JFrame {
         goldLabel=new GoldLabel();
         nameLabel= new NameLabel("{Mago} LVL. 1");
     }
-
+    public void appendText(String text) {
+        // Añadimos el texto al textDisplay
+        textDisplay.append(text);
+        // Hacemos que el textDisplay se posicione en la última línea
+        textDisplay.setCaretPosition(textDisplay.getDocument().getLength());
+    }
     public static void main(String[] args) {
         new HomeInterface();
     }

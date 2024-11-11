@@ -11,7 +11,7 @@ import java.util.HashMap;
 import javax.swing.*;
 import java.lang.Integer;
 import javax.swing.Action;
-
+import java.awt.image.BufferedImage;
 /**
  * Creacion de la clase con sus atributos.
  */
@@ -25,9 +25,15 @@ public abstract class Enemy extends GameCharacter {
     }
     public abstract void getLoot();
 
+    public abstract String attack(GameCharacter enemy);
     public abstract void attack(GameCharacter enemy);
 
     public EnemyType getType(){
         return type;
     }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public abstract ImageIcon getSprite();
 }
