@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc0f9441-2c0c-4d43-89b3-04e94701314d" name="Changes" comment="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
-      <change afterPath="$PROJECT_DIR$/image/InterfacePlugins/Normal/NamePV.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/InterfacePlugins/Normal/OroBP.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rpg/gui/Labels/GoldLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rpg/gui/Labels/NameLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rpg/gui/ui/GameLabelUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rpg/gui/ui/NameLabelUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/InterfacePlugins/Normal/NamePV.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/InterfacePlugins/Normal/NamePV.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/InterfacePlugins/Normal/OroBP.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/InterfacePlugins/Normal/OroBP.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rpg/gui/HomeInterface.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/HomeInterface.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpg/gui/HomeInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/HomeInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpg/gui/Labels/PortraitLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/Labels/PortraitLabel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/ui/NameLabelUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/ui/NameLabelUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,22 +106,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728597993386</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
-      <option name="closed" value="true" />
-      <created>1729566883663</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1729566883663</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
-      <option name="closed" value="true" />
-      <created>1729566888811</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1729566888811</updated>
     </task>
     <task id="LOCAL-00035" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
       <option name="closed" value="true" />
@@ -504,7 +483,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731351570542</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
+      <option name="closed" value="true" />
+      <created>1731356705735</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1731356705735</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
+      <option name="closed" value="true" />
+      <created>1731356715464</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1731356715464</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
