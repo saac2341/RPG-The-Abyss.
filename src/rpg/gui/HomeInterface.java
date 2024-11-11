@@ -1,5 +1,7 @@
 package rpg.gui;
 
+import rpg.gui.Labels.GoldLabel;
+import rpg.gui.Labels.NameLabel;
 import rpg.gui.buttons.EstaticsBotton;
 import rpg.gui.buttons.ExitBotton;
 import rpg.gui.buttons.InventaryButton;
@@ -24,6 +26,8 @@ public class HomeInterface extends JFrame {
     private JLabel lifeLabel;
     private JLabel magicLabel;
     private JLabel expLabel;
+    private JLabel goldLabel;
+    private JLabel nameLabel;
     private JDesktopPane desktopPane;
 
     public HomeInterface() {
@@ -59,6 +63,8 @@ public class HomeInterface extends JFrame {
         lifeLabel = new BarLabel(100, 100, BarType.LIFE);
         magicLabel = new BarLabel(100, 100, BarType.MAGIC);
         expLabel = new BarLabel(100, 100, BarType.EXPERIENCE);
+        goldLabel=new GoldLabel();
+        nameLabel= new NameLabel("{Mago} LVL. 1");
     }
 
     public static void main(String[] args) {

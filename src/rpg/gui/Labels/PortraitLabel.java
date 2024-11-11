@@ -1,6 +1,6 @@
 package rpg.gui.Labels;
 
-import rpg.gui.ui.LabelUI;
+import rpg.gui.ui.GameLabelUI;
 import rpg.utils.cache.PictureCache;
 
 import javax.swing.*;
@@ -12,7 +12,7 @@ public class PortraitLabel extends JLabel {
 
     public PortraitLabel() {
         initComponents();
-        setUI(new LabelUI(getPreferredSize(), icon));
+        setUI(new GameLabelUI(getPreferredSize(), icon));
     }
 
     public void initComponents() {
