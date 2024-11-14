@@ -14,7 +14,7 @@ public class MoleMan extends Enemy{
     @Override
     protected void intiCharacter() {
         this.name="Hombre Topo";
-        this.type = EnemyType.enemyA;
+        this.type = EnemyType.BASIC;
         this.stats.put(Stats.MAX_HP,15);
         this.stats.put(Stats.HP,10);
         this.stats.put(Stats.ATTACK,3);
@@ -38,6 +38,11 @@ public class MoleMan extends Enemy{
                 ((GameCharacter)this).attack(enemy);
                 break;
         }
+    }
+
+    @Override
+    public ImageIcon getSprite() {
+        return null;
     }
 
     protected void Scratch(GameCharacter enemy) {

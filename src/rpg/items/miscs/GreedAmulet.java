@@ -2,7 +2,7 @@ package rpg.items.miscs;
 
 public class GreedAmulet extends Misc {
     public GreedAmulet(){
-        super("Amuleto de la codicia");
+        super();
     }
 
     @Override
@@ -12,4 +12,8 @@ public class GreedAmulet extends Misc {
         this.price=1015;
     }
 
+    @Override
+    public void use() {
+
+    }
 }

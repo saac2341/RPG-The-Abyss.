@@ -4,6 +4,9 @@ public enum EnemyType {
     /**
      * Enumeracion para los enemigos.
      */
-    enemyA,
-    enemtB,
+    BASIC,
+    MEDIUM,
+    BOSS,
+    SECRET,
+
 }

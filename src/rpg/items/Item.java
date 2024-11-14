@@ -16,9 +16,6 @@ public abstract class Item {
     public Item(String name){
         initItem();
         this.name=name;
-        this.description=description;
-        this.price=price;
-        this.itemType=itemType;
 
     }
 

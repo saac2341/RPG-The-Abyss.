@@ -97,7 +97,7 @@ public class Player extends GameCharacter implements Serializable {
             } else {
                 inventory.removeItem(getItem);
             }
-        } catch (ItemNotFoundException e) {
+        } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
     }

@@ -1,7 +1,8 @@
 package rpg.gui;
 
-import rpg.gui.Labels.GoldLabel;
-import rpg.gui.Labels.NameLabel;
+import rpg.entities.enemies.Enemy;
+import rpg.entities.enemies.enemyTypeA.Hermit;
+import rpg.gui.Labels.*;
 import rpg.gui.buttons.EstaticsBotton;
 import rpg.gui.buttons.ExitBotton;
 import rpg.gui.buttons.InventaryButton;
@@ -9,7 +10,6 @@ import rpg.gui.buttons.SaveBottion;
 import rpg.gui.panels.HomePanel;
 import rpg.gui.panels.MiddlePanel;
 import rpg.gui.panels.TopPanel;
-import rpg.gui.Labels.BarLabel;
 import rpg.enums.BarType;
 
 import javax.swing.*;
@@ -36,6 +36,11 @@ public class HomeInterface extends JFrame {
     private JTextArea textDisplay;
     private JScrollPane textScroll;
     private JDesktopPane desktopPane;
+    //Sorints.
+    private JLabel playerSprite;
+    private JLabel enemyNameLabel;
+    private JLabel enemyLifeLabel;
+    private JLabel enemySprite;
 
     public HomeInterface() {
         initComponets();
@@ -85,6 +90,12 @@ public class HomeInterface extends JFrame {
         expLabel = new BarLabel(100, 100, BarType.EXPERIENCE);
         goldLabel=new GoldLabel();
         nameLabel= new NameLabel("{Mago} LVL. 1");
+
+        playerSprite=new PlayerSpriteLabel();
+        Enemy enemy=new Hermit();
+        enemyNameLabel=new NameLabel(enemy.getName());
+        enemyLifeLabel= new BarLabel(100,100,BarType.LIFE);
+        enemySprite=new EnemySpriteLabel(enemy);
     }
 
     public static void main(String[] args) {

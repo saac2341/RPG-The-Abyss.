@@ -3,7 +3,7 @@ package rpg.items.miscs;
 public abstract class StrengthPotion extends Misc {
 
     public StrengthPotion(){
-        super("Posima de fuerza");
+        super();
     }
 
     @Override
@@ -13,4 +13,8 @@ public abstract class StrengthPotion extends Misc {
         this.price=300;
     }
 
+    @Override
+    public void use() {
+
+    }
 }

@@ -82,6 +82,7 @@ public enum Stats {
      **/
 
     CRITICAL_HIT_DAMAGE,
+    INTELLIGENCE,
     LEVEL,
     NEEDED_EXPERIENCE,
     EXPERIENCE,

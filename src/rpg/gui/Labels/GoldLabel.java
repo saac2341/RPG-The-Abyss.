@@ -20,7 +20,7 @@ public class GoldLabel extends PortraitLabel {
 
     @Override
     public void initComponents() {
-        PictureCache.addImage("gold", "InterfacePlugins/Normal/OroBp.png");
+        PictureCache.addImage("gold", "InterfacePlugins/NameOro/OroP2.png");
         icon = PictureCache.getImageIcon("gold");
         setPreferredSize(new Dimension(
                 icon.getIconWidth(), icon.getIconHeight()));

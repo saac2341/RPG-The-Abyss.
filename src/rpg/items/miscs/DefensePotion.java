@@ -3,7 +3,7 @@ package rpg.items.miscs;
 public abstract class DefensePotion extends Misc {
 
     public DefensePotion(){
-        super("Posima de defensa");
+        super();
     }
 
     @Override
@@ -13,4 +13,8 @@ public abstract class DefensePotion extends Misc {
         this.price=100;
     }
 
+    @Override
+    public void use() {
+
+    }
 }

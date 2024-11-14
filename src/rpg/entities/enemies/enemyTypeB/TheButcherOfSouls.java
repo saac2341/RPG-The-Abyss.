@@ -1,6 +1,7 @@
 package rpg.entities.enemies.enemyTypeB;
 import rpg.entities.GameCharacter;
 import rpg.entities.enemies.Enemy;
+import rpg.enums.EnemyType;
 import rpg.enums.Stats;
 import rpg.utils.Randomize;
 import javax.swing.*;
@@ -12,6 +13,7 @@ public class TheButcherOfSouls extends Enemy {
 
     protected void intiCharacter(){
         this.name = "EL CARNICERO DE ALMAS";
+        this.type= EnemyType.BOSS;
         this.stats.put(Stats.MAX_HP, 160);
         this.stats.put(Stats.HP, 160);
         this.stats.put(Stats.ATTACK, 15);
@@ -35,6 +37,11 @@ public class TheButcherOfSouls extends Enemy {
                 ((GameCharacter)this).attack(enemy);
                 break;
         }
+    }
+
+    @Override
+    public ImageIcon getSprite() {
+        return null;
     }
 
     protected void Tear(GameCharacter enemy) {

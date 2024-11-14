@@ -30,4 +30,5 @@ public abstract class Enemy extends GameCharacter {
     public EnemyType getType(){
         return type;
     }
+    public abstract ImageIcon getSprite();
 }

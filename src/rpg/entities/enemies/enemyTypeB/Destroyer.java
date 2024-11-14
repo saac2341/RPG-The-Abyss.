@@ -13,7 +13,7 @@ public class Destroyer extends Enemy {
 
     protected void intiCharacter(){
         this.name = "Destroyer";
-        this.type= EnemyType.enemtB;
+        this.type= EnemyType.SECRET;
         this.stats.put(Stats.MAX_HP, 50); // Más vida que el Rookie Goblin
         this.stats.put(Stats.HP, 50);
         this.stats.put(Stats.ATTACK, 10); // Más ataque
@@ -34,6 +34,11 @@ public class Destroyer extends Enemy {
                 ((GameCharacter)this).attack(enemy);
                 break;
         }
+    }
+
+    @Override
+    public ImageIcon getSprite() {
+        return null;
     }
 
     protected void fireBlast(GameCharacter enemy) {

@@ -33,6 +33,19 @@ public class Inventory {
     public Item getItem(int index){
         return items.get(index);
     }
+    public Item getItem(Item item) throws Exception {
+        Item found=null;
+        for(Item i:items){
+            if(i.getName().equals(item.getName())){
+                found=i;
+                break;
+            }
+        }
+        if (found==null){
+            throw new Exception();
+        }
+        return item;
+    }
     public void getItemCount(){
         items.size();
     }
@@ -74,5 +87,9 @@ public class Inventory {
             }
         }
         return weapons;
+    }
+
+    public ArrayList<Item> getItems() {
+        return items;
     }
 }

@@ -5,24 +5,30 @@ import rpg.entities.enemies.Enemy;
 import rpg.enums.EnemyType;
 import rpg.enums.Stats;
 import rpg.utils.Randomize;
+import rpg.utils.cache.PictureCache;
+
 import javax.swing.*;
 
 public class Hermit extends Enemy {
 
     public Hermit() {
         super("Hermit");
+        PictureCache.addImage("hermit","Enemies/New/Hermitaño2.png");
     }
     //Loot que lleva el enemigo el enemigo
     public void getLoot(){
 
     }
     protected void intiCharacter(){
-        this.type = EnemyType.enemyA;
+        this.type = EnemyType.BASIC;
         this.name = "Hermit";
         this.stats.put(Stats.MAX_HP, 60); // Más vida que Destroyer
         this.stats.put(Stats.HP, 60);
         this.stats.put(Stats.ATTACK, 12); // Más ataque
         this.stats.put(Stats.DEFENSE, 7); // Más defensa
+    }
+    public ImageIcon getSprite(){
+        return PictureCache.getImageIcon("hermit");
     }
 
     @Override

@@ -3,7 +3,7 @@ package rpg.items.miscs;
 public abstract class EquipmentAmulet extends Misc {
 
     public EquipmentAmulet(){
-        super("Amuleto de equipamiento");
+        super();
     }
 
     @Override
@@ -13,4 +13,8 @@ public abstract class EquipmentAmulet extends Misc {
         this.price=3500;
     }
 
+    @Override
+    public void use() {
+
+    }
 }

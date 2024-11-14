@@ -13,7 +13,7 @@ public class IntermediateLince extends Enemy {
     }
     protected void intiCharacter(){
         this.name="Lince";
-        this.type= EnemyType.enemtB;
+        this.type= EnemyType.MEDIUM;
         this.stats.put(Stats.MAX_MP,60);
         this.stats.put(Stats.HP,60);
         this.stats.put(Stats.ATTACK,12);
@@ -38,6 +38,11 @@ public class IntermediateLince extends Enemy {
                 ((GameCharacter)this).attack(enemy);
                 break;
         }
+    }
+
+    @Override
+    public ImageIcon getSprite() {
+        return null;
     }
 
     protected void clawStrike(GameCharacter enemy) {
