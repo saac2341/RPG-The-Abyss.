@@ -4,6 +4,7 @@ import rpg.gui.UIConstants;
 import rpg.utils.cache.PictureCache;
 
 import javax.swing.*;
+import javax.swing.border.LineBorder;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
@@ -30,15 +31,22 @@ public class NameLabelUI extends GameLabelUI {
         c.setHorizontalTextPosition(JLabel.CENTER);
         FontMetrics metrics = c.getFontMetrics(c.getFont());
         int textWidth = metrics.stringWidth(c.getText());
-        c.setPreferredSize(new Dimension(textWidth + 100, 100));
+        c.setPreferredSize(new Dimension(100, 58));
     }
 
     @Override
     public void paint(Graphics g, JComponent c) {
 
+        JLabel label = (JLabel) c;
+        FontMetrics fm = g.getFontMetrics();
+        String clippedText = layout(label, fm, c.getWidth(), c.getHeight());
+        int stringWidth = fm.stringWidth(label.getText());
+        int textY = paintTextR.y;
         Graphics2D g2d = (Graphics2D) g;
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        g2d.drawImage(icons[0], 0, 0, icons[0].getWidth(), icons[0].getHeight(), c);
-        g2d.translate(icons[0].getWidth(), 0);
+        g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
+        g2d.drawImage(icons[0], 0, 0, 100, 58, c);
+        g2d.translate(-stringWidth, 0);
+        g2d.drawString(clippedText, 0, textY + fm.getAscent());
     }
 }

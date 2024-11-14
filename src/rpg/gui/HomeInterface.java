@@ -13,6 +13,8 @@ import rpg.gui.Labels.BarLabel;
 import rpg.enums.BarType;
 
 import javax.swing.*;
+import javax.swing.border.EmptyBorder;
+import java.awt.*;
 
 public class HomeInterface extends JFrame {
     private JPanel mainPanel;
@@ -28,6 +30,11 @@ public class HomeInterface extends JFrame {
     private JLabel expLabel;
     private JLabel goldLabel;
     private JLabel nameLabel;
+    private JButton buttonSkills;
+    private JButton buttonAttack;
+    private JButton buttonExit;
+    private JTextArea textDisplay;
+    private JScrollPane textScroll;
     private JDesktopPane desktopPane;
 
     public HomeInterface() {
@@ -49,6 +56,19 @@ public class HomeInterface extends JFrame {
         ((BarLabel) lifeLabel).initComponents();
         ((BarLabel) magicLabel).initComponents();
         ((BarLabel) expLabel).initComponents();
+        /**
+         * Acciones previas en el panel
+         */
+        textScroll.getViewport().setOpaque(false);
+        textScroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        textScroll.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        textDisplay.setFont(UIConstants.FONT.deriveFont(22f));
+        textDisplay.setBorder(new EmptyBorder(10,10,10,10));
+        textDisplay.setForeground(Color.BLACK);
+        textDisplay.setLineWrap(true);
+        textDisplay.setWrapStyleWord(true);
+        appendText("Hola Mundo");
+
     }
 
     private void createUIComponents() {
@@ -74,6 +94,17 @@ public class HomeInterface extends JFrame {
     }
     public static void main(String[] args) {
         new HomeInterface();
+    }
+
+    public void appendText(String text) {
+        /**
+         * Añadimos el texto al textDisplay
+         */
+        textDisplay.append(text);
+        /**
+         * Hacemos que el textDisplay se poscicione en la última línea
+         */
+        textDisplay.setCaretPosition(textDisplay.getDocument().getLength());
     }
 
 }

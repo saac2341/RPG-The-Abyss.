@@ -1,33 +1,138 @@
 package rpg.entities;
 
-import javax.swing.*;
-
-import rpg.entities.enemies.Enemy;
 import rpg.enums.Stats;
+import rpg.inventory.Inventory;
+import rpg.items.Item;
+import rpg.items.miscs.Misc;
+import rpg.utils.Randomize;
 
+import javax.swing.*;
+import java.io.*;
 import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Creación de los atributos.
  */
-public class Player extends GameCharacter{
+public class Player extends GameCharacter implements Serializable {
+
+    private final Inventory inventory;
+
     /**
      * Deffinición de los atributos.
      *
-     * @param name
      */
     public Player(String name) {
         super(name);
+        inventory = new Inventory(15);
     }
+
+    public void levelUp(){
+
+        stats.put(Stats.LEVEL, stats.get(Stats.LEVEL) + 1);
+        stats.put(Stats.MAX_HP, stats.get(Stats.MAX_HP) + Randomize.getRandomInt(5, 10));
+        stats.put(Stats.HP, stats.get(Stats.MAX_HP));
+        stats.put(Stats.MAX_MP, stats.get(Stats.MAX_MP) + Randomize.getRandomInt(2, 5));
+        stats.put(Stats.MP, stats.get(Stats.MAX_MP));
+        stats.put(Stats.ATTACK, stats.get(Stats.ATTACK) + Randomize.getRandomInt(1, 3));
+        stats.put(Stats.DEFENSE, stats.get(Stats.DEFENSE) + Randomize.getRandomInt(1, 3));
+        stats.put(Stats.NEEDED_EXPERIENCE, stats.get(Stats.NEEDED_EXPERIENCE) + 50);
+        stats.put(Stats.EXPERIENCE, 0);
+
+    }
+
+
     protected void intiCharacter(){
-    //Implementacion de de la clase abstracta
-        this.stats = new HashMap<>();
-        this.stats.put(Stats.MAX_HP, 100);
-        this.stats.put(Stats.HP, 100);
-        this.stats.put(Stats.MAX_MP, 50);
-        this.stats.put(Stats.MP, 50);
-        this.stats.put(Stats.ATTACK, 10);
-        this.stats.put(Stats.DEFENSE, 5);
+        /**
+         * Implementacion de de la clase abstractas
+         */
+        stats.put(Stats.LEVEL,1);
+        stats.put(Stats.MAX_HP, 100);
+        stats.put(Stats.HP, 100);
+        stats.put(Stats.MAX_MP, 50);
+        stats.put(Stats.MP, 50);
+        stats.put(Stats.ATTACK, 10);
+        stats.put(Stats.DEFENSE, 5);
+        stats.put(Stats.EXPERIENCE, 0);
+        stats.put(Stats.NEEDED_EXPERIENCE, 100);
+        stats.put(Stats.GOLD, 0);
     }
+
+    public void addItemToInventory(Item item) {
+
+        if (item instanceof Misc misc) {
+            if (misc.isStackable()) {
+                boolean found = false;
+                for (Item i : inventory.getMiscs()) {
+                    if (i.getName().equals(misc.getName())) {
+                        misc.increaseQuantity(1);
+                        inventory.removeItem(i);
+                        inventory.addItem(misc);
+                        found = true;
+                        break;
+                    }
+                }
+                if (!found) {
+                    inventory.addItem(item);
+                }
+            } else {
+                inventory.addItem(item);
+            }
+        } else {
+            inventory.addItem(item);
+        }
+    }
+
+    public void sellItem(Item item) {
+
+        try {
+            Item getItem = inventory.getItem(item);
+            if (getItem instanceof Misc misc) {
+                if (misc.isStackable()) {
+                    if (misc.getQuantity() > 1) {
+                        misc.decreaseQuantity(1);
+                    } else {
+                        inventory.removeItem(item);
+                    }
+                }
+            } else {
+                inventory.removeItem(getItem);
+            }
+        } catch (ItemNotFoundException e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+    }
+
+    public void showInventory() {
+
+        StringBuilder content = new StringBuilder("Inventory: \n");
+        String format = """
+                Name: %s, Price: %d
+                Description: %s
+                """;
+        String formatQuantity = """
+                Name: %s, Price: %d, Quantity: %d
+                Description: %s
+                """;
+        for (Item item : inventory.getItems()) {
+
+            if (item instanceof Misc misc) {
+                if (misc.isStackable()) {
+                    content.append(String.format(formatQuantity, item.getName(),
+                            item.getPrice(), misc.getQuantity(), item.getDescription()));
+                } else {
+                    content.append(String.format(format, item.getName(), item.getPrice(),
+                            item.getDescription()));
+                }
+            } else {
+                content.append(String.format(format, item.getName(), item.getPrice(),
+                        item.getDescription()));
+            }
+        }
+        JOptionPane.showMessageDialog(null, content.toString());
+    }
+
+    public Inventory getInventory() {
+        return inventory;
+    }
+
 }
