@@ -97,7 +97,12 @@ public class HomeInterface extends JFrame {
         enemyLifeLabel= new BarLabel(100,100,BarType.LIFE);
         enemySprite=new EnemySpriteLabel(enemy);
     }
-
+    public void appendText(String text) {
+        // Añadimos el texto al textDisplay
+        textDisplay.append(text);
+        // Hacemos que el textDisplay se posicione en la última línea
+        textDisplay.setCaretPosition(textDisplay.getDocument().getLength());
+    }
     public static void main(String[] args) {
         new HomeInterface();
     }
