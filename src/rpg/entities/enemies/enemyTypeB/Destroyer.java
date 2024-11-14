@@ -5,10 +5,17 @@ import rpg.enums.EnemyType;
 import rpg.enums.Stats;
 import rpg.utils.Randomize;
 import javax.swing.*;
+import rpg.utils.cache.PictureCache;
 
 public class Destroyer extends Enemy {
-    public void getLoot(){
+    public Destroyer () {
 
+        super("Destroyer");
+        PictureCache.addImage("rookie_goblin", "Enemies/New/Destroyer2.png");
+    }
+
+    public void getLoot(){
+        System.out.println("Destroyer");
     }
 
     protected void intiCharacter(){
@@ -18,8 +25,48 @@ public class Destroyer extends Enemy {
         this.stats.put(Stats.HP, 50);
         this.stats.put(Stats.ATTACK, 10); // Más ataque
         this.stats.put(Stats.DEFENSE, 5); // Más defensa
+        this.stats.put(Stats.EXPERIENCE, 35);
+        this.stats.put(Stats.GOLD, 20);
     }
-    public Destroyer(){super("Destroyer");}
+    @Override
+    public String attack(GameCharacter enemy) {
+        String message;
+        // Se elige un número aleatorio entre 1 y 100
+        int random = Randomize.getRandomInt(1, 100);
+        // 50% de probabilidad de atacar normalmente
+        // 25% de probabilidad de atacar con barra oscura
+        // 25% de probabilidad de atacar con explosion de fuego
+        int attack = (random <= 50) ? 3 : (random <= 75) ? 2 : 1;
+        // Se elige el ataque a realizar
+        switch (attack) {
+            case 1:
+                try {
+                    message = fireBlast(enemy);
+                } catch (EnemyType e) {
+                    enemy.getStats().put(Stats.HP, 0);
+                    message = """
+                            Destroyer ataca con explosion de fuego te hace 2 de daño.
+                            ¡Has muerto!
+                            """;
+                }
+                break;
+            case 2:
+                try {
+                    message = darkSlash(enemy);
+                } catch (EnemyType e) {
+                    enemy.getStats().put(Stats.HP, 0);
+                    message = """
+                            Destroyer ataca con barra oscura te hace 3 de daño.
+                            ¡Has muerto!
+                            """;
+                }
+                break;
+            default:
+                message = ((GameCharacter) this).attack(enemy);
+                break;
+        }
+        return message;
+    }
 
     public void attack(GameCharacter enemy) {
         int attack = Randomize.getRandomInt(1, 2); // Elegir entre 2 ataques
