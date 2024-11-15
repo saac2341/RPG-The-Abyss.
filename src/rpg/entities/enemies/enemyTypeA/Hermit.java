@@ -20,6 +20,7 @@ public class Hermit extends Enemy {
     public void getLoot(){
         System.out.println("Hermit.");
     }
+
     protected void intiCharacter(){
         this.type = EnemyType.BASIC;
         this.name = "Hermit";
