@@ -1,14 +1,24 @@
 package rpg.entities.enemies.enemyTypeB;
+
 import rpg.entities.GameCharacter;
 import rpg.entities.enemies.Enemy;
 import rpg.enums.EnemyType;
 import rpg.enums.Stats;
 import rpg.utils.Randomize;
+import rpg.utils.cache.PictureCache;
+import rpg.exceptions.EnemyDeathException;
+
 import javax.swing.*;
 
 public class TheButcherOfSouls extends Enemy {
-    public void getLoot(){
 
+    public TheButcherOfSouls(){
+        super("El CARNICERO DE ALMAS");
+        PictureCache.addImage("Butcher_Souls","Enemies/New/Alamas2.png");
+    }
+
+    public void getLoot(){
+        System.out.println("The Butcher of Souls drops all the gold of the fallen.");
     }
 
     protected void intiCharacter(){
@@ -18,51 +28,89 @@ public class TheButcherOfSouls extends Enemy {
         this.stats.put(Stats.HP, 160);
         this.stats.put(Stats.ATTACK, 15);
         this.stats.put(Stats.DEFENSE, 8);
+        this.stats.put(Stats.EXPERIENCE,100);
+        this.stats.put(Stats.GOLD, 150);
     }
-    public TheButcherOfSouls(){super("El CARNICERO DE ALMAS");}
 
-    public void attack(GameCharacter enemy) {
-        int attack = Randomize.getRandomInt(1, 3);
+    @Override
+    public String attack(GameCharacter enemy) {
+        String message;
+        int random = Randomize.getRandomInt(1, 100);
+        int attack = (random <= 50) ? 4 : (random <= 25) ? 3 : (random <= 65) ? 2 : 1;
         switch (attack) {
             case 1:
-                Tear(enemy);
+                try {
+                    message = Tear (enemy);
+                } catch ( EnemyDeathException e) {
+                    enemy.getStats().put(Stats.HP, 0);
+                    message = """
+                            El Hermitaño lanza un golpe de sombra y hace 2 de daño.
+                            ¡Has muerto!
+                            """;
+                }
                 break;
             case 2:
-                DarkFog(enemy);
+                try {
+                    message = DarkFog(enemy);
+                } catch ( EnemyDeathException e) {
+                    enemy.getStats().put(Stats.HP, 0);
+                    message = """
+                            El Hermitaño lanza un golpe de sombra y hace 2 de daño.
+                            ¡Has muerto!
+                            """;
+                }
                 break;
             case 3:
-                EatMeat(enemy);
+                try {
+                    message = EatMeat(enemy);
+                } catch ( EnemyDeathException e) {
+                    enemy.getStats().put(Stats.HP, 0);
+                    message = """
+                            El Hermitaño lanza un golpe de sombra y hace 2 de daño.
+                            ¡Has muerto!
+                            """;
+                }
                 break;
             default:
-                ((GameCharacter)this).attack(enemy);
+                message = ((GameCharacter)this).attack(enemy);
                 break;
         }
+        return message;
+    }
+
+    protected String Tear (GameCharacter enemy) throws EnemyDeathException{
+        int damage = 7;
+        int newHP = reduceHP (enemy, damage);
+        enemy.getStats().put(Stats.HP, enemy.getStats().get(Stats.HP) - damage);
+        String message = String.format(""" 
+                ¡%s desgarra la piel de %s por %d de daño! %s tiene %d HP restante.
+                """);
+        return message;
+    }
+
+    protected String DarkFog(GameCharacter enemy) throws EnemyDeathException {
+        int damage = 15;
+        int newHP = reduceHP (enemy, damage);
+        enemy.getStats().put(Stats.HP, enemy.getStats().get(Stats.HP) - damage);
+        String message = String.format(""" 
+                ¡%s invoca una niebla negra que consume la fuerza vital de %s por %d de daño! %s tiene %d HP restante.
+                """);
+        return message;
+    }
+
+    protected String EatMeat(GameCharacter enemy) throws EnemyDeathException{
+        int damage = 30;
+        int newHP = reduceHP (enemy, damage);
+        enemy.getStats().put(Stats.HP, enemy.getStats().get(Stats.HP) - damage);
+        String message = String.format(""" 
+                ¡%s arranca la piel de %s por %d de daño! %s tiene %d HP restante.
+                """);
+        return message;
     }
 
     @Override
     public ImageIcon getSprite() {
-        return null;
+        return PictureCache.getImageIcon("Butcher_Souls");
     }
 
-    protected void Tear(GameCharacter enemy) {
-        int damage = 7;
-        enemy.getStats().put(Stats.HP, enemy.getStats().get(Stats.HP) - damage);
-        JOptionPane.showMessageDialog(null,this.name + " desgarra a " + enemy.getName() + " menos " + damage + " puntos");
-        JOptionPane.showMessageDialog(null,enemy.getName() + " tiene " + enemy.getStats().get(Stats.HP) + " puntos de vida.");
-    }
-
-    protected void DarkFog(GameCharacter enemy) {
-        int damage = 15;
-        enemy.getStats().put(Stats.HP, enemy.getStats().get(Stats.HP) - damage);
-        JOptionPane.showMessageDialog(null,this.name + " una niebla extraña te rodea y consume tus puntos de vida " + enemy.getName() + " menos " + damage + " puntos");
-        JOptionPane.showMessageDialog(null,enemy.getName() + " tiene " + enemy.getStats().get(Stats.HP) + " puntos de vida.");
-
-    }
-
-    protected void EatMeat(GameCharacter enemy) {
-        int damage = 30;
-        enemy.getStats().put(Stats.HP, enemy.getStats().get(Stats.HP) - damage);
-        JOptionPane.showMessageDialog(null,this.name + " devora la carne de " + enemy.getName() + " menos " + damage + " puntos");
-        JOptionPane.showMessageDialog(null,enemy.getName() + " tiene " + enemy.getStats().get(Stats.HP) + " puntos de vida.");
-    }
 }

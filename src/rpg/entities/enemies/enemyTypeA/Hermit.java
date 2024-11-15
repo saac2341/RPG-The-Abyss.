@@ -6,7 +6,7 @@ import rpg.enums.EnemyType;
 import rpg.enums.Stats;
 import rpg.utils.cache.PictureCache;
 import rpg.utils.Randomize;
-import rpg.utils.cache.PictureCache;
+import rpg.exceptions.EnemyDeathException;
 
 import javax.swing.*;
 
@@ -21,16 +21,16 @@ public class Hermit extends Enemy {
         System.out.println("Hermit.");
     }
 
-    protected void intiCharacter(){
+    protected void initCharacter(){
         this.type = EnemyType.BASIC;
-        this.name = "Hermit";
         this.stats.put(Stats.MAX_HP, 60); // Más vida que Destroyer
         this.stats.put(Stats.HP, 60);
         this.stats.put(Stats.ATTACK, 12); // Más ataque
         this.stats.put(Stats.DEFENSE, 7); // Más defensa
         this.stats.put(Stats.EXPERIENCE, 30);
-        this.stats.put(Stats.GOLD, 15);
+        this.stats.put(Stats.GOLD, 35);
     }
+
     @Override
     public String attack(GameCharacter enemy) {
         String message;
@@ -76,16 +76,17 @@ public class Hermit extends Enemy {
     }
 
 
-    protected void shadowStrike(GameCharacter enemy) throws EnemyDeathException {
+    protected String shadowStrike(GameCharacter enemy) throws EnemyDeathException {
         int damage = 8; // Daño considerable para este ataque
         int newHP = reduceHP (enemy, damage);
         enemy.getStats().put(Stats.HP, enemy.getStats().get(Stats.HP) - damage);
-        JOptionPane.showMessageDialog(null, this.name + " uses Shadow Strike on " + enemy.getName() + " for "
-                + damage + " damage!");
-        JOptionPane.showMessageDialog(null, enemy.getName() + " has " + enemy.getStats().get(Stats.HP) + " HP left.");
+        String message = String.format(""" 
+                ¡%s El enemigo ataca a %s con garra Fantasma %d de daño ! %s tiene %d HP restante.
+                """);
+        return message;
     }
 
-    protected void phantomClaw(GameCharacter enemy) throws EnemyDeathException {
+    protected String phantomClaw(GameCharacter enemy) throws EnemyDeathException {
         /**
          * Daño un poco menor que el Shadow Strike
          */
