@@ -36,7 +36,6 @@ public class HomeInterface extends JFrame {
     private JTextArea textDisplay;
     private JScrollPane textScroll;
     private JDesktopPane desktopPane;
-    //Sorints.
     private JLabel playerSprite;
     private JLabel enemyNameLabel;
     private JLabel enemyLifeLabel;
