@@ -21,7 +21,8 @@ public class MoleMan extends Enemy {
         System.out.println("The Mole Man drops a gold stone.");
     }
 
-    protected void intiCharacter() {
+    @Override
+    protected void initCharacter() {
         this.type = EnemyType.BASIC;
         this.stats.put(Stats.MAX_HP,15);
         this.stats.put(Stats.HP,10);

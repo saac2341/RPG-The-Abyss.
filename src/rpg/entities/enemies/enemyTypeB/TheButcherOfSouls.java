@@ -21,7 +21,8 @@ public class TheButcherOfSouls extends Enemy {
         System.out.println("The Butcher of Souls drops all the gold of the fallen.");
     }
 
-    protected void intiCharacter(){
+    @Override
+    protected void initCharacter() {
         this.name = "EL CARNICERO DE ALMAS";
         this.type= EnemyType.BOSS;
         this.stats.put(Stats.MAX_HP, 160);

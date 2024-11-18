@@ -3,15 +3,26 @@ import rpg.entities.GameCharacter;
 import rpg.entities.enemies.Enemy;
 import rpg.enums.EnemyType;
 import rpg.enums.Stats;
+import rpg.exceptions.EnemyDeathException;
 import rpg.utils.Randomize;
+import javax.swing.*;
+import rpg.utils.cache.PictureCache;
+
 import javax.swing.*;
 
 public class IntermediateLince extends Enemy {
-
-    public void getLoot(){
-
+    public IntermediateLince(){
+        super("Lince");
+        PictureCache.addImage("Lince","Enemies/New/Ninja2.png");
     }
-    protected void intiCharacter(){
+
+    public void getLoot() {
+        System.out.println("Lince");
+    }
+
+
+    @Override
+    protected void initCharacter() {
         this.name="Lince";
         this.type= EnemyType.MEDIUM;
         this.stats.put(Stats.MAX_MP,60);
@@ -20,50 +31,86 @@ public class IntermediateLince extends Enemy {
         this.stats.put(Stats.DEFENSE,5);
     }
 
-    public IntermediateLince(){super("Lince");}
-
-    public void attack(GameCharacter enemy){
-        int attack=Randomize.getRandomInt(1,3);
+    public String attack(GameCharacter enemy){
+        String message;
+        //Numero aleatorio.
+        int random=Randomize.getRandomInt(1,100);
+        //Probabilidades del ataque.
+        int attack=(random<=50) ?3:(random<=75)? 2:1;
         switch (attack){
             case 1:
-                clawStrike(enemy);
+                try {
+                    message=clawStrike(enemy);
+                }catch (EnemyDeathException e){
+                    enemy.getStats().put(Stats.HP,0);
+                    message= """
+                            Lince ataca con gudaña y te lasima con 6 de daño
+                            ¡Has muerto!
+                            """;
+                }
                 break;
             case 2:
-                tailWhip(enemy);
+                try {
+                    message=tailWhip(enemy);
+                } catch (EnemyDeathException e) {
+                    enemy.getStats().put(Stats.HP,0);
+                    message= """
+                            Lince te ataca con latigos de cadenas de hace 4 de daño.
+                            ¡Has muerto!
+                            """;
+                }
                 break;
             case 3:
-                roar(enemy);
+                try {
+                    message=roar(enemy);
+                }catch (EnemyDeathException e){
+                    enemy.getStats().put(Stats.HP,0);
+                    message= """
+                            Lince utiliza rugido te reduce 2 de ataque.
+                            ¡Has muerto!
+                            """;
+                }
                 break;
             default:
-                ((GameCharacter)this).attack(enemy);
+                message = ((GameCharacter)this).attack(enemy);
                 break;
         }
+        return message;
     }
 
     @Override
     public ImageIcon getSprite() {
-        return null;
+        return PictureCache.getImageIcon("Lince");
     }
 
-    protected void clawStrike(GameCharacter enemy) {
+    protected String clawStrike(GameCharacter enemy) throws EnemyDeathException {
         int damage = 6;
-        enemy.getStats().put(Stats.HP, enemy.getStats().get(Stats.HP) - damage);
-        JOptionPane.showMessageDialog(null,this.name + " guadalla " + enemy.getName() + " lo lastima por " + damage + " daño!");
-        JOptionPane.showMessageDialog(null,enemy.getName() + " tiene " + enemy.getStats().get(Stats.HP) + "vida.");
+        int newHP=reduceHP(enemy,damage);
+        enemy.getStats().put(Stats.HP,enemy.getStats().get(Stats.HP)-damage);
+        String message=String.format("""
+                !%s usa claw strike a %s por %d daño! %s tienen %d HP restante.
+                """);
+        return message;
     }
 
-    protected void tailWhip(GameCharacter enemy) {
+    protected String tailWhip(GameCharacter enemy) throws EnemyDeathException {
         int damage = 4;
-        enemy.getStats().put(Stats.HP, enemy.getStats().get(Stats.HP) - damage);
-        JOptionPane.showMessageDialog(null,this.name + " latigos " + enemy.getName() + " con cadenas " + damage + " daño!");
-        JOptionPane.showMessageDialog(null,enemy.getName() + " tiene " + enemy.getStats().get(Stats.HP) + " vida.");
+        int newHP=reduceHP(enemy,damage);
+        enemy.getStats().put(Stats.HP,enemy.getStats().get(Stats.HP)-damage);
+        String message=String.format("""
+                !%s usa sus latigos para atacar a %s por %d daño! %s tienen %d HP restante.
+                """);
+        return message;
     }
 
-    protected void roar(GameCharacter enemy) {
-        int attackReduction = 2;
-        enemy.getStats().put(Stats.ATTACK, enemy.getStats().get(Stats.ATTACK) - attackReduction);
-        JOptionPane.showMessageDialog(null,this.name + " rugido " + enemy.getName() + ", reduciendo el ataque " + attackReduction + "!");
-        JOptionPane.showMessageDialog(null,enemy.getName() + " ahora el ataca " + enemy.getStats().get(Stats.ATTACK) + ".");
-        }
+    protected String roar(GameCharacter enemy) throws EnemyDeathException {
+        int damage = 2;
+        int newHP=reduceHP(enemy,damage);
+        enemy.getStats().put(Stats.HP,enemy.getStats().get(Stats.HP)-damage);
+        String message=String.format("""
+                !%s usa sus rugido para atacar a %s por %d daño! %s tienen %d HP restante.
+                """);
+        return message;
     }
+}
 

@@ -26,22 +26,8 @@ public class Player extends GameCharacter implements Serializable {
         inventory = new Inventory(15);
     }
 
-    public void levelUp(){
-
-        stats.put(Stats.LEVEL, stats.get(Stats.LEVEL) + 1);
-        stats.put(Stats.MAX_HP, stats.get(Stats.MAX_HP) + Randomize.getRandomInt(5, 10));
-        stats.put(Stats.HP, stats.get(Stats.MAX_HP));
-        stats.put(Stats.MAX_MP, stats.get(Stats.MAX_MP) + Randomize.getRandomInt(2, 5));
-        stats.put(Stats.MP, stats.get(Stats.MAX_MP));
-        stats.put(Stats.ATTACK, stats.get(Stats.ATTACK) + Randomize.getRandomInt(1, 3));
-        stats.put(Stats.DEFENSE, stats.get(Stats.DEFENSE) + Randomize.getRandomInt(1, 3));
-        stats.put(Stats.NEEDED_EXPERIENCE, stats.get(Stats.NEEDED_EXPERIENCE) + 50);
-        stats.put(Stats.EXPERIENCE, 0);
-
-    }
-
-
-    protected void intiCharacter(){
+    @Override
+    protected void initCharacter() {
         /**
          * Implementacion de de la clase abstractas
          */
@@ -55,6 +41,20 @@ public class Player extends GameCharacter implements Serializable {
         stats.put(Stats.EXPERIENCE, 0);
         stats.put(Stats.NEEDED_EXPERIENCE, 100);
         stats.put(Stats.GOLD, 0);
+    }
+
+    public void levelUp(){
+
+        stats.put(Stats.LEVEL, stats.get(Stats.LEVEL) + 1);
+        stats.put(Stats.MAX_HP, stats.get(Stats.MAX_HP) + Randomize.getRandomInt(5, 10));
+        stats.put(Stats.HP, stats.get(Stats.MAX_HP));
+        stats.put(Stats.MAX_MP, stats.get(Stats.MAX_MP) + Randomize.getRandomInt(2, 5));
+        stats.put(Stats.MP, stats.get(Stats.MAX_MP));
+        stats.put(Stats.ATTACK, stats.get(Stats.ATTACK) + Randomize.getRandomInt(1, 3));
+        stats.put(Stats.DEFENSE, stats.get(Stats.DEFENSE) + Randomize.getRandomInt(1, 3));
+        stats.put(Stats.NEEDED_EXPERIENCE, stats.get(Stats.NEEDED_EXPERIENCE) + 50);
+        stats.put(Stats.EXPERIENCE, 0);
+
     }
 
     public void addItemToInventory(Item item) {
