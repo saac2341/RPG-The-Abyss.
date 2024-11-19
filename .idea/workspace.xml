@@ -4,9 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc0f9441-2c0c-4d43-89b3-04e94701314d" name="Changes" comment="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
-      <change beforePath="$PROJECT_DIR$/src/rpg/gui/LoadingWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/LoadingWindow.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpg/gui/LoadingWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/LoadingWindow.java" afterDir="false" />
+    <list default="true" id="cc0f9441-2c0c-4d43-89b3-04e94701314d" name="Changes" comment="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <change afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/AttackButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/ExitButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/SkillsButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/events/AttackEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/events/ExitEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rpg/gui/ui/UserHoverUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ButtonParts/Boton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ButtonParts/ButtonDerecha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ButtonParts/ButtonI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ButtonParts/ButtonIzquierda.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ButtonParts/ButtonMedio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Enemies/New/Alamas2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Enemies/New/Destroyer2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Enemies/New/Hermitaño2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Enemies/New/Ninja2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Enemies/New/Topo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Enemies/Normal/CarniceroDeAlmas.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Enemies/Normal/Destroyer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Enemies/Normal/Hermitaño.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Enemies/Normal/HombreTopo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Enemies/Normal/Ninja.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Enemies/Pixel/CarniceroAlmasP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Enemies/Pixel/DestroyerP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Enemies/Pixel/HermitañoP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Enemies/Pixel/HombreTP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Enemies/Pixel/NinjaP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/entities/enemies/enemyTypeA/Hermit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/entities/enemies/enemyTypeA/Hermit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/entities/enemies/enemyTypeA/MoleMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/entities/enemies/enemyTypeA/MoleMan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/entities/enemies/enemyTypeB/Destroyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/entities/enemies/enemyTypeB/Destroyer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/entities/enemies/enemyTypeB/IntermediateLince.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/entities/enemies/enemyTypeB/IntermediateLince.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/entities/enemies/enemyTypeB/TheButcherOfSouls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/entities/enemies/enemyTypeB/TheButcherOfSouls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/Labels/PlayerSpriteLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/Labels/PlayerSpriteLabel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/buttons/ExitBotton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/buttons/HoverButtonUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/HoverButtonUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,30 +144,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728597993386</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <option name="closed" value="true" />
-      <created>1730752644153</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1730752644153</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <option name="closed" value="true" />
-      <created>1730752655964</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1730752655964</updated>
-    </task>
-    <task id="LOCAL-00062" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <option name="closed" value="true" />
-      <created>1730752661150</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1730752661150</updated>
     </task>
     <task id="LOCAL-00063" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
       <option name="closed" value="true" />
@@ -503,7 +513,31 @@
       <option name="project" value="LOCAL" />
       <updated>1732054014170</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
+      <option name="closed" value="true" />
+      <created>1732055934571</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1732055934571</updated>
+    </task>
+    <task id="LOCAL-00110" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
+      <option name="closed" value="true" />
+      <created>1732056049911</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1732056049911</updated>
+    </task>
+    <task id="LOCAL-00111" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
+      <option name="closed" value="true" />
+      <created>1732056142105</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1732056142105</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -524,8 +558,8 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;src/rpg/enums/WeaponType.java&#10;#&#9;src/rpg/inventory/Inventory.java&#10;#&#9;src/rpg/items/Equipment.java&#10;#&#9;src/rpg/items/weapons/Weapon.java" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/vcs.xml" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;src/rpg/entities/enemies/Enemy.java" />
-    <MESSAGE value="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main-cpp' into main-cpp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main-cpp' into main-cpp" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main-cpp' into main-cpp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
   </component>
 </project>

@@ -31,7 +31,6 @@ public class HoverButtonUI extends BasicButtonUI {
         String text = b.getText();
         this.width = b.getFontMetrics(b.getFont()).stringWidth(text) + (5);
         this.height = 48;
-        d=new Dimension(Math.max(width + 54, 84), 48);
     }
 
     @Override
@@ -55,21 +54,26 @@ public class HoverButtonUI extends BasicButtonUI {
      * En sus estados normal y hover.
      */
     private void initParts() {
-        /**
-         * Inicializamos los arreglos de imágenes.
-         */
-        parts = new ImageIcon[1];
-        partsHover = new ImageIcon[1];
+        parts = new ImageIcon[3];
+        partsHover = new ImageIcon[3];
         /**
          * Agregamos las imágenes a la caché.
          */
-        PictureCache.addImage("userCenterSide", "ButtonParts/Boton.png");
-        PictureCache.addImage("userHoverCenterSide", "ButtonParts/Boton.png");
+        PictureCache.addImage("userLeftSide", "ButtonParts/BotonI.png");
+        PictureCache.addImage("userCenterSide", "ButtonParts/BotonC.png");
+        PictureCache.addImage("userRightSide", "ButtonParts/BotonD.png");
+        PictureCache.addImage("userHoverLeftSide", "ButtonParts/BotonI.png");
+        PictureCache.addImage("userHoverCenterSide", "ButtonParts/BotonC.png");
+        PictureCache.addImage("userHoverRightSide", "ButtonParts/BotonD.png");
         /**
          * Obtenemos las imágenes de la caché y las almacenamos en los arreglos correspondientes.
          */
-        parts[0] = PictureCache.getImageIcon("userCenterSide");
-        partsHover[0] = PictureCache.getImageIcon("userHoverCenterSide");
+        parts[0] = PictureCache.getImageIcon("userLeftSide");
+        parts[1] = PictureCache.getImageIcon("userCenterSide");
+        parts[2] = PictureCache.getImageIcon("userRightSide");
+        partsHover[0] = PictureCache.getImageIcon("userHoverLeftSide");
+        partsHover[1] = PictureCache.getImageIcon("userHoverCenterSide");
+        partsHover[2] = PictureCache.getImageIcon("userHoverRightSide");
     }
 
     @Override

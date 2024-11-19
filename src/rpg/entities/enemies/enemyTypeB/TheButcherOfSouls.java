@@ -14,7 +14,7 @@ public class TheButcherOfSouls extends Enemy {
 
     public TheButcherOfSouls(){
         super("El CARNICERO DE ALMAS");
-        PictureCache.addImage("Butcher_Souls","Enemies/New/Alamas2.png");
+        PictureCache.addImage("Butcher_Souls","Enemies/New/AlmasF.png");
     }
 
     public void getLoot(){
