@@ -11,7 +11,7 @@ public class PlayerSpriteLabel extends PortraitLabel{
     }
     //Agregar la imagen de al panel del jugador.
     public void initComponents(){
-        PictureCache.addImage("playerSprite","Player/MagoP.png");
+        PictureCache.addImage("playerSprite","Player/MagoF.png");
         icon = PictureCache.getImageIcon("playerSprite");
         setPreferredSize(new Dimension(icon.getIconWidth(),icon.getIconHeight()));
         setIcon(icon);

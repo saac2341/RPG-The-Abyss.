@@ -13,7 +13,7 @@ import javax.swing.*;
 public class IntermediateLince extends Enemy {
     public IntermediateLince(){
         super("Lince");
-        PictureCache.addImage("Lince","Enemies/New/Ninja2.png");
+        PictureCache.addImage("Lince","Enemies/New/LinceF.png");
     }
 
     public void getLoot() {

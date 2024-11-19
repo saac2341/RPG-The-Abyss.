@@ -12,7 +12,7 @@ public class Destroyer extends Enemy {
     public Destroyer () {
 
         super("Destroyer");
-        PictureCache.addImage("Destroyer", "Enemies/New/Destroyer2.png");
+        PictureCache.addImage("Destroyer", "Enemies/New/DestroyerF.png");
     }
 
     public void getLoot(){

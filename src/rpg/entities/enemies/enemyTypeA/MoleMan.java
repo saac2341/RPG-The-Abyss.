@@ -14,7 +14,7 @@ public class MoleMan extends Enemy {
 
     public MoleMan() {
         super("Hombre Topo");
-        PictureCache.addImage("Hombre_Topo", "Enemies/New/Topo2.png");
+        PictureCache.addImage("Hombre_Topo", "Enemies/New/TopoF.png");
     }
 
     public void getLoot() {

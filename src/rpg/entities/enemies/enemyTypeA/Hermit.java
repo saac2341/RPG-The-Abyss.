@@ -14,7 +14,7 @@ public class Hermit extends Enemy {
 
     public Hermit() {
         super("Hermit");
-        PictureCache.addImage("hermit","Enemies/New/Hermitaño2.png");
+        PictureCache.addImage("hermit","Enemies/New/ErmitañoR.png");
     }
     //Loot que lleva el enemigo el enemigo
     public void getLoot(){
