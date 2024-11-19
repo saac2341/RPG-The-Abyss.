@@ -66,12 +66,15 @@ public class HomeInterface extends JFrame {
         textScroll.getViewport().setOpaque(false);
         textScroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         textScroll.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-        textDisplay.setFont(UIConstants.FONT.deriveFont(22f));
-        textDisplay.setBorder(new EmptyBorder(10,10,10,10));
-        textDisplay.setForeground(Color.BLACK);
+        textDisplay.setFont(UIConstants.FONT.deriveFont(28f));
+        textDisplay.setBorder(null);
+        textDisplay.setForeground(Color.WHITE);
+        textDisplay.setColumns(1);
+        textDisplay.setEditable(false);
         textDisplay.setLineWrap(true);
         textDisplay.setWrapStyleWord(true);
         appendText("Hola Mundo");
+
 
     }
 
