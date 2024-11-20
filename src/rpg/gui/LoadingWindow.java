@@ -1,9 +1,14 @@
 package rpg.gui;
 
-import rpg.gui.Labels.*;
+import rpg.gui.UIConstants;
+import rpg.gui.buttons.LoadFileButton;
+import rpg.gui.buttons.NewFileButton;
+import rpg.gui.Labels.NameLabel;
+import rpg.gui.panels.FilesPanel;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
 
 public class LoadingWindow extends JFrame{
 
@@ -24,6 +29,15 @@ public class LoadingWindow extends JFrame{
     private JLabel file3Name;
     private JLabel file4Name;
     private JLabel file5Name;
+
+    public LoadingWindow(){
+        this.setContentPane(mainPanel);
+        this.setSize(UIConstants.STAR_WINDOW_DIMENSION);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setLocationRelativeTo(null);
+        this.setResizable(false);
+        this.setVisible(true);
+    }
 
     private void createUIComponents() {
         mainPanel = new FilesPanel();

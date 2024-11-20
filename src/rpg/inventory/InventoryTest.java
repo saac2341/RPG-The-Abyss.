@@ -1,5 +1,7 @@
 package rpg.inventory;
 import javax.swing.*;
+import java.awt.*;
+import java.io.*;
 
 import rpg.items.armors.Armaduras.*;
 import rpg.items.armors.Armor;

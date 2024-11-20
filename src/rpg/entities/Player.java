@@ -1,6 +1,7 @@
 package rpg.entities;
 
 import rpg.enums.Stats;
+import rpg.exceptions.ItemNotFoundException;
 import rpg.inventory.Inventory;
 import rpg.items.Item;
 import rpg.items.miscs.Misc;
@@ -16,7 +17,6 @@ import java.util.HashMap;
 public class Player extends GameCharacter implements Serializable {
 
     private final Inventory inventory;
-
     /**
      * Deffinición de los atributos.
      *
@@ -24,6 +24,10 @@ public class Player extends GameCharacter implements Serializable {
     public Player(String name) {
         super(name);
         inventory = new Inventory(15);
+    }
+
+    public boolean tryToFlee(){
+        return Randomize.getRandomBolean();
     }
 
     @Override
@@ -79,6 +83,27 @@ public class Player extends GameCharacter implements Serializable {
             }
         } else {
             inventory.addItem(item);
+        }
+    }
+
+    public void removeItemFromInventory(Item item) {
+
+        if (item instanceof Misc misc) {
+            if (misc.isStackable()) {
+                for (Item i : inventory.getMiscs()) {
+                    if (i.getName().equals(item.getName())) {
+                        misc.decreaseQuantity(1);
+                        if (misc.getQuantity() == 0) {
+                            inventory.removeItem(i);
+                        }
+                        break;
+                    }
+                }
+            } else {
+                inventory.removeItem(item);
+            }
+        } else {
+            inventory.removeItem(item);
         }
     }
 

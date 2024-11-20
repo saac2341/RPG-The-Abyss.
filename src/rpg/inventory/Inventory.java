@@ -1,10 +1,13 @@
 package rpg.inventory;
 
+import rpg.exceptions.InventoryFullException;
+import rpg.exceptions.ItemNotFoundException;
 import rpg.items.Item;
 import rpg.items.armors.Armor;
 import rpg.items.miscs.Misc;
 import rpg.items.weapons.Weapon;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import javax.swing.*;
 
@@ -12,8 +15,8 @@ import javax.swing.*;
  * Clase que representará el inventario de un personaje.
  */
 
-public class Inventory {
-    private ArrayList<Item> items;
+public class Inventory implements Serializable {
+    private final ArrayList<Item> items;
     private int capacity;
 
     public Inventory(int capacity){

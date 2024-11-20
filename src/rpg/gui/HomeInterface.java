@@ -1,5 +1,6 @@
 package rpg.gui;
 
+import rpg.entities.Player;
 import rpg.entities.enemies.Enemy;
 import rpg.entities.enemies.enemyTypeA.Hermit;
 import rpg.gui.Labels.*;
@@ -113,6 +114,14 @@ public class HomeInterface extends JFrame {
          * Hacemos que el textDisplay se poscicione en la última línea
          */
         textDisplay.setCaretPosition(textDisplay.getDocument().getLength());
+    }
+
+    public Player getPlayer() {
+        return player;
+    }
+
+    public Enemy getEnemy() {
+        return enemy;
     }
 
 }

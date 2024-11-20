@@ -1,7 +1,7 @@
 package rpg.entities;
+
 import rpg.entities.enemies.*;
 import javax.swing.*;
-
 import rpg.entities.enemies.enemyTypeA.Hermit;
 import rpg.entities.enemies.enemyTypeA.MoleMan;
 import rpg.entities.enemies.enemyTypeB.Destroyer;
@@ -10,8 +10,8 @@ import rpg.entities.enemies.enemyTypeB.TheButcherOfSouls;
 import rpg.utils.Randomize;
 
 public class Game {
-        private final Player player;
-        private final Enemy enemy;
+        private Player player;
+        private Enemy enemy;
 
         /**
          * Ejecutos del programa del juego
@@ -26,7 +26,7 @@ public class Game {
          */
         public Game() {
             this.player = new Player("Mago");
-            int enemyType= Randomize.getRandomInt(1,5);
+            int enemyType= Randomize.getRandomInt(1,6);
             this.enemy = switch (enemyType){
                 case 1 -> new Destroyer();
                 case 2 -> new TheButcherOfSouls();

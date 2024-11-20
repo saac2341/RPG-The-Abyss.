@@ -22,10 +22,13 @@ public interface UIConstants {
     Dimension BAR_DISPLAY = new Dimension(179, 58);
     Dimension TOP_DIMENSION = new Dimension(WINDOW_WIDTH, TOP_HEIGHT);
     Dimension MIDDLE_DIMENSION = new Dimension(WINDOW_WIDTH, MIDDLE_HEIGHT);
+    Dimension STAR_WINDOW_DIMENSION = new Dimension(800,600);
+    Dimension FILES_PANEL_DIMENSION = new Dimension(786, 563);
     Dimension BOTTOM_DIMENSION = new Dimension(WINDOW_WIDTH, BOTTOM_HEIGHT);
     Dimension CORNER_DIMENSION = new Dimension(52, 77);
     Dimension CENTER_DIMENSION = new Dimension(CENTER_WIDTH, 77);
     Dimension BAR_LABEL = new Dimension(172, 51);
+    Dimension MESSAGE_DIMENSION = new Dimension(1100, 287);
     EmptyBorder EMPTY_BORDER = new EmptyBorder(14, SIMPLE_MARGIN,
             SIMPLE_MARGIN, SIMPLE_MARGIN);
 
