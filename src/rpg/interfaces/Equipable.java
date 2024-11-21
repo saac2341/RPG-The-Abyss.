@@ -1,10 +1,11 @@
 package rpg.interfaces;
 
+import rpg.entities.Player;
+
 public interface Equipable {
-    static void equip(){
+    static void equip(Player player){
 
     }
-    static void unequip(){
-
+    static void unequip(Player player){
     }
 }

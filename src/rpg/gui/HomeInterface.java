@@ -5,7 +5,7 @@ import rpg.entities.enemies.Enemy;
 import rpg.entities.enemies.enemyTypeA.Hermit;
 import rpg.gui.Labels.*;
 import rpg.gui.buttons.EstaticsBotton;
-import rpg.gui.buttons.ExitBotton;
+import rpg.gui.buttons.ExitButton;
 import rpg.gui.buttons.InventaryButton;
 import rpg.gui.buttons.SaveBottion;
 import rpg.gui.panels.HomePanel;

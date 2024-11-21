@@ -8,5 +8,6 @@ public class AttackButton extends UserBotton {
     public AttackButton(HomeInterface game) {
 
         super("Atacar");
+        addActionListener(new AttackEvent(game));
     }
 }

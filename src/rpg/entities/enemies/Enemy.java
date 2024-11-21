@@ -31,4 +31,8 @@ public abstract class Enemy extends GameCharacter {
         return type;
     }
     public abstract ImageIcon getSprite();
+
+    public void setName(String name){
+        this.name = name;
+    }
 }

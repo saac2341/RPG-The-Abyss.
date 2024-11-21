@@ -17,10 +17,6 @@ public abstract class Equipment extends Item implements Equipable{
         super(name);
     }
 
-    protected Equipment() {
-        super();
-    }
-
     public void equip(Player player){
 
     }

@@ -11,4 +11,10 @@ public enum ItemType {
     ARMOR,
     //MAS ATRIBUTOS
     MISC,
+    //Objetos clave
+    QUEST,
+    //Posiones
+    POTION,
+    //Objetos miselaneos
+    MISC
 }

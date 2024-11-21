@@ -1,8 +1,23 @@
 package rpg.gui.buttons;
 
-public class InventaryButton extends UserBotton{
+import rpg.utils.cache.PictureCache;
 
-    public InventaryButton(){
+import javax.swing.*;
+import java.awt.image.BufferedImage;
+
+public class InventaryButton extends UserBotton {
+
+    public InventaryButton() {
         super("Inventario");
+    }
+
+    protected void initIcons() {
+
+        BufferedImage inventoryIdle = PictureCache.addImage(
+                "inventoryIdle", "ButtonParts/BotonD.png");
+        BufferedImage inventoryHover = PictureCache.addImage(
+                "inventoryHover", "ButtonParts/BotonD.png");
+        setIcon(new ImageIcon(inventoryIdle));
+        setRolloverIcon(new ImageIcon(inventoryHover));
     }
 }
