@@ -1,7 +1,6 @@
 package rpg.gui.buttons;
 
-import rpg.utils.cache.PictureCache;
-import rpg.gui.buttons.HoverButtonUI;
+import rpg.gui.ui.HoverButtonUI;
 
 import javax.swing.*;
 

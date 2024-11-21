@@ -1,5 +1,5 @@
 package rpg.gui.buttons;
-import rpg.gui.buttons.HoverButtonUI;
+import rpg.gui.ui.HoverButtonUI;
 
 public class UserBotton extends BaseButton{
     /*

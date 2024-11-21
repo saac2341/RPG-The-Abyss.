@@ -1,4 +1,4 @@
-package rpg.gui;
+package rpg.gui.windows;
 
 import rpg.gui.UIConstants;
 import rpg.gui.buttons.LoadFileButton;
@@ -8,7 +8,6 @@ import rpg.gui.panels.FilesPanel;
 
 import javax.swing.*;
 import java.awt.*;
-import java.io.File;
 
 public class LoadingWindow extends JFrame{
 

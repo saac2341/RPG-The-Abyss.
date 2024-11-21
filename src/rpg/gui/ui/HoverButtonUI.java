@@ -1,4 +1,4 @@
-package rpg.gui.buttons;
+package rpg.gui.ui;
 
 import rpg.utils.cache.FontCache;
 import rpg.utils.cache.PictureCache;

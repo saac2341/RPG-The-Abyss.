@@ -1,9 +1,10 @@
-package rpg.gui;
+package rpg.gui.windows;
 
 import rpg.entities.Player;
 import rpg.entities.enemies.Enemy;
 import rpg.entities.enemies.enemyTypeA.Hermit;
 import rpg.gui.Labels.*;
+import rpg.gui.UIConstants;
 import rpg.gui.buttons.EstaticsBotton;
 import rpg.gui.buttons.ExitButton;
 import rpg.gui.buttons.InventaryButton;
@@ -34,15 +35,24 @@ public class HomeInterface extends JFrame {
     private JButton buttonSkills;
     private JButton buttonAttack;
     private JButton buttonExit;
+    private final JInternalFrame statusFrame;
     private JTextArea textDisplay;
     private JScrollPane textScroll;
     private JDesktopPane desktopPane;
+    //Sorints.
     private JLabel playerSprite;
     private JLabel enemyNameLabel;
     private JLabel enemyLifeLabel;
     private JLabel enemySprite;
+    //Jugador, equipo y cosas.
+    Player player;
+    Enemy enemy;
+    int slot;
 
-    public HomeInterface() {
+    public HomeInterface(JInternalFrame statusFrame, Player player, int slot) {
+        this.statusFrame = statusFrame;
+        this.player=player;
+        this.slot=slot;
         initComponets();
     }
 
@@ -67,15 +77,12 @@ public class HomeInterface extends JFrame {
         textScroll.getViewport().setOpaque(false);
         textScroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         textScroll.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-        textDisplay.setFont(UIConstants.FONT.deriveFont(28f));
-        textDisplay.setBorder(null);
-        textDisplay.setForeground(Color.WHITE);
-        textDisplay.setColumns(1);
-        textDisplay.setEditable(false);
+        textDisplay.setFont(UIConstants.FONT.deriveFont(22f));
+        textDisplay.setBorder(new EmptyBorder(10,10,10,10));
+        textDisplay.setForeground(Color.BLACK);
         textDisplay.setLineWrap(true);
         textDisplay.setWrapStyleWord(true);
         appendText("Hola Mundo");
-
 
     }
 
@@ -85,7 +92,7 @@ public class HomeInterface extends JFrame {
         middlePanel = new MiddlePanel();
         homePanel=new HomePanel();
         button1 =new SaveBottion();
-        button2=new ExitBotton();
+        button2=new ExitButton();
         button3=new InventaryButton();
         button4=new EstaticsBotton();
         lifeLabel = new BarLabel(100, 100, BarType.LIFE);
@@ -116,12 +123,21 @@ public class HomeInterface extends JFrame {
         textDisplay.setCaretPosition(textDisplay.getDocument().getLength());
     }
 
+    public void tryToFlee() {
+    }
+
+    public Enemy getEnemy() {return enemy;
+    }
+
     public Player getPlayer() {
         return player;
     }
 
-    public Enemy getEnemy() {
-        return enemy;
+    public void checkGameStatus() {
+
     }
 
+    public Component getStatusFrame() {
+        return statusFrame;
+    }
 }

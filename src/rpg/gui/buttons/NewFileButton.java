@@ -1,7 +1,7 @@
 package rpg.gui.buttons;
 
-import rpg.gui.buttons.events.NewPlayerEvenet;
-import rpg.gui.LoadingWindow;
+import rpg.gui.buttons.events.NewPlayerEvent;
+import rpg.gui.windows.LoadingWindow;
 
 public class NewFileButton extends UserBotton {
    int slot;

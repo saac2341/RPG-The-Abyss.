@@ -127,6 +127,17 @@ public class Player extends GameCharacter implements Serializable {
         }
     }
 
+    public void save(int slot){
+        try {
+            ObjectOutputStream out= new ObjectOutputStream(new FileOutputStream("files/save"+ slot+".dat"));
+            out.writeObject(this);
+            out.close();;
+            System.out.println("Gama saved");
+        }catch (IOException e){
+            JOptionPane.showMessageDialog(null,"Error al salvar el juego");
+        }
+    }
+
     public void showInventory() {
 
         StringBuilder content = new StringBuilder("Inventory: \n");
