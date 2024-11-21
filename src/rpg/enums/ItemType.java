@@ -16,5 +16,4 @@ public enum ItemType {
     //Posiones
     POTION,
     //Objetos miselaneos
-    MISC
 }
