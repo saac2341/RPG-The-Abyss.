@@ -1,4 +1,4 @@
-package rpg.gui.Labels;
+package rpg.gui.labels;
 
 //Impportar clases de la cache al mago.
 import rpg.utils.cache.PictureCache;

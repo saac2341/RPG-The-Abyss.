@@ -1,4 +1,4 @@
-package rpg.gui.Labels.events;
+package rpg.gui.labels.events;
 
 import rpg.gui.windows.HomeInterface;
 

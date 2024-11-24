@@ -3,7 +3,7 @@ package rpg.gui.windows;
 import rpg.gui.UIConstants;
 import rpg.gui.buttons.LoadFileButton;
 import rpg.gui.buttons.NewFileButton;
-import rpg.gui.Labels.NameLabel;
+import rpg.gui.labels.NameLabel;
 import rpg.gui.panels.FilesPanel;
 
 import javax.swing.*;

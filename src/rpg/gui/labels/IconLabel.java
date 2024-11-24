@@ -1,13 +1,13 @@
-package rpg.gui.Labels;
+package rpg.gui.labels;
 
 import rpg.gui.ui.GameLabelUI;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class iconLabel extends JLabel {
+public class IconLabel extends JLabel {
     protected ImageIcon icon;
-    public iconLabel(ImageIcon icon){
+    public IconLabel(ImageIcon icon){
         this.icon=icon;
         setIcon(icon);
         initComponents();

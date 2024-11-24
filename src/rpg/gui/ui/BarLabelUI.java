@@ -2,10 +2,9 @@ package rpg.gui.ui;
 
 import rpg.enums.BarType;
 import rpg.gui.UIConstants;
-import rpg.gui.Labels.BarLabel;
+import rpg.gui.labels.BarLabel;
 
 import javax.swing.*;
-import javax.swing.border.LineBorder;
 import javax.swing.plaf.basic.BasicLabelUI;
 import java.awt.*;
 import java.awt.image.BufferedImage;

@@ -1,4 +1,4 @@
-package rpg.gui.Labels;
+package rpg.gui.labels;
 
 import rpg.enums.BarType;
 import rpg.gui.ui.BarLabelUI;
@@ -17,6 +17,15 @@ public class BarLabel extends JLabel {
         this.maxValue = maxValue;
         this.type = type;
         initComponents();
+    }
+
+    public void updateBar(int value, int maxValue){
+
+        setMaxValue(maxValue);
+        setBarValue(value);
+        setUI(new BarLabelUI(type));
+        revalidate();
+        repaint();
     }
 
     public void initComponents() {

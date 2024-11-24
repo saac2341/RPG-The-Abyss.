@@ -1,4 +1,4 @@
-package rpg.gui.Labels;
+package rpg.gui.labels;
 
 import rpg.gui.UIConstants;
 import rpg.utils.cache.PictureCache;

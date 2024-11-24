@@ -9,14 +9,13 @@ import rpg.gui.UIConstants;
 import rpg.gui.buttons.*;
 import rpg.gui.internalFrames.InventoryFrame;
 import rpg.gui.internalFrames.StatusFrame;
-import rpg.gui.Labels.*;
+import rpg.gui.labels.*;
 import rpg.gui.panels.HomePanel;
 import rpg.gui.panels.MiddlePanel;
 import rpg.gui.panels.TopPanel;
 
 
 import javax.swing.*;
-import javax.swing.border.EmptyBorder;
 import java.awt.*;
 
 public class HomeInterface extends JFrame {
@@ -37,6 +36,7 @@ public class HomeInterface extends JFrame {
     private JButton buttonAttack;
     private JButton buttonExit;
     private final JInternalFrame statusFrame;
+    private final JInternalFrame inventoryFrame;
     private JTextArea textDisplay;
     private JScrollPane textScroll;
     private JDesktopPane desktopPane;

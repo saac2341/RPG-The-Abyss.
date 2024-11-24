@@ -1,9 +1,8 @@
-package rpg.gui.Labels;
+package rpg.gui.labels;
 
 import rpg.entities.enemies.Enemy;
 import rpg.gui.ui.EnemyLabelUI;
-import rpg.utils.cache.PictureCache;
-import rpg.gui.ui.GameLabelUI;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -32,4 +31,20 @@ public class EnemySpriteLabel extends JLabel {
         }
         return new Dimension(icon.getIconWidth(),icon.getIconHeight());
      }
+
+     public void updateSprite(){
+        icon=enemy.getSprite();
+        setUI(new EnemyLabelUI(icon));
+        setPreferredSize(getMinDimension);
+        setSize(gerMinDimension);
+        setIcon(icon);
+        revalidate();
+        repaint();
+     }
+
+     public void setEnemy(Enemy enemy){
+        this.enemy = enemy;
+        updateSprite();
+     }
+
 }
