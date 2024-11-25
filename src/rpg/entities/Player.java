@@ -26,6 +26,20 @@ public class Player extends GameCharacter implements Serializable {
         inventory = new Inventory(15);
     }
 
+    public static Player load(int slot) {
+
+        try {
+            ObjectInputStream in = new ObjectInputStream(new FileInputStream
+                    ("files/save" + slot + ".dat"));
+            Player player = (Player) in.readObject();
+            in.close();
+            return player;
+        } catch (IOException | ClassNotFoundException e) {
+            JOptionPane.showMessageDialog(null, "Error loading the game");
+        }
+        return null;
+    }
+
     public boolean tryToFlee(){
         return Randomize.getRandomBolean();
     }
@@ -40,7 +54,7 @@ public class Player extends GameCharacter implements Serializable {
         stats.put(Stats.HP, 100);
         stats.put(Stats.MAX_MP, 50);
         stats.put(Stats.MP, 50);
-        stats.put(Stats.ATTACK, 10);
+        stats.put(Stats.ATTACK, 25);
         stats.put(Stats.DEFENSE, 5);
         stats.put(Stats.EXPERIENCE, 0);
         stats.put(Stats.NEEDED_EXPERIENCE, 100);

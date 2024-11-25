@@ -5,15 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc0f9441-2c0c-4d43-89b3-04e94701314d" name="Changes" comment="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_11_2024_03_18_p__m___Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_11_2024_03_18_p_ m__[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_11_2024_04_07_p__m___Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_11_2024_04_07_p_ m__[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpg/gui/Labels/BarLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/Labels/BarLabel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/entities/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/entities/enemies/enemyTypeA/Hermit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/entities/enemies/enemyTypeA/Hermit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/entities/enemies/enemyTypeA/MoleMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/entities/enemies/enemyTypeA/MoleMan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/entities/enemies/enemyTypeB/Destroyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/entities/enemies/enemyTypeB/Destroyer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/entities/enemies/enemyTypeB/IntermediateLince.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/entities/enemies/enemyTypeB/IntermediateLince.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/entities/enemies/enemyTypeB/TheButcherOfSouls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/entities/enemies/enemyTypeB/TheButcherOfSouls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/factory/EnemyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/factory/EnemyFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/buttons/LoadFileButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/LoadFileButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/buttons/NewFileButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/NewFileButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/buttons/SkillsButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/SkillsButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/buttons/events/NewFileEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/events/NewFileEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/buttons/events/NewPlayerEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/events/NewPlayerEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rpg/gui/internalFrames/InternalStatusBar.form" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rpg/gui/internalFrames/InternalStatusBar.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rpg/gui/internalFrames/InventoryFrame.form" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rpg/gui/internalFrames/InventoryFrame.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rpg/gui/internalFrames/StatusFrame.form" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rpg/gui/internalFrames/StatusFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/labels/EnemySpriteLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/labels/EnemySpriteLabel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/labels/GoldLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/labels/GoldLabel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/labels/events/ShowStatusEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/labels/events/ShowStatusEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/ui/HoverButtonUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/ui/HoverButtonUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/windows/HomeInterface.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/windows/HomeInterface.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rpg/gui/windows/HomeInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/windows/HomeInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/windows/NewFileWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/windows/NewFileWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/items/armors/Armor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/items/armors/Armor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +86,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.HomeInterface.executor&quot;: &quot;Run&quot;,
+    &quot;Application.rpg.gui.windows.HomeInterface.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW&quot;: &quot;false&quot;,
     &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW&quot;: &quot;true&quot;,
@@ -89,7 +112,7 @@
       <recent name="C:\Users\CP Mario Trejo\IdeaProjects\The-Abyss\image\InterfacePlugins\Magic" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.rpg.gui.windows.HomeInterface">
     <configuration name="HomeInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="rpg.gui.HomeInterface" />
       <module name="RPG-The-Abyss9" />
@@ -103,8 +126,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="rpg.gui.windows.HomeInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="rpg.gui.windows.HomeInterface" />
+      <module name="RPG-The-Abyss9" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rpg.gui.windows.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.rpg.gui.windows.HomeInterface" />
         <item itemvalue="Application.HomeInterface" />
       </list>
     </recent_temporary>
@@ -117,22 +154,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728597993386</updated>
-    </task>
-    <task id="LOCAL-00066" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
-      <option name="closed" value="true" />
-      <created>1730780448916</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1730780448916</updated>
-    </task>
-    <task id="LOCAL-00067" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
-      <option name="closed" value="true" />
-      <created>1730845845711</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1730845845711</updated>
     </task>
     <task id="LOCAL-00068" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
       <option name="closed" value="true" />
@@ -510,7 +531,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732488116155</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
+      <option name="closed" value="true" />
+      <created>1732564005672</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1732564005672</updated>
+    </task>
+    <task id="LOCAL-00116" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
+      <option name="closed" value="true" />
+      <created>1732564013839</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1732564013839</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

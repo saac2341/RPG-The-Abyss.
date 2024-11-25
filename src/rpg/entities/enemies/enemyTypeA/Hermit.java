@@ -79,10 +79,11 @@ public class Hermit extends Enemy {
     protected String shadowStrike(GameCharacter enemy) throws EnemyDeathException {
         int damage = 8; // Daño considerable para este ataque
         int newHP = reduceHP (enemy, damage);
-        enemy.getStats().put(Stats.HP, enemy.getStats().get(Stats.HP) - damage);
+        String enemyName = enemy.getName();
+        //enemy.getStats().put(Stats.HP, enemy.getStats().get(Stats.HP) - damage);
         String message = String.format(""" 
                 ¡%s El enemigo ataca a %s con garra Fantasma %d de daño ! %s tiene %d HP restante.
-                """);
+                """,this.name, enemyName, damage, enemyName, newHP);
         return message;
     }
 
@@ -95,7 +96,7 @@ public class Hermit extends Enemy {
         String enemyName = enemy.getName();
         String message = String.format(""" 
                 ¡%s El enemigo ataca a %s con garra Fantasma %d de daño ! %s tiene %d HP restante.
-                """);
+                """, this.name, enemyName, damage, enemyName, newHP);
         return message;
     }
 }

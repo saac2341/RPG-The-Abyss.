@@ -84,13 +84,18 @@ public class HoverButtonUI extends BasicButtonUI {
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         ImageIcon[] images = button.getModel().isRollover() ? partsHover : parts;
         drawButtonParts(g2d, images);
+        g2d.translate(-width-30, 0);
         g2d.setColor(Color.WHITE);
         super.paint(g2d, c);
     }
 
     private void drawButtonParts(Graphics2D g2d, ImageIcon[] parts) {
 
-        g2d.drawImage(parts[0].getImage(), 0, 0, d.width,
-                d.height, null);
+        g2d.drawImage(parts[0].getImage(), 0, 0, 27, height, null);
+        g2d.translate(27, 0);
+        g2d.drawImage(parts[1].getImage(), 0, 0,
+                width, height, null);
+        g2d.translate(width, 0);
+        g2d.drawImage(parts[2].getImage(), 0, 0, 27, height, null);
     }
 }

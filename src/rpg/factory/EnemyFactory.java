@@ -16,7 +16,7 @@ import java.util.Set;
 public class EnemyFactory {
     private static final Random random = new Random();
 
-    public static Enemy getEnemy(){
+    public static Enemy getEnemy(EnemyType type){
         Enemy enemyInstance;
         Set<Class<? extends Enemy>> enemyClasses;
         List<Class<? extends Enemy>> classList;
@@ -27,7 +27,7 @@ public class EnemyFactory {
         //Obtenr las clases de Enemy.
         enemyClasses=reflections.getSubTypesOf(Enemy.class);
         //Filtrar las clases a solo obtener de tipo basico.
-        classList =filterList(enemyClasses.stream().toList(), EnemyType.BASIC);
+        classList =filterList(enemyClasses.stream().toList(), type);
 
         try {
             int randomIndex;

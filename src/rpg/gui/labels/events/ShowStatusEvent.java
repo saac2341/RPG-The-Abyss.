@@ -12,6 +12,5 @@ public class ShowStatusEvent extends MouseAdapter {
     }
 
     public void mouseClicked(MouseEvent e){
-        homeInterface.getStatusFrame().setVisible(true);
     }
 }

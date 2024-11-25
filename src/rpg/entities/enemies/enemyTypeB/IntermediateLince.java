@@ -1,16 +1,17 @@
 package rpg.entities.enemies.enemyTypeB;
+
 import rpg.entities.GameCharacter;
 import rpg.entities.enemies.Enemy;
 import rpg.enums.EnemyType;
 import rpg.enums.Stats;
 import rpg.exceptions.EnemyDeathException;
 import rpg.utils.Randomize;
-import javax.swing.*;
 import rpg.utils.cache.PictureCache;
 
 import javax.swing.*;
 
 public class IntermediateLince extends Enemy {
+
     public IntermediateLince(){
         super("Lince");
         PictureCache.addImage("Lince","Enemies/New/LinceF.png");
@@ -25,10 +26,12 @@ public class IntermediateLince extends Enemy {
     protected void initCharacter() {
         this.name="Lince";
         this.type= EnemyType.MEDIUM;
-        this.stats.put(Stats.MAX_MP,60);
-        this.stats.put(Stats.HP,60);
-        this.stats.put(Stats.ATTACK,12);
+        this.stats.put(Stats.MAX_MP,90);
+        this.stats.put(Stats.HP,90);
+        this.stats.put(Stats.ATTACK,15);
         this.stats.put(Stats.DEFENSE,5);
+        this.stats.put(Stats.EXPERIENCE,100);
+        this.stats.put(Stats.GOLD, 30);
     }
 
     public String attack(GameCharacter enemy){
@@ -36,7 +39,7 @@ public class IntermediateLince extends Enemy {
         //Numero aleatorio.
         int random=Randomize.getRandomInt(1,100);
         //Probabilidades del ataque.
-        int attack=(random<=50) ?3:(random<=75)? 2:1;
+        int attack = (random <= 50) ? 4 : (random <= 25) ? 3 : (random <= 65) ? 2 : 1;
         switch (attack){
             case 1:
                 try {
@@ -86,30 +89,30 @@ public class IntermediateLince extends Enemy {
     protected String clawStrike(GameCharacter enemy) throws EnemyDeathException {
         int damage = 6;
         int newHP=reduceHP(enemy,damage);
-        enemy.getStats().put(Stats.HP,enemy.getStats().get(Stats.HP)-damage);
+        String enemyName = enemy.getName();
         String message=String.format("""
                 !%s usa claw strike a %s por %d daño! %s tienen %d HP restante.
-                """);
+                """, this.name, enemyName, damage, enemyName, newHP);
         return message;
     }
 
     protected String tailWhip(GameCharacter enemy) throws EnemyDeathException {
         int damage = 4;
         int newHP=reduceHP(enemy,damage);
-        enemy.getStats().put(Stats.HP,enemy.getStats().get(Stats.HP)-damage);
+        String enemyName = enemy.getName();
         String message=String.format("""
                 !%s usa sus latigos para atacar a %s por %d daño! %s tienen %d HP restante.
-                """);
+                """, this.name, enemyName, damage, enemyName, newHP);
         return message;
     }
 
     protected String roar(GameCharacter enemy) throws EnemyDeathException {
         int damage = 2;
-        int newHP=reduceHP(enemy,damage);
-        enemy.getStats().put(Stats.HP,enemy.getStats().get(Stats.HP)-damage);
+        int newHP = reduceHP(enemy,damage);
+        String enemyName = enemy.getName();
         String message=String.format("""
                 !%s usa sus rugido para atacar a %s por %d daño! %s tienen %d HP restante.
-                """);
+                """, this.name, enemyName, damage, enemyName, newHP);
         return message;
     }
 }

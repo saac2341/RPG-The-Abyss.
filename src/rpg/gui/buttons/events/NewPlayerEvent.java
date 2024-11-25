@@ -1,7 +1,7 @@
 package rpg.gui.buttons.events;
 
-import rpg.gui.NewFileWindow;
-import rpg.gui.LoadingWindow;
+import rpg.gui.windows.NewFileWindow;
+import rpg.gui.windows.LoadingWindow;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

@@ -2,17 +2,17 @@ package rpg.gui.windows;
 
 import rpg.entities.Player;
 import rpg.entities.enemies.Enemy;
+import rpg.enums.EnemyType;
 import rpg.factory.EnemyFactory;
 import rpg.enums.BarType;
 import rpg.enums.Stats;
 import rpg.gui.UIConstants;
 import rpg.gui.buttons.*;
-import rpg.gui.internalFrames.InventoryFrame;
-import rpg.gui.internalFrames.StatusFrame;
 import rpg.gui.labels.*;
 import rpg.gui.panels.HomePanel;
 import rpg.gui.panels.MiddlePanel;
 import rpg.gui.panels.TopPanel;
+import rpg.utils.Randomize;
 
 
 import javax.swing.*;
@@ -35,8 +35,6 @@ public class HomeInterface extends JFrame {
     private JButton buttonSkills;
     private JButton buttonAttack;
     private JButton buttonExit;
-    private final JInternalFrame statusFrame;
-    private final JInternalFrame inventoryFrame;
     private JTextArea textDisplay;
     private JScrollPane textScroll;
     private JDesktopPane desktopPane;
@@ -52,21 +50,15 @@ public class HomeInterface extends JFrame {
 
     public HomeInterface(Player player, int slot) {
 
-        this.player=player;
-        this.slot=slot;
+        this.player = player;
+        this.slot = slot;
         initComponets();
         ((BarLabel) lifeLabel).updateBar(player.getStats().get(Stats.HP), player.getStats().get(Stats.MAX_HP));
         ((BarLabel) magicLabel).updateBar(player.getStats().get(Stats.MP), player.getStats().get(Stats.MAX_MP));
         ((BarLabel) expLabel).updateBar(player.getStats().get(Stats.EXPERIENCE), player.getStats().get(Stats.NEEDED_EXPERIENCE));
-        statusFrame = new StatusFrame(this);
-        inventoryFrame = new InventoryFrame(this);
-        desktopPane.add(statusFrame, JLayeredPane.PALETTE_LAYER);
-        desktopPane.add(inventoryFrame, JLayeredPane.PALETTE_LAYER);
-        statusFrame.setLocation((desktopPane.getHeight()-statusFrame.getWidth())/2,(desktopPane.getHeight()-statusFrame.getWidth())/2);
-        inventoryFrame.setLocation((desktopPane.getHeight()-inventoryFrame.getWidth())/2,(desktopPane.getHeight()-inventoryFrame.getWidth())/2);
         appendText("¡Bienvenido a RPG The Abyss!\n");
         appendText("¡Preparate para la aventura!\n");
-        appendText("Aparece un nuevo enemigo: "+enemy.getName()+"\n");
+        appendText("Aparece un nuevo enemigo: " + enemy.getName() + "\n");
     }
 
     private void initComponets() {
@@ -95,9 +87,9 @@ public class HomeInterface extends JFrame {
 
     }
 
-    public void tryToFlee(){
+    public void tryToFlee() {
 
-        if (player.tryToFlee()){
+        if (player.tryToFlee()) {
             appendText("Has huido con éxito.\n");
             createEnemy();
         } else {
@@ -107,7 +99,7 @@ public class HomeInterface extends JFrame {
         updateBars();
     }
 
-    public void checkGameStatus(){
+    public void checkGameStatus() {
         if (!player.isAlive()) {
             // En caso de que el jugador haya muerto
             // Añadimos un mensaje al textDisplay de que el jugador ha muerto
@@ -147,7 +139,14 @@ public class HomeInterface extends JFrame {
 
     private void createEnemy() {
 
-        enemy = EnemyFactory.getEnemy();
+        int rand= Randomize.getRandomInt(1, 4);
+        enemy = switch (rand){
+            case 1->EnemyFactory.getEnemy(EnemyType.BASIC);
+            case 2->EnemyFactory.getEnemy(EnemyType.MEDIUM);
+            case 3->EnemyFactory.getEnemy(EnemyType.BOSS);
+            case 4->EnemyFactory.getEnemy(EnemyType.SECRET);
+            default -> EnemyFactory.getEnemy(EnemyType.BASIC);
+        };
         if (enemy != null) {
 
             enemyNameLabel.setText(enemy.getName());
@@ -188,26 +187,28 @@ public class HomeInterface extends JFrame {
 
     private void createUIComponents() {
 
+        enemy=EnemyFactory.getEnemy(EnemyType.BASIC);
         topPanel = new TopPanel();
         middlePanel = new MiddlePanel();
-        homePanel=new HomePanel();
-        button1 =new SaveBottion();
-        button2=new ExitButton();
-        button3=new InventaryButton();
-        button4=new EstaticsBotton();
+        homePanel = new HomePanel();
+        buttonAttack=new AttackButton(this);
+        button1 = new SaveBottion();
+        button2 = new ExitButton(this);
+        button3 = new InventaryButton();
+        button4 = new EstaticsBotton();
         lifeLabel = new BarLabel(0, 0, BarType.LIFE);
         magicLabel = new BarLabel(0, 0, BarType.MAGIC);
         expLabel = new BarLabel(0, 0, BarType.EXPERIENCE);
-        goldLabel=new GoldLabel(player.getStats().get(Stats.GOLD));
-        nameLabel= new NameLabel(String.format("%s LVL. %d", player.getName(), player.getStats().get(Stats.LEVEL)));
-        playerSprite=new PlayerSpriteLabel();
-        enemyNameLabel=new NameLabel(enemy.getName());
-        enemyLifeLabel= new BarLabel(enemy.getStats().get(Stats.HP),enemy.getStats().get(Stats.MAX_HP),BarType.LIFE);
-        enemySprite=new EnemySpriteLabel(enemy);
+        goldLabel = new GoldLabel(player.getStats().get(Stats.GOLD));
+        nameLabel = new NameLabel(String.format("%s LVL. %d", player.getName(), player.getStats().get(Stats.LEVEL)));
+        playerSprite = new PlayerSpriteLabel();
+        enemyNameLabel = new NameLabel(enemy.getName());
+        enemyLifeLabel = new BarLabel(enemy.getStats().get(Stats.HP), enemy.getStats().get(Stats.MAX_HP), BarType.LIFE);
+        enemySprite = new EnemySpriteLabel(enemy);
     }
 
     public static void main(String[] args) {
-        new HomeInterface();
+        new HomeInterface(new Player("Prueba"), 1);
     }
 
     public void appendText(String text) {
@@ -221,18 +222,11 @@ public class HomeInterface extends JFrame {
         textDisplay.setCaretPosition(textDisplay.getDocument().getLength());
     }
 
-    public Enemy getEnemy() {return enemy;
+    public Enemy getEnemy() {
+        return enemy;
     }
 
     public Player getPlayer() {
         return player;
-    }
-
-    public JInternalFrame getInventoryFrame(){
-        return inventoryFrame;
-    }
-
-    public JInternalFrame getStatusFrame{
-        return statusFrame;
     }
 }

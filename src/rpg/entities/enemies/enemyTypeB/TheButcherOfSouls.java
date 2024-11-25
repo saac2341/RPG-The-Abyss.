@@ -25,9 +25,9 @@ public class TheButcherOfSouls extends Enemy {
     protected void initCharacter() {
         this.name = "EL CARNICERO DE ALMAS";
         this.type= EnemyType.BOSS;
-        this.stats.put(Stats.MAX_HP, 160);
-        this.stats.put(Stats.HP, 160);
-        this.stats.put(Stats.ATTACK, 15);
+        this.stats.put(Stats.MAX_HP, 170);
+        this.stats.put(Stats.HP, 170);
+        this.stats.put(Stats.ATTACK, 20);
         this.stats.put(Stats.DEFENSE, 8);
         this.stats.put(Stats.EXPERIENCE,100);
         this.stats.put(Stats.GOLD, 150);
@@ -82,30 +82,30 @@ public class TheButcherOfSouls extends Enemy {
     protected String Tear (GameCharacter enemy) throws EnemyDeathException{
         int damage = 7;
         int newHP = reduceHP (enemy, damage);
-        enemy.getStats().put(Stats.HP, enemy.getStats().get(Stats.HP) - damage);
+        String enemyName = enemy.getName();
         String message = String.format(""" 
                 ¡%s desgarra la piel de %s por %d de daño! %s tiene %d HP restante.
-                """);
+                """, this.name, enemyName, damage, enemyName, newHP);
         return message;
     }
 
     protected String DarkFog(GameCharacter enemy) throws EnemyDeathException {
         int damage = 15;
         int newHP = reduceHP (enemy, damage);
-        enemy.getStats().put(Stats.HP, enemy.getStats().get(Stats.HP) - damage);
+        String enemyName = enemy.getName();
         String message = String.format(""" 
                 ¡%s invoca una niebla negra que consume la fuerza vital de %s por %d de daño! %s tiene %d HP restante.
-                """);
+                """, this.name, enemyName, damage, enemyName, newHP);
         return message;
     }
 
     protected String EatMeat(GameCharacter enemy) throws EnemyDeathException{
         int damage = 30;
         int newHP = reduceHP (enemy, damage);
-        enemy.getStats().put(Stats.HP, enemy.getStats().get(Stats.HP) - damage);
+        String enemyName = enemy.getName();
         String message = String.format(""" 
                 ¡%s arranca la piel de %s por %d de daño! %s tiene %d HP restante.
-                """);
+                """, this.name, enemyName, damage, enemyName, newHP);
         return message;
     }
 

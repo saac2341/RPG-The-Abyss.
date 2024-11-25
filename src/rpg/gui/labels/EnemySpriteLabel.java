@@ -27,7 +27,7 @@ public class EnemySpriteLabel extends JLabel {
     }
      private Dimension getMinimusSize(){
         if (icon.getIconHeight()>350 || icon.getIconHeight()>184){
-            icon=new ImageIcon(icon.getImage().getScaledInstance(450,250,Image.SCALE_SMOOTH));
+            icon=new ImageIcon(icon.getImage().getScaledInstance(150,250,Image.SCALE_SMOOTH));
         }
         return new Dimension(icon.getIconWidth(),icon.getIconHeight());
      }
@@ -35,8 +35,8 @@ public class EnemySpriteLabel extends JLabel {
      public void updateSprite(){
         icon=enemy.getSprite();
         setUI(new EnemyLabelUI(icon));
-        setPreferredSize(getMinDimension);
-        setSize(gerMinDimension);
+        setPreferredSize(getMinimusSize());
+        setSize(getMinimusSize());
         setIcon(icon);
         revalidate();
         repaint();

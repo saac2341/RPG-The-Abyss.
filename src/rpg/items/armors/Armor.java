@@ -17,11 +17,11 @@ public abstract class Armor extends Equipment{
     protected ArmorType armorType;
     public Armor(String name) {
 
-        initArmor();
+        super(name, "", 12, ItemType.ARMOR);
         this.name=name;
-        this.description=description;
-        this.price=price;
-        this.armorType=armorType;
+        this.description="";
+        this.price=0;
+        this.armorType=ArmorType.BOOTS;
     }
     protected abstract void initArmor();
 

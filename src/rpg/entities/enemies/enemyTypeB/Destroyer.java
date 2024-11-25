@@ -23,9 +23,9 @@ public class Destroyer extends Enemy {
     protected void initCharacter() {
         this.name = "Destroyer";
         this.type= EnemyType.SECRET;
-        this.stats.put(Stats.MAX_HP, 50); // Más vida que el Rookie Goblin
-        this.stats.put(Stats.HP, 50);
-        this.stats.put(Stats.ATTACK, 10); // Más ataque
+        this.stats.put(Stats.MAX_HP, 80); // Más vida que el Rookie Goblin
+        this.stats.put(Stats.HP, 80);
+        this.stats.put(Stats.ATTACK, 18); // Más ataque
         this.stats.put(Stats.DEFENSE, 5); // Más defensa
         this.stats.put(Stats.EXPERIENCE, 35);
         this.stats.put(Stats.GOLD, 20);
@@ -80,20 +80,20 @@ public class Destroyer extends Enemy {
     protected String fireBlast(GameCharacter enemy) throws EnemyDeathException {
         int damage = 7; // Daño considerable para este ataque
         int newHP = reduceHP (enemy, damage);
-        enemy.getStats().put(Stats.HP, enemy.getStats().get(Stats.HP) - damage);
+        String enemyName = enemy.getName();
         String message = String.format(""" 
                 ¡%s usa Fire Blast a %s por %d de daño! %s tiene %d HP restante.
-                """);
+                """, this.name, enemyName, damage, enemyName, newHP);
         return message;
     }
 
     protected String darkSlash(GameCharacter enemy) throws EnemyDeathException {
         int damage = 5; // Daño un poco menor que el Fire Blast
         int newHP = reduceHP (enemy, damage);
-        enemy.getStats().put(Stats.HP, enemy.getStats().get(Stats.HP) - damage);
+        String enemyName = enemy.getName();
         String message = String.format(""" 
                 ¡%s usa sus garras con %s por %d de daño! %s tiene %d HP restante.
-                """);
+                """, this.name, enemyName, damage, enemyName, newHP);
         return message;
     }
 }

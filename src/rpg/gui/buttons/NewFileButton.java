@@ -10,6 +10,6 @@ public class NewFileButton extends UserBotton {
     public NewFileButton(int slot, LoadingWindow loadingWindow) {
         super("Nueva Partida");
         this.slot = slot;
-        addActionListener(new NewPlayerEvent(slot, LoadingWindow));
+        addActionListener(new NewPlayerEvent(slot, loadingWindow));
     }
 }

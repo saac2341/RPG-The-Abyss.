@@ -24,11 +24,11 @@ public class MoleMan extends Enemy {
     @Override
     protected void initCharacter() {
         this.type = EnemyType.BASIC;
-        this.stats.put(Stats.MAX_HP,15);
-        this.stats.put(Stats.HP,10);
-        this.stats.put(Stats.ATTACK,3);
+        this.stats.put(Stats.MAX_HP,50);
+        this.stats.put(Stats.HP,50);
+        this.stats.put(Stats.ATTACK,8);
         this.stats.put(Stats.DEFENSE,6);
-        this.stats.put(Stats.EXPERIENCE,20);
+        this.stats.put(Stats.EXPERIENCE,30);
         this.stats.put(Stats.GOLD, 30);
     }
 
@@ -67,7 +67,7 @@ public class MoleMan extends Enemy {
     }
 
     protected String Scratch(GameCharacter enemy) throws EnemyDeathException {
-        int damage = 2;
+        int damage = 5;
         int newHP = reduceHP(enemy, damage);
         String enemyName = enemy.getName();
         String message = String.format("""
@@ -78,7 +78,7 @@ public class MoleMan extends Enemy {
     }
 
     protected String Drill(GameCharacter enemy) throws EnemyDeathException {
-        int damage = 5;
+        int damage = 7;
         int newHP = reduceHP(enemy, damage);
         String enemyName = enemy.getName();
         String message = String.format("""
