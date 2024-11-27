@@ -1,5 +1,4 @@
 package rpg.entities.enemies.enemyTypeB;
-
 import rpg.entities.GameCharacter;
 import rpg.entities.enemies.Enemy;
 import rpg.enums.EnemyType;
@@ -17,9 +16,7 @@ public class IntermediateLince extends Enemy {
         PictureCache.addImage("Lince","Enemies/New/LinceF.png");
     }
 
-    public void getLoot() {
-        System.out.println("Lince");
-    }
+    public void getLoot() { System.out.println("Lince");}
 
 
     @Override
@@ -30,7 +27,7 @@ public class IntermediateLince extends Enemy {
         this.stats.put(Stats.HP,90);
         this.stats.put(Stats.ATTACK,15);
         this.stats.put(Stats.DEFENSE,5);
-        this.stats.put(Stats.EXPERIENCE,100);
+        this.stats.put(Stats.EXPERIENCE,90);
         this.stats.put(Stats.GOLD, 30);
     }
 

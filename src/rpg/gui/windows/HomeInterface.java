@@ -34,7 +34,6 @@ public class HomeInterface extends JFrame {
     private JLabel nameLabel;
     private JButton buttonSkills;
     private JButton buttonAttack;
-    private JButton buttonExit;
     private JTextArea textDisplay;
     private JScrollPane textScroll;
     private JDesktopPane desktopPane;
@@ -43,6 +42,7 @@ public class HomeInterface extends JFrame {
     private JLabel enemyNameLabel;
     private JLabel enemyLifeLabel;
     private JLabel enemySprite;
+    private JButton buttonFlee;
     //Jugador, equipo y cosas.
     Player player;
     Enemy enemy;
@@ -191,6 +191,8 @@ public class HomeInterface extends JFrame {
         topPanel = new TopPanel();
         middlePanel = new MiddlePanel();
         homePanel = new HomePanel();
+        buttonSkills = new SkillsButton(this);
+        buttonFlee = new FleeButton(this);
         buttonAttack=new AttackButton(this);
         button1 = new SaveBottion();
         button2 = new ExitButton(this);

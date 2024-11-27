@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc0f9441-2c0c-4d43-89b3-04e94701314d" name="Changes" comment="Merge remote-tracking branch 'origin/main-cpp' into main-cpp" />
+    <list default="true" id="cc0f9441-2c0c-4d43-89b3-04e94701314d" name="Changes" comment="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/entities/enemies/enemyTypeB/Destroyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/entities/enemies/enemyTypeB/Destroyer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/entities/enemies/enemyTypeB/IntermediateLince.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/entities/enemies/enemyTypeB/IntermediateLince.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/windows/HomeInterface.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/windows/HomeInterface.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/windows/HomeInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/windows/HomeInterface.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,22 +128,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728597993386</updated>
-    </task>
-    <task id="LOCAL-00071" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
-      <option name="closed" value="true" />
-      <created>1730862953357</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1730862953357</updated>
-    </task>
-    <task id="LOCAL-00072" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
-      <option name="closed" value="true" />
-      <created>1730862967067</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1730862967067</updated>
     </task>
     <task id="LOCAL-00073" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
       <option name="closed" value="true" />
@@ -515,7 +505,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732675626161</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
+      <option name="closed" value="true" />
+      <created>1732675702708</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1732675702708</updated>
+    </task>
+    <task id="LOCAL-00121" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
+      <option name="closed" value="true" />
+      <created>1732675709178</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1732675709178</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

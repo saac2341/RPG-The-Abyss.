@@ -23,22 +23,18 @@ public class Destroyer extends Enemy {
     protected void initCharacter() {
         this.name = "Destroyer";
         this.type= EnemyType.SECRET;
-        this.stats.put(Stats.MAX_HP, 80); // Más vida que el Rookie Goblin
+        this.stats.put(Stats.MAX_HP, 80);
         this.stats.put(Stats.HP, 80);
-        this.stats.put(Stats.ATTACK, 18); // Más ataque
-        this.stats.put(Stats.DEFENSE, 5); // Más defensa
-        this.stats.put(Stats.EXPERIENCE, 35);
+        this.stats.put(Stats.ATTACK, 18);
+        this.stats.put(Stats.DEFENSE, 5);
+        this.stats.put(Stats.EXPERIENCE, 55);
         this.stats.put(Stats.GOLD, 20);
     }
 
     @Override
     public String attack(GameCharacter enemy) {
         String message;
-        // Se elige un número aleatorio entre 1 y 100
         int random = Randomize.getRandomInt(1, 100);
-        // 50% de probabilidad de atacar normalmente
-        // 25% de probabilidad de atacar con barra oscura
-        // 25% de probabilidad de atacar con explosion de fuego
         int attack = (random <= 50) ? 3 : (random <= 75) ? 2 : 1;
         // Se elige el ataque a realizar
         switch (attack) {

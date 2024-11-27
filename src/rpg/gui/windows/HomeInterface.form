@@ -107,13 +107,11 @@
         </properties>
         <border type="none"/>
         <children>
-          <component id="53bf3" class="javax.swing.JButton" binding="buttonSkills">
+          <component id="53bf3" class="javax.swing.JButton" binding="buttonSkills" custom-create="true">
             <constraints>
               <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
-            <properties>
-              <text value="Button"/>
-            </properties>
+            <properties/>
           </component>
           <component id="abf01" class="javax.swing.JButton" binding="buttonAttack" custom-create="true">
             <constraints>
@@ -121,13 +119,11 @@
             </constraints>
             <properties/>
           </component>
-          <component id="71282" class="javax.swing.JButton" binding="buttonExit">
+          <component id="71282" class="javax.swing.JButton" binding="buttonFlee" custom-create="true">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
-            <properties>
-              <text value="Button"/>
-            </properties>
+            <properties/>
           </component>
           <scrollpane id="30acd" binding="textScroll">
             <constraints>
