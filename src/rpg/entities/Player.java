@@ -54,7 +54,7 @@ public class Player extends GameCharacter implements Serializable {
         stats.put(Stats.HP, 100);
         stats.put(Stats.MAX_MP, 50);
         stats.put(Stats.MP, 50);
-        stats.put(Stats.ATTACK, 25);
+        stats.put(Stats.ATTACK, 20);
         stats.put(Stats.DEFENSE, 5);
         stats.put(Stats.EXPERIENCE, 0);
         stats.put(Stats.NEEDED_EXPERIENCE, 100);
