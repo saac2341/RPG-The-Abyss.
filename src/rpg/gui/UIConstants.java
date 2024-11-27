@@ -31,5 +31,6 @@ public interface UIConstants {
     Dimension MESSAGE_DIMENSION = new Dimension(1100, 287);
     EmptyBorder EMPTY_BORDER = new EmptyBorder(14, SIMPLE_MARGIN,
             SIMPLE_MARGIN, SIMPLE_MARGIN);
+    Dimension NEW_PLAYER_PANEL_DIMENSION = new Dimension(786, 250);
 
 }

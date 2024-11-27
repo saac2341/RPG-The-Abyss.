@@ -3,7 +3,6 @@ package rpg.gui.buttons.events;
 import rpg.entities.Player;
 import rpg.gui.windows.HomeInterface;
 import rpg.gui.windows.NewFileWindow;
-import rpg.gui.windows.LoadingWindow;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

@@ -22,7 +22,7 @@ public class Destroyer extends Enemy {
     @Override
     protected void initCharacter() {
         this.name = "Destroyer";
-        this.type= EnemyType.SECRET;
+        this.type= EnemyType.MEDIUM;
         this.stats.put(Stats.MAX_HP, 80);
         this.stats.put(Stats.HP, 80);
         this.stats.put(Stats.ATTACK, 18);

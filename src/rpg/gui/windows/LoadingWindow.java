@@ -40,7 +40,7 @@ public class LoadingWindow extends JFrame{
 
     private void createUIComponents() {
         mainPanel = new FilesPanel();
-        titleLabel = new JLabel("Java RPG");
+        titleLabel = new JLabel("RPG The-Abyss");
         titleLabel.setForeground(Color.WHITE);
         titleLabel.setFont(new Font("Arial", Font.BOLD, 30));
         file1Name = new NameLabel("");

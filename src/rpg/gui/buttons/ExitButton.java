@@ -4,7 +4,7 @@ import rpg.gui.windows.HomeInterface;
 
 public class ExitButton extends UserBotton {
 
-    public ExitButton(HomeInterface game) {
+    public ExitButton() {
 
         super("Salir");
         addActionListener(e -> System.exit(0));

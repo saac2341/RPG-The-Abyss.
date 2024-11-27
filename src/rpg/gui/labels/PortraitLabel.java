@@ -17,7 +17,7 @@ public class PortraitLabel extends JLabel {
 
     public void initComponents() {
         PictureCache.addImage("portrait",
-                "player/portrait.png");
+                "Player/Icono.png");
         icon = PictureCache.getImageIcon("portrait");
         setPreferredSize(
                 new Dimension(icon.getIconWidth(),

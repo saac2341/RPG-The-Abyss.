@@ -145,7 +145,7 @@ public class HomeInterface extends JFrame {
             case 2->EnemyFactory.getEnemy(EnemyType.MEDIUM);
             case 3->EnemyFactory.getEnemy(EnemyType.BOSS);
             case 4->EnemyFactory.getEnemy(EnemyType.SECRET);
-            default -> EnemyFactory.getEnemy(EnemyType.BASIC);
+            default -> throw new IllegalStateException("Unexpected value: " + rand);
         };
         if (enemy != null) {
 
@@ -195,7 +195,7 @@ public class HomeInterface extends JFrame {
         buttonFlee = new FleeButton(this);
         buttonAttack=new AttackButton(this);
         button1 = new SaveBottion();
-        button2 = new ExitButton(this);
+        button2 = new ExitButton();
         button3 = new InventaryButton();
         button4 = new EstaticsBotton();
         lifeLabel = new BarLabel(0, 0, BarType.LIFE);
@@ -207,10 +207,6 @@ public class HomeInterface extends JFrame {
         enemyNameLabel = new NameLabel(enemy.getName());
         enemyLifeLabel = new BarLabel(enemy.getStats().get(Stats.HP), enemy.getStats().get(Stats.MAX_HP), BarType.LIFE);
         enemySprite = new EnemySpriteLabel(enemy);
-    }
-
-    public static void main(String[] args) {
-        new HomeInterface(new Player("Prueba"), 1);
     }
 
     public void appendText(String text) {

@@ -22,8 +22,8 @@ public class IntermediateLince extends Enemy {
     @Override
     protected void initCharacter() {
         this.name="Lince";
-        this.type= EnemyType.MEDIUM;
-        this.stats.put(Stats.MAX_MP,90);
+        this.type= EnemyType.SECRET;
+        this.stats.put(Stats.MAX_HP,90);
         this.stats.put(Stats.HP,90);
         this.stats.put(Stats.ATTACK,15);
         this.stats.put(Stats.DEFENSE,5);
@@ -36,7 +36,7 @@ public class IntermediateLince extends Enemy {
         //Numero aleatorio.
         int random=Randomize.getRandomInt(1,100);
         //Probabilidades del ataque.
-        int attack = (random <= 50) ? 4 : (random <= 25) ? 3 : (random <= 65) ? 2 : 1;
+        int attack = (random <= 50) ? 4 : (random <= 65) ? 3 : (random <= 85) ? 2 : 1;
         switch (attack){
             case 1:
                 try {

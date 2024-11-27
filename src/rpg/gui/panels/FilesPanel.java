@@ -8,7 +8,7 @@ import javax.swing.*;
 public class FilesPanel extends BackgroundPanel{
      protected void init(){
          backgroundImage=new ImageIcon(PictureCache.addImage("BorderPanel",
-                 ""));
+                 "panels/ImagenFondo.jpg"));
          setDimension(UIConstants.FILES_PANEL_DIMENSION);
      }
 }
