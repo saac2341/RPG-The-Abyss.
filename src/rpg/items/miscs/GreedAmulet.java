@@ -1,5 +1,8 @@
 package rpg.items.miscs;
 
+/*
+Creacion de un amuleto
+ */
 public class GreedAmulet extends Misc {
     public GreedAmulet(){
         super();

@@ -2,6 +2,9 @@ package rpg.items.weapons.swords;
 import rpg.enums.WeaponType;
 import rpg.items.weapons.*;
 
+/*
+Clase base para la creacion de las armas
+ */
 public abstract class Sword extends Weapon{
 
     public Sword(String name, String descripcion, int price){

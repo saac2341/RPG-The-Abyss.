@@ -10,15 +10,18 @@ import rpg.utils.cache.PictureCache;
 import javax.swing.*;
 
 public class IntermediateLince extends Enemy {
-
+    /*
+    Le agrega noombre y imagen al personaje
+     */
     public IntermediateLince(){
         super("Lince");
         PictureCache.addImage("Lince","Enemies/New/LinceF.png");
     }
 
     public void getLoot() { System.out.println("Lince");}
-
-
+    /*
+    Le agrega caracteristicas al enemigo
+     */
     @Override
     protected void initCharacter() {
         this.name="Lince";
@@ -30,7 +33,9 @@ public class IntermediateLince extends Enemy {
         this.stats.put(Stats.EXPERIENCE,90);
         this.stats.put(Stats.GOLD, 30);
     }
-
+    /*
+    Administra los ataques del enemigo al jugador.
+     */
     public String attack(GameCharacter enemy){
         String message;
         //Numero aleatorio.

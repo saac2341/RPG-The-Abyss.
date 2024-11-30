@@ -4,7 +4,9 @@ import rpg.utils.cache.PictureCache;
 
 import javax.swing.*;
 import java.awt.image.BufferedImage;
-
+/*
+Estos enums se encargan de la barras que se van a mostar en la vetana
+ */
 public enum BarType {
 
     LIFE, MAGIC, EXPERIENCE;

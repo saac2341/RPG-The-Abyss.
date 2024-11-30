@@ -1,5 +1,8 @@
 package rpg.items.miscs;
 
+/*
+Clase base de para los objetos
+ */
 public class Posion extends Misc {
     public Posion(){
         super();

@@ -4,6 +4,9 @@ import rpg.enums.WeaponType;
 import rpg.items.weapons.Weapon;
 
 public abstract class PlasmaCannon extends Weapon {
+    /*
+Afrefa caracteristicas al arma.
+ */
     public PlasmaCannon() {
         super("Cañon de plasma","Un arama fututiste que dispara plasma", 1500, WeaponType.SPEAR);
     }

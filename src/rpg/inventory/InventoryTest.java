@@ -26,6 +26,9 @@ public class InventoryTest {
                 protected void initItem() {
                 }
             };
+            /*
+            Agregar item
+             */
             inventory.addItem(armor);
             Misc misc=new DefensePotion() {
             };

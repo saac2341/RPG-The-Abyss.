@@ -18,16 +18,17 @@ public class Player extends GameCharacter implements Serializable {
 
     private final Inventory inventory;
     /**
-     * Deffinición de los atributos.
+     * Definicion del inventario inicial y algunos tributos del personaje.
      *
      */
     public Player(String name) {
         super(name);
         inventory = new Inventory(15);
     }
-
+    /*
+    Esta funcion serciora que se carge el personaje en el juego.
+     */
     public static Player load(int slot) {
-
         try {
             ObjectInputStream in = new ObjectInputStream(new FileInputStream
                     ("files/save" + slot + ".dat"));
@@ -39,16 +40,14 @@ public class Player extends GameCharacter implements Serializable {
         }
         return null;
     }
-
     public boolean tryToFlee(){
         return Randomize.getRandomBolean();
     }
-
+    /*
+    Esta clase implementa las caracteristicas del personaje y atributos que va a tener.
+     */
     @Override
     protected void initCharacter() {
-        /**
-         * Implementacion de de la clase abstractas
-         */
         stats.put(Stats.LEVEL,1);
         stats.put(Stats.MAX_HP, 100);
         stats.put(Stats.HP, 100);
@@ -60,9 +59,11 @@ public class Player extends GameCharacter implements Serializable {
         stats.put(Stats.NEEDED_EXPERIENCE, 100);
         stats.put(Stats.GOLD, 0);
     }
+    /*
+    Esta clase se encarga de actualizar los atributos del jugador cuando sube de nivel
+     */
 
     public void levelUp(){
-
         stats.put(Stats.LEVEL, stats.get(Stats.LEVEL) + 1);
         stats.put(Stats.MAX_HP, stats.get(Stats.MAX_HP) + Randomize.getRandomInt(5, 10));
         stats.put(Stats.HP, stats.get(Stats.MAX_HP));
@@ -74,9 +75,10 @@ public class Player extends GameCharacter implements Serializable {
         stats.put(Stats.EXPERIENCE, 0);
 
     }
-
+    /*
+    Esta clase se encarga de agregar items o cosas al personaje.
+     */
     public void addItemToInventory(Item item) {
-
         if (item instanceof Misc misc) {
             if (misc.isStackable()) {
                 boolean found = false;
@@ -99,7 +101,9 @@ public class Player extends GameCharacter implements Serializable {
             inventory.addItem(item);
         }
     }
-
+    /*
+    Esta clase se encarga de quitar items al personaje que lleve en el inventario.
+     */
     public void removeItemFromInventory(Item item) {
 
         if (item instanceof Misc misc) {
@@ -122,7 +126,6 @@ public class Player extends GameCharacter implements Serializable {
     }
 
     public void sellItem(Item item) {
-
         try {
             Item getItem = inventory.getItem(item);
             if (getItem instanceof Misc misc) {
@@ -140,7 +143,9 @@ public class Player extends GameCharacter implements Serializable {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
     }
-
+    /*
+    Esta clase salva el slot del jugador
+     */
     public void save(int slot){
         try {
             ObjectOutputStream out= new ObjectOutputStream(new FileOutputStream("files/save"+ slot+".dat"));
@@ -153,7 +158,6 @@ public class Player extends GameCharacter implements Serializable {
     }
 
     public void showInventory() {
-
         StringBuilder content = new StringBuilder("Inventory: \n");
         String format = """
                 Name: %s, Price: %d
@@ -164,7 +168,6 @@ public class Player extends GameCharacter implements Serializable {
                 Description: %s
                 """;
         for (Item item : inventory.getItems()) {
-
             if (item instanceof Misc misc) {
                 if (misc.isStackable()) {
                     content.append(String.format(formatQuantity, item.getName(),

@@ -1,7 +1,9 @@
 package rpg.items.miscs;
 
 public abstract class EquipmentAmulet extends Misc {
-
+/*
+Creacion de un amuleto
+ */
     public EquipmentAmulet(){
         super();
     }

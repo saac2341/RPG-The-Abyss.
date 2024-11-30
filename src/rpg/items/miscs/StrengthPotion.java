@@ -1,7 +1,9 @@
 package rpg.items.miscs;
 
 public abstract class StrengthPotion extends Misc {
-
+/*
+Posion para la incremenar la defensa.
+ */
     public StrengthPotion(){
         super();
     }

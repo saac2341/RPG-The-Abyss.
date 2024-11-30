@@ -9,8 +9,10 @@ import javax.swing.*;
 import rpg.utils.cache.PictureCache;
 
 public class Destroyer extends Enemy {
+    /*
+    Le agraga nombre y la imagen al personaje
+     */
     public Destroyer () {
-
         super("Destroyer");
         PictureCache.addImage("Destroyer", "Enemies/New/DestroyerF.png");
     }
@@ -18,7 +20,9 @@ public class Destroyer extends Enemy {
     public void getLoot(){
         System.out.println("Destroyer");
     }
-
+    /*
+    Le agrega caracteristicas al personaje
+     */
     @Override
     protected void initCharacter() {
         this.name = "Destroyer";
@@ -30,7 +34,9 @@ public class Destroyer extends Enemy {
         this.stats.put(Stats.EXPERIENCE, 55);
         this.stats.put(Stats.GOLD, 20);
     }
-
+    /*
+    Administra los ataque del enemigo hacia el jugador.
+     */
     @Override
     public String attack(GameCharacter enemy) {
         String message;

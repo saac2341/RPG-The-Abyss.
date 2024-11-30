@@ -4,7 +4,9 @@ import rpg.items.armors.Armor;
 import rpg.items.miscs.Misc;
 
 import java.util.ArrayList;
-
+/*
+Esta clase es la base para el inventario
+ */
 public class Inventory {
 
     private ArrayList<Item> items;

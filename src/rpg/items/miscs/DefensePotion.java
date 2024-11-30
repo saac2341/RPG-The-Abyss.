@@ -1,7 +1,9 @@
 package rpg.items.miscs;
 
 public abstract class DefensePotion extends Misc {
-
+/*
+Posicion de defensa
+ */
     public DefensePotion(){
         super();
     }

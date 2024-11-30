@@ -12,7 +12,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.Set;
-
+/*
+Esta clase se encarga de generar y mandar los enemigos
+para que peleen con el jugador.
+ */
 public class EnemyFactory {
     private static final Random random = new Random();
 

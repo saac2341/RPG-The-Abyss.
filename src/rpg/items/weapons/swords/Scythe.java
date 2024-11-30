@@ -4,7 +4,9 @@ import rpg.enums.WeaponType;
 import rpg.items.weapons.Weapon;
 
 public abstract class Scythe extends Weapon {
-
+    /*
+    Afrefa caracteristicas al arma.
+     */
     public Scythe (){
         super("Guadaña","Una guadaña para cosechar almas.", 1200, WeaponType.MYTHICAL);
     }

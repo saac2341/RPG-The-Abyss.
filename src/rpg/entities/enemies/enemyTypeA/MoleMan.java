@@ -11,7 +11,9 @@ import rpg.utils.cache.PictureCache;
 import javax.swing.*;
 
 public class MoleMan extends Enemy {
-
+    /*
+    Esta clase se le apregar el nombre al personaje al igual que la imagen que va a llevar
+     */
     public MoleMan() {
         super("Hombre Topo");
         PictureCache.addImage("Hombre_Topo", "Enemies/New/TopoF.png");
@@ -20,7 +22,9 @@ public class MoleMan extends Enemy {
     public void getLoot() {
         System.out.println("The Mole Man drops a gold stone.");
     }
-
+    /*
+    Esta clase se ocupa de los atributos del personaje
+     */
     @Override
     protected void initCharacter() {
         this.type = EnemyType.BASIC;
@@ -31,7 +35,9 @@ public class MoleMan extends Enemy {
         this.stats.put(Stats.EXPERIENCE,30);
         this.stats.put(Stats.GOLD, 30);
     }
-
+    /*
+    Administra los ataques del personaje de forma aleatoria
+     */
     public String attack(GameCharacter enemy){
         String message;
         int random = Randomize.getRandomInt(1,100);
@@ -65,7 +71,9 @@ public class MoleMan extends Enemy {
         }
         return message;
     }
-
+    /*
+    Cosas que hacen cada tipo de ataque al jugador
+     */
     protected String Scratch(GameCharacter enemy) throws EnemyDeathException {
         int damage = 5;
         int newHP = reduceHP(enemy, damage);

@@ -23,6 +23,9 @@ public class Inventory implements Serializable {
         this.capacity=capacity;
         items=new ArrayList<>();
     }
+    /*
+    Funcion para poder agregar items en el inventario
+     */
     public void addItem(Item item){
         if (items.size()<capacity){
             items.add(item);
@@ -30,9 +33,15 @@ public class Inventory implements Serializable {
             JOptionPane.showMessageDialog(null,"Inventario lleno");
         }
     }
+    /*
+    Remover item
+     */
     public void removeItem(Item item){
         items.remove(item);
     }
+    /*
+    Actualizar item
+     */
     public Item getItem(int index){
         return items.get(index);
     }
@@ -62,6 +71,9 @@ public class Inventory implements Serializable {
         capacity +=amount;
         items.ensureCapacity(capacity);
     }
+    /*
+    Crea un listado de las armaduras qeu hay en el inventario.
+     */
     public ArrayList<Armor> getArmors() {
         ArrayList<Armor> armors = new ArrayList<>();
         for (Item item : items) {
@@ -71,8 +83,10 @@ public class Inventory implements Serializable {
         }
         return armors;
     }
+    /*
+    Crea una lista de los cosas que hay en el inventario.
+     */
     public ArrayList<Misc>getMiscs(){
-
         ArrayList<Misc>miscs=new ArrayList<>();
         for (Item item:items){
             if (item instanceof Misc){
@@ -81,7 +95,9 @@ public class Inventory implements Serializable {
         }
         return miscs;
     }
-
+    /*
+    Este crea una lista de las armas que hay.
+     */
     public ArrayList<Weapon> getWeapons() {
         ArrayList<Weapon> weapons=new ArrayList<>();
         for (Item item:items){
@@ -91,7 +107,9 @@ public class Inventory implements Serializable {
         }
         return weapons;
     }
-
+    /*
+    Esta crea una lista de los items que esta en el inventario.
+     */
     public ArrayList<Item> getItems() {
         return items;
     }

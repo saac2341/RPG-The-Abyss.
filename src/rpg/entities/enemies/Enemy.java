@@ -12,14 +12,13 @@ import javax.swing.*;
 import java.lang.Integer;
 import javax.swing.Action;
 
-/**
- * Creacion de la clase con sus atributos.
- */
 public abstract class Enemy extends GameCharacter {
-    protected EnemyType type;
-    /**
-     * Constructor de los atributos iniciales muy paraecido a player.
+    /*
+    Esta clase d enemy se ocupa de administar los ataques y atibutos de los enemigos
+    para luego mandarlos, ocupa como base la clase GameCharacter
      */
+    protected EnemyType type;
+
     public Enemy(String name) {
         super(name);
     }

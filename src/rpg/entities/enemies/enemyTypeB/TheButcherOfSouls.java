@@ -11,7 +11,9 @@ import rpg.exceptions.EnemyDeathException;
 import javax.swing.*;
 
 public class TheButcherOfSouls extends Enemy {
-
+    /*
+    Le agrega nombre y imagen al enemigo
+     */
     public TheButcherOfSouls(){
         super("El CARNICERO DE ALMAS");
         PictureCache.addImage("Butcher_Souls","Enemies/New/AlmasF.png");
@@ -20,7 +22,9 @@ public class TheButcherOfSouls extends Enemy {
     public void getLoot(){
         System.out.println("The Butcher of Souls drops all the gold of the fallen.");
     }
-
+    /*
+    coloca caractieristeicas al enemigo
+     */
     @Override
     protected void initCharacter() {
         this.name = "EL CARNICERO DE ALMAS";
