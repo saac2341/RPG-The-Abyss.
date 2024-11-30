@@ -9,13 +9,22 @@ import java.awt.event.ActionListener;
 
 public class AttackEvent implements ActionListener {
 
+    /**
+     * Evento ligado a la pantalla principal, el cual le permite atacar al enemigo con el botón atacar.
+     */
+
     private final HomeInterface game;
 
+    /**
+     * Variable de referencia del juego
+     */
     public AttackEvent(HomeInterface game) {
-
         this.game = game;
     }
 
+    /**
+     *Ligamiento e impresión de texto sobe la batalla entre el enemigo y el jugador
+     */
     @Override
     public void actionPerformed(ActionEvent e) {
 

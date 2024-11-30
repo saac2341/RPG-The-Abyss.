@@ -49,14 +49,34 @@ public class UserHoverUI extends HoverButtonUI {
         partsHover[2] = PictureCache.getImageIcon("actionHoverRightSide");
     }
 
+    /**
+     * Recibe como parámetros un objeto Graphics2D y un array de ImageIcon que representan las partes del botón.
+     */
     protected void drawButtonParts(Graphics2D g2d, ImageIcon[] parts) {
 
+        /**
+         * Dibuja la primera parte del botón.
+         */
         g2d.drawImage(parts[0].getImage(), 0, 0, null);
+        /**
+         * Translada el sistema de coordenadas para dibujar la segunda parte.
+         */
         g2d.translate(27, 0);
-        g2d.drawImage(parts[1].getImage(), 0, 0,
-                staticWidth - 54, height, null);
+        /**
+         * Dibuja la segunda parte del botón.
+         */
+        g2d.drawImage(parts[1].getImage(), 0, 0, staticWidth - 54, height, null);
+        /**
+         * Translada el sistema de coordenadas a la derecha para dibujar la tercera parte.
+         */
         g2d.translate(staticWidth - 54, 0);
+        /**
+         * Dibuja la tercera parte del botón en la posición actual.
+         */
         g2d.drawImage(parts[2].getImage(), 0, 0, null);
+        /**
+         * Restaura el sistema de coordenadas a su posición original, trasladando hacia la izquierda.
+         */
         g2d.translate(-staticWidth + width + 54, 0);
     }
 }

@@ -5,14 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc0f9441-2c0c-4d43-89b3-04e94701314d" name="Changes" comment="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_11_2024_04_23_p__m___Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_11_2024_04_35_p__m___Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_11_2024_04_40_p__m___Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/save1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/files/save1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/UIConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/UIConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/buttons/AttackButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/AttackButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/buttons/BlacksmithButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/BlacksmithButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/buttons/CreateButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/CreateButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/buttons/EstaticsBotton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/EstaticsBotton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/buttons/ExitButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/ExitButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/buttons/FleeButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/FleeButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/buttons/InventaryButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/InventaryButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/buttons/LoadFileButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/LoadFileButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/buttons/NewFileButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/NewFileButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/buttons/SaveBottion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/SaveBottion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/buttons/events/AttackEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/events/AttackEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/buttons/events/LoadFileEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/events/LoadFileEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/buttons/events/NewFileEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/events/NewFileEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/buttons/events/NewPlayerEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/buttons/events/NewPlayerEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/labels/BarLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/labels/BarLabel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/labels/EnemySpriteLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/labels/EnemySpriteLabel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/labels/GoldLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/labels/GoldLabel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/labels/IconLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/labels/IconLabel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/labels/NameLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/labels/NameLabel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/labels/PlayerSpriteLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/labels/PlayerSpriteLabel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/labels/PortraitLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/labels/PortraitLabel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/labels/events/ShowStatusEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/labels/events/ShowStatusEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/panels/BackgroundPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/panels/BackgroundPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/panels/FilesPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/panels/FilesPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/panels/HomePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/panels/HomePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/panels/MiddlePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/panels/MiddlePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/panels/NewPlayerPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/panels/NewPlayerPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/panels/TopPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/panels/TopPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/ui/BarLabelUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/ui/BarLabelUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rpg/gui/ui/EnemyLabelUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/ui/EnemyLabelUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpg/gui/windows/HomeInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/windows/HomeInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/ui/GameLabelUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/ui/GameLabelUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/ui/HoverButtonUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/ui/HoverButtonUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/ui/LabelUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/ui/LabelUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/ui/NameLabelUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/ui/NameLabelUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rpg/gui/ui/UserHoverUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/ui/UserHoverUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rpg/gui/windows/LoadingWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/windows/LoadingWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpg/gui/windows/NewFileWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rpg/gui/windows/NewFileWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,22 +205,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728597993386</updated>
-    </task>
-    <task id="LOCAL-00079" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
-      <option name="closed" value="true" />
-      <created>1731016606544</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1731016606544</updated>
-    </task>
-    <task id="LOCAL-00080" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
-      <option name="closed" value="true" />
-      <created>1731351562668</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1731351562668</updated>
     </task>
     <task id="LOCAL-00081" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
       <option name="closed" value="true" />
@@ -567,7 +582,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732943346785</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
+      <option name="closed" value="true" />
+      <created>1732946511329</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1732946511329</updated>
+    </task>
+    <task id="LOCAL-00129" summary="Merge remote-tracking branch 'origin/main-cpp' into main-cpp">
+      <option name="closed" value="true" />
+      <created>1732946518678</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1732946518678</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

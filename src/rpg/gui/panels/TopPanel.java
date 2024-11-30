@@ -5,6 +5,9 @@ import rpg.utils.cache.PictureCache;
 
 import javax.swing.*;
 
+/**
+ * Imagen o fondo de la sección superior de nuestro panel de juego
+ */
 public class TopPanel extends BackgroundPanel {
 
     @Override

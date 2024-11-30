@@ -7,6 +7,10 @@ import javax.swing.*;
 
 public class HomePanel extends BackgroundPanel{
 
+    /**
+     * Imagen o fondo de la sección media de nuestro panel de juego, en este panel se desarrollan las peleas del juego.
+     */
+
     protected void init(){
         /**
          * Imagen de enmedio de la interfas

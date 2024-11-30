@@ -33,6 +33,9 @@ public class LoadingWindow extends JFrame{
     private JLabel file5Name;
 
     public LoadingWindow(){
+        /**
+         * Variables del panel
+         */
         this.setContentPane(mainPanel);
         this.setSize(UIConstants.STAR_WINDOW_DIMENSION);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -46,10 +49,16 @@ public class LoadingWindow extends JFrame{
          * Características y eventos de los elementos de la pantalla de carga.
          */
         mainPanel = new FilesPanel();
+        /**
+         * Caracteristicas de la impreción del titulo deinicio
+         */
         titleLabel = new JLabel("RPG The-Abyss");
         titleLabel.setForeground(Color.WHITE);
         titleLabel.setFont(new Font("Arial", Font.BOLD, 30));
         file1Name = new NameLabel("");
+        /**
+         * Eventos de los botones de inicio
+         */
         newFile1 = new NewFileButton(1, this);
         loadFile1 = new LoadFileButton(1, this);
         file2Name = new NameLabel("");
