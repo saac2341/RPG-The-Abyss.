@@ -11,7 +11,9 @@ public class UserHoverUI extends HoverButtonUI {
 
     protected void installDefaults(AbstractButton b) {
         super.installDefaults(b);
-        // Establecemos el borde del botón.
+        /**
+         * Establecemos el borde del botón.
+         */
         b.setForeground(Color.WHITE);
     }
 
@@ -22,17 +24,23 @@ public class UserHoverUI extends HoverButtonUI {
     }
 
     protected void initParts() {
-        //Inicializamos los arreglos de imágenes.
+        /**
+         * Inicializamos los arreglos de imágenes.
+         */
         parts = new ImageIcon[3];
         partsHover = new ImageIcon[3];
-        // Agregamos las imágenes a la caché.
+        /**
+         * Agregamos las imágenes a la caché.
+         */
         PictureCache.addImage("actionLeftSide", "ButtonParts/BotonI.png");
         PictureCache.addImage("actionCenterSide", "ButtonParts/BotonC.png");
         PictureCache.addImage("actionRightSide", "ButtonParts/BotonD.png");
         PictureCache.addImage("actionHoverLeftSide", "ButtonParts/BotonI.png");
         PictureCache.addImage("actionHoverCenterSide", "ButtonParts/BotonC.png");
         PictureCache.addImage("actionHoverRightSide", "ButtonParts/BotonD.png");
-        // Obtenemos las imágenes de la caché y las almacenamos en los arreglos correspondientes.
+        /**
+         * Obtenemos las imágenes de la caché y las almacenamos en los arreglos correspondientes.
+         */
         parts[0] = PictureCache.getImageIcon("actionLeftSide");
         parts[1] = PictureCache.getImageIcon("actionCenterSide");
         parts[2] = PictureCache.getImageIcon("actionRightSide");

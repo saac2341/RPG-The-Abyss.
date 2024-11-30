@@ -9,7 +9,9 @@ import javax.swing.*;
 import java.awt.*;
 
 public class NewFileWindow extends JFrame {
-
+    /**
+     * Componentes del panel de un nuevo archivo de partida.
+     */
     private int slot;
     private JTextField playerName;
     private JButton cancelButton;
@@ -27,12 +29,18 @@ public class NewFileWindow extends JFrame {
         this.setLocationRelativeTo(null);
         this.setResizable(false);
         this.setVisible(true);
+        /**
+         * Especificaciones del texto a imprimir.
+         */
         playerName.setFont(new Font("Retron", Font.BOLD, 18));
         playerName.setBackground(new Color(0, 0, 0, 0));
         playerName.setForeground(Color.WHITE);
     }
 
     private void createUIComponents() {
+        /**
+         * Características y eventos de un nuevo archivo de partida.
+         */
         mainPanel = new NewPlayerPanel();
         portraitLabel = new PortraitLabel();
         infoLabel = new JLabel();

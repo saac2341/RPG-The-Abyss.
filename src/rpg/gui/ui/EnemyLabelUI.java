@@ -4,8 +4,8 @@ import javax.swing.*;
 import javax.swing.plaf.basic.BasicLabelUI;
 import java.awt.*;
 
-/*
-Mostra de manera corrcta los sprites.
+/**
+Mostra de manera correcta los sprites.
  */
 public class EnemyLabelUI extends BasicLabelUI {
     ImageIcon icon;

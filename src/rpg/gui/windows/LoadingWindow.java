@@ -11,6 +11,9 @@ import java.awt.*;
 
 public class LoadingWindow extends JFrame{
 
+    /**
+     * Elementos del panel de carga.
+     */
     private JPanel mainPanel;
     private JButton newFile1;
     private JButton newFile2;
@@ -39,6 +42,9 @@ public class LoadingWindow extends JFrame{
     }
 
     private void createUIComponents() {
+        /**
+         * Características y eventos de los elementos de la pantalla de carga.
+         */
         mainPanel = new FilesPanel();
         titleLabel = new JLabel("RPG The-Abyss");
         titleLabel.setForeground(Color.WHITE);
